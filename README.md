@@ -22,6 +22,25 @@
 
 </div>
 
+## mocha-bun (Bun fork)
+
+This is `mocha-bun` — a fork of `mocha@12.0.0-rc.6` with first-class **Bun 1.4+** support.
+
+- **Engines:** `node >=22.12.0` (ESM), `bun >=1.4.0`
+- **Bin:** `mocha` (`#!/usr/bin/env node`) and `mocha-bun` (`#!/usr/bin/env bun`) — no manual `node_modules/.bin` edit needed. Use `bunx mocha`, `bun run mocha`, or `mocha-bun` (`bun ./bin/mocha-bun.js`) for Bun; `npx mocha` / `node ./bin/mocha.js` for Node.
+- **`--parallel` on Bun:** native `BunForkPool` (`lib/nodejs/worker-bun.cjs` + `node:child_process.fork` queue, reuse, `MOCHA_WORKER_ID`) — `workerpool` is kept for Node only. Verified `bun --parallel` 69ms vs Node 113ms.
+- **`glob` → `fs.globSync`:** `lib/cli/lookup-files.js` and `watch-run.cjs` now use built-in `node:fs.globSync` + `minimatch.braceExpand` (removed direct `glob` dep, transitive via `nyc` remains).
+- **ESM:** CLI layer (`options.js`, `collect-files.js`, `node-flags.js`) is ESM, Bun's `require(esm)` unsupported is avoided via `errors.cjs` shims and `import` chain.
+- **Globals:** `global` → `globalThis` fallback in `runner`, `runnable`, `reporters`, `mocha.cjs`.
+
+Install (private fork):
+```bash
+bun install mocha-bun   # or from this repo: bun install
+bun ./bin/mocha-bun.js --no-config test/smoke/smoke.spec.cjs
+bun ./bin/mocha-bun.js --no-config --parallel test/**/*.spec.cjs
+```
+Test matrix: `npm run test-bun` (smoke+unit+integration on Bun), `npm run test-node` (Node), `npm run test-bun:parallel-smoke`.
+
 ## Links
 
 - **[Documentation](https://mochajs.org)**
