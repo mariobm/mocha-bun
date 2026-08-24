@@ -22,47 +22,34 @@
 
 ## 2) Plan phases
 
-### Phase 1 — Fork setup ✅ (this commit)
-- Copy rc.6 → `mocha-slop`, `git init`, rename `package.json:name` to `mocha-bun`, add `bun` engine, `bin: {mocha, mocha-bun}`.
+### Phase 1 — Fork setup ✅ Done
+- Copy rc.6 → `mocha-slop`, `git init`, rename `package.json:name` to `mocha-bun`, engines `node >=22.12.0`, `bun >=1.4.0`, bin `mocha` + `mocha-bun` (ESM decision: Node >22 assumed).
 
-### Phase 2 — `node:fs.glob` migration (dep removal)
-- **lookup-files.js**: replace `import * as glob from 'glob'` with `import fs from 'node:fs'`. Implement `hasMagic` helper (simple regex or `fs.glob` pattern check — Bun/Node don't expose hasMagic, so keep tiny helper). Replace `glob.sync` with `fs.globSync(pattern, {exclude: …?})` or `fs.globSync`. Audit `windowsPathsNoEscape`, `nodir`, sorting (`localeCompare('en')`). Keep behavior.
-- **watch-run.cjs**: hardest. `glob.Glob` → replace with native `fs.globSync` expansion or keep `minimatch` path. Options: a) use `Bun.Glob` when on Bun (`new Bun.Glob(pattern).scanSync`), b) use `fs.globSync` listing + manual filter, c) vendor small pattern parser. Prefer (a)+(b) branching: if `fs.globSync` available use it, else fallback to lightweight regex. Remove `glob` import entirely.
-- **package.json**: remove `glob` dep, update `knip`/`eslint` ignores, test with `node` and `bun`.
-- Verify with `test/integration/glob.spec.cjs`, `test/unit` for lookup.
+### Phase 2 — `node:fs.glob` migration ✅ Done (c15fcb1 + follow-ups)
+- `lookup-files.js`: replaced `glob.sync`/`hasMagic` with `fs.globSync` + custom `hasMagic` regex, `nodir` filter, `en` sort; verified both runtimes (Node 26, Bun 1.4) via `lookupFiles` tests.
+- `watch-run.cjs`: removed `glob.Glob`, replaced `createPathFilter` with `minimatch.braceExpand` + `isGlobSegment` split logic (handles `**`, `*`, `{a,b}`, `+(a|b)`), kept `minimatch` for `matchPattern`. Verified vs old `glob.Glob` output.
+- `package.json`: removed direct `glob` dep (transitive via `nyc` remains), `bun install` 0.15s.
 
-### Phase 3 — Bin / runtime detection
-- Change shebang to `#!/usr/bin/env node` stays but add runtime detection inside:
-  ```js
-  const isBun = typeof Bun !== 'undefined' || !!process.versions.bun;
-  const execPath = process.execPath; // already bun when run via bun
-  ```
-- Handle `isNodeFlag` when `process.allowedNodeEnvironmentFlags` missing/small: fallback list for Bun (`--conditions`, `--inspect`, etc), or treat unknown `--*` as Mocha unless in Bun allowlist.
-- Ensure `spawn(execPath, args, {stdio:'inherit'})` works both: Bun's `spawn` supports same but `execArgv` forwarding differs (`Bun.spawn` vs `child_process.spawn`). Keep using `node:child_process.spawn` which Bun polyfills.
-- Test: `bun ./bin/mocha.js --version`, `bun run mocha --help`, `node ./bin/mocha.js`.
+### Phase 3 — Bin / runtime detection + ESM migration ✅ Done
+- Decision: go ESM (Node >=22 assumed). Created `lib/cli/options.js`, `collect-files.js`, `node-flags.js` as ESM alongside `.cjs` shims; `lib/cli/cli.js` now `import {loadOptions} from "./options.js"`, `parse-args.js` → `node-flags.js`. This fixes Bun's `require(esm)` unsupported (CJS→ESM) — `bun ./bin/mocha.js --help` now works (was `require() async module` error).
+- `bin/mocha.js` updated to import from `options.js`/`node-flags.js` (ESM→ESM). Kept `#!/usr/bin/env node` but added `bin/mocha-bun.js` with `#!/usr/bin/env bun` and `package.json` bin `mocha-bun: ./bin/mocha-bun.js` so no manual edit needed (`bunx mocha-bun`, `bun ./bin/mocha-bun.js`).
+- `isBun` detection via `process.versions.bun`/`globalThis.Bun` kept for `node-flags.js` (Bun has 32 flags vs Node 292) and `spawn(process.execPath)` correctly uses `bun` when run via Bun.
 
-### Phase 4 — Parallel (Bun-native option)
-- **Option A (preferred per user)**: Bun-native pool. Use `Bun.Worker` or `node:worker_threads` with `Bun.Worker` interop, or `Bun.spawn` per file. Evaluate:
-  - `workerpool` on Bun: test if `workerpool.pool(WORKER_PATH, {workerType:'process'})` works under `bun` (needs confirming). If not, replace pool impl when `isBun`.
-  - Native Bun alternative: `lib/nodejs/buffered-worker-pool.bun.cjs` using `Bun.spawn([process.execPath, workerPath], {ipc: …})` or `new Worker(workerPath)` (ESM). Keep same `run(filepath, serializedOptions)` interface → `pool.run`.
-  - `worker.cjs`: currently `workerpool.worker({run})`. For Bun, provide thin adapter: if `isBun`, use `process.on('message')` or `Bun.worker` message passing? Or keep `workerpool` but patch `forkOpts` to use `bun` exec.
-- Keep fallback: Node path unchanged. Branch in `buffered-worker-pool.cjs`:
-  ```js
-  const isBun = !!process.versions.bun;
-  if (isBun) { /* BunPool */ } else { /* existing workerpool */ }
-  ```
-- Also need `parallel-buffered-runner.cjs` interval `global.setInterval` → `globalThis.setInterval`.
-- Validate: `bun ./bin/mocha.js --parallel test/smoke/*.spec.cjs` (also Node still passes).
+### Phase 4 — Parallel (Bun-native) ✅ Done (BunForkPool)
+- Tested `workerpool` on Bun: hangs (1/1 busy, no completion after 5s) for both `process` and `thread`. Raw `fork` IPC works (ping/pong test). So built Bun-native pool.
+- Added `lib/nodejs/worker-bun.cjs` (mirrors `worker.cjs` `run()` but uses `process.on('message', {cmd:'run',id,filepath,serializedOptions})` / `process.send({id,result})` instead of `workerpool.worker`).
+- Added `BunForkPool` inside `lib/nodejs/buffered-worker-pool.cjs`: fork-per-worker with `node:child_process.fork(WORKER_BUN_PATH)`, queue, reuse, `MOCHA_WORKER_ID` env, `maxWorkers`, `stats()`, `terminate(force)` with graceful `send({cmd:'exit'})` → `SIGTERM` → `SIGKILL`. `isBun` branch uses `BunForkPool`, Node keeps `workerpool.pool(WORKER_PATH)`.
+- Verified: `bun ./bin/mocha.js --no-config --parallel test/smoke/smoke.spec.cjs` 69ms (Node 113ms) with correct events; Node parallel still 134ms.
 
-### Phase 5 — Globals & runtime polyfills
-- Replace bare `global` with `globalThis` in `lib/runner.cjs`, `lib/runnable.js`, `lib/reporters/*`, `lib/nodejs/*`. Keep `global` alias for compat: `const g = globalThis;`.
-- Audit `process.features.require_module` check in `esm-utils.cjs` (Bun supports `.ts` natively). Ensure `requireOrImport` prefers `Bun` early return.
-- Check `utils.cjs` etc for `global` enumeration: `Object.keys(globalThis)` + explicit allowlist.
+### Phase 5 — Globals & runtime polyfills ✅ Done
+- Replaced bare `global` with `globalThis` (with `typeof globalThis !== 'undefined' ? globalThis : global` fallback) in: `lib/runner.cjs` (`Runner.immediately`, `globalProps`, `filterLeaks` `global.navigator`), `lib/runnable.js` (`global.Date`/`setTimeout`), `lib/reporters/html.js`/`xunit.js`/`base.js` (`global.Date`/`innerHeight`), `lib/mocha.cjs` (`global` passed to `EVENT_FILE_PRE_REQUIRE`), `lib/nodejs/parallel-buffered-runner.cjs`/`worker.cjs`/`worker-bun.cjs` (`global.setInterval`). Keeps compat but Bun's `global === globalThis` (true) now explicit.
+- Added `lib/errors.cjs`/`error-constants.cjs` + fallback `try{require("./errors.cjs")}catch{require("./errors.js")}` in all CJS that did `require("../errors.js")` (config, options, run, run-helpers, mocha, worker, esm-utils, runner, buffered-worker-pool) to fix Bun's sync `require(esm)` after ESM migration (config → errors edge).
 
-### Phase 6 — Polish & verification
-- `bun install` vs `npm install` scripts: `package.json` scripts currently `node bin/mocha.js`. Add `bun` variants or make them runtime agnostic (`--bun` flag). Update `README` for bun usage.
-- Run full suites under both: `bun run test-node:unit`, `bun bin/mocha.js --parallel`.
-- Remove `glob` from deps, ensure `minimatch` still needed? Maybe can also drop if using `fs.glob` but keep for `watch-run` `minimatch` filtering.
+### Phase 6 — Polish & verification (next)
+- Scripts: `package.json` still `node bin/mocha.js` for tests; add `bun` variants or runtime-agnostic (`--bun`). Update `README` for `mocha-bun` usage (`bun install mocha-bun`, `mocha` vs `mocha-bun` bin, `bun --parallel`).
+- Full matrix: `node` + `bun` for `test/smoke`, `test/unit`, `test/node-unit`, `test/integration` (parallel). `glob` already removed from direct deps.
+- Remaining: `esm-utils.cjs` Bun `.ts` handling, `bin` docs, `watch` mode chokidar on Bun, final lint.
+
 
 ## 3) Risk notes / Steering
 - `fs.globSync` API slightly different: takes `pattern` string, not array; `exclude` option vs `nodir`. Need to test Bun's implementation parity (Bun's fs.globSync signature may differ from Node's). Check Node docs: `fs.globSync(pattern, options)` returns `string[]`.

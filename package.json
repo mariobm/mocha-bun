@@ -35,7 +35,7 @@
   "main": "./index.js",
   "bin": {
     "mocha": "./bin/mocha.js",
-    "mocha-bun": "./bin/mocha.js"
+    "mocha-bun": "./bin/mocha-bun.js"
   },
   "directories": {
     "lib": "./lib",
