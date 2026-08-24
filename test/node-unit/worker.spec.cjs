@@ -13,9 +13,8 @@ describe("worker", function () {
 
   beforeEach(function () {
     stubs = {
-      workerpool: {
-        isMainThread: false,
-        worker: sinon.stub(),
+      piscina: {
+        Piscina: { isWorkerThread: true },
       },
     };
     sinon.spy(process, "removeAllListeners");
@@ -25,9 +24,8 @@ describe("worker", function () {
     it("should throw", function () {
       expect(() => {
         rewiremock.proxy(WORKER_PATH, {
-          workerpool: {
-            isMainThread: true,
-            worker: stubs.workerpool.worker,
+          piscina: {
+            Piscina: { isWorkerThread: false },
           },
         });
       }, "to throw");
@@ -63,7 +61,7 @@ describe("worker", function () {
       };
 
       worker = rewiremock.proxy(WORKER_PATH, {
-        workerpool: stubs.workerpool,
+        piscina: stubs.piscina,
         "../../lib/mocha.cjs": stubs.Mocha,
         "../../lib/nodejs/serializer.js": stubs.serializer,
         "../../lib/cli/run-helpers.cjs": stubs.runHelpers,
@@ -71,10 +69,9 @@ describe("worker", function () {
       });
     });
 
-    it("should register itself with workerpool", function () {
-      expect(stubs.workerpool.worker, "to have a call satisfying", [
-        { run: worker.run },
-      ]);
+    it("should export run for Piscina", function () {
+      expect(worker.run, "to be a", "function");
+      expect(worker.default, "to be a", "function");
     });
 
     describe("function", function () {

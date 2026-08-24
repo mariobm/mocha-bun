@@ -4,6 +4,12 @@ const rewiremock = require("rewiremock/node");
 const sinon = require("sinon");
 
 describe("class BufferedWorkerPool", function () {
+  // Piscina pool tests only for Node; Bun uses BunForkPool (tested via integration)
+  before(function () {
+    if (process.versions.bun || typeof Bun !== "undefined") {
+      this.skip();
+    }
+  });
   let BufferedWorkerPool;
   let pool;
   let stats;
@@ -19,10 +25,13 @@ describe("class BufferedWorkerPool", function () {
       pendingTasks: 3,
     };
     result = { failures: 0, events: [] };
+    // Piscina mock for Node (Bun uses BunForkPool)
     pool = {
-      terminate: sinon.stub().resolves(),
-      exec: sinon.stub().resolves(result),
-      stats: sinon.stub().returns(stats),
+      run: sinon.stub().resolves(result),
+      close: sinon.stub().resolves(),
+      destroy: sinon.stub().resolves(),
+      threads: Array(10).fill({}),
+      queueSize: 3,
     };
     serializer = {
       deserialize: sinon.stub(),
@@ -32,9 +41,11 @@ describe("class BufferedWorkerPool", function () {
     BufferedWorkerPool = rewiremock.proxy(
       require.resolve("../../lib/nodejs/buffered-worker-pool.cjs"),
       {
-        workerpool: {
-          pool: sinon.stub().returns(pool),
-          cpus: 8,
+        piscina: {
+          Piscina: sinon.stub().returns(pool),
+        },
+        "node:os": {
+          cpus: sinon.stub().returns(Array(8).fill({})),
         },
         "../../lib/nodejs/serializer.js": serializer,
         "serialize-javascript": serializeJavascript,
@@ -105,8 +116,6 @@ describe("class BufferedWorkerPool", function () {
     it("should apply defaults", function () {
       expect(new BufferedWorkerPool(), "to satisfy", {
         options: {
-          workerType: "process",
-          forkOpts: { execArgv: process.execArgv },
           maxWorkers: expect.it("to be greater than or equal to", 1),
         },
       });
@@ -121,8 +130,10 @@ describe("class BufferedWorkerPool", function () {
     });
 
     describe("stats()", function () {
-      it("should return the object returned by `workerpool.Pool#stats`", function () {
-        expect(workerPool.stats(), "to be", stats);
+      it("should return stats derived from Piscina", function () {
+        const s = workerPool.stats();
+        expect(s.totalWorkers, "to be", 10);
+        expect(s.pendingTasks, "to be", 3);
       });
     });
 
@@ -146,9 +157,8 @@ describe("class BufferedWorkerPool", function () {
       it("should serialize the options object", async function () {
         await workerPool.run("file.js", { foo: "bar" });
 
-        expect(pool.exec, "to have a call satisfying", [
-          "run",
-          ["file.js", '{"foo":"bar"}'],
+        expect(pool.run, "to have a call satisfying", [
+          { filepath: "file.js", serializedOptions: '{"foo":"bar"}' },
         ]).and("was called once");
       });
 
@@ -166,10 +176,8 @@ describe("class BufferedWorkerPool", function () {
           await workerPool.terminate(true);
         });
 
-        it('should delegate to the underlying pool w/ "force" behavior', async function () {
-          expect(pool.terminate, "to have a call satisfying", [true]).and(
-            "was called once",
-          );
+        it('should delegate to Piscina destroy w/ "force" behavior', async function () {
+          expect(pool.destroy, "was called once");
         });
       });
 
@@ -178,10 +186,8 @@ describe("class BufferedWorkerPool", function () {
           await workerPool.terminate();
         });
 
-        it('should delegate to the underlying pool w/o "force" behavior', async function () {
-          expect(pool.terminate, "to have a call satisfying", [false]).and(
-            "was called once",
-          );
+        it('should delegate to Piscina close w/o "force" behavior', async function () {
+          expect(pool.close, "was called once");
         });
       });
     });
