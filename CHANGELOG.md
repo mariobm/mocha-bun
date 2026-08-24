@@ -2,857 +2,758 @@
 
 ## [12.0.0-rc.6](https://github.com/mochajs/mocha/compare/v12.0.0-rc.5...v12.0.0-rc.6) (2026-08-09)
 
-
 ### 🩹 Fixes
 
-* **deps:** update dependency starlight-blog to ^0.28.0 ([#6153](https://github.com/mochajs/mocha/issues/6153)) ([6b79044](https://github.com/mochajs/mocha/commit/6b79044a260d096d8266585dfbd7daf173886937))
-* **docs:** restore homepage logo ([#6183](https://github.com/mochajs/mocha/issues/6183)) ([06e81a8](https://github.com/mochajs/mocha/commit/06e81a800356bb5ea42304e978919d833c8558b4))
-* **docs:** restore spacing around footer links ([#6185](https://github.com/mochajs/mocha/issues/6185)) ([163d751](https://github.com/mochajs/mocha/commit/163d751ebb0a9587559ed24aae74564c09f10312))
-* use main instead of exports for the package entry point ([#6193](https://github.com/mochajs/mocha/issues/6193)) ([c32a696](https://github.com/mochajs/mocha/commit/c32a696f0963737eedc9dde5a3e122a6fa1586b3))
-
+- **deps:** update dependency starlight-blog to ^0.28.0 ([#6153](https://github.com/mochajs/mocha/issues/6153)) ([6b79044](https://github.com/mochajs/mocha/commit/6b79044a260d096d8266585dfbd7daf173886937))
+- **docs:** restore homepage logo ([#6183](https://github.com/mochajs/mocha/issues/6183)) ([06e81a8](https://github.com/mochajs/mocha/commit/06e81a800356bb5ea42304e978919d833c8558b4))
+- **docs:** restore spacing around footer links ([#6185](https://github.com/mochajs/mocha/issues/6185)) ([163d751](https://github.com/mochajs/mocha/commit/163d751ebb0a9587559ed24aae74564c09f10312))
+- use main instead of exports for the package entry point ([#6193](https://github.com/mochajs/mocha/issues/6193)) ([c32a696](https://github.com/mochajs/mocha/commit/c32a696f0963737eedc9dde5a3e122a6fa1586b3))
 
 ### 📚 Documentation
 
-* **blog:** add community contributions post ([#6172](https://github.com/mochajs/mocha/issues/6172)) ([5fcc0fe](https://github.com/mochajs/mocha/commit/5fcc0fe4e2bf7a260cd1cc7f312132e26abd1a05))
-* **blog:** update community-contributions to 2026-community-sponsorships ([5462d84](https://github.com/mochajs/mocha/commit/5462d841264d28f0bd3c1fe90479b40af6ba03d3))
-* fix blog/2026-community-sponsorships description ([#6177](https://github.com/mochajs/mocha/issues/6177)) ([98c4746](https://github.com/mochajs/mocha/commit/98c47466fc7bdfb7e1ff7bdabad04739e892ff09))
-* sync CLI docs with v12 options and defaults ([#6140](https://github.com/mochajs/mocha/issues/6140)) ([579fd15](https://github.com/mochajs/mocha/commit/579fd1563822564d528d99e10303dd3a5e29116c))
-
+- **blog:** add community contributions post ([#6172](https://github.com/mochajs/mocha/issues/6172)) ([5fcc0fe](https://github.com/mochajs/mocha/commit/5fcc0fe4e2bf7a260cd1cc7f312132e26abd1a05))
+- **blog:** update community-contributions to 2026-community-sponsorships ([5462d84](https://github.com/mochajs/mocha/commit/5462d841264d28f0bd3c1fe90479b40af6ba03d3))
+- fix blog/2026-community-sponsorships description ([#6177](https://github.com/mochajs/mocha/issues/6177)) ([98c4746](https://github.com/mochajs/mocha/commit/98c47466fc7bdfb7e1ff7bdabad04739e892ff09))
+- sync CLI docs with v12 options and defaults ([#6140](https://github.com/mochajs/mocha/issues/6140)) ([579fd15](https://github.com/mochajs/mocha/commit/579fd1563822564d528d99e10303dd3a5e29116c))
 
 ### 🧹 Chores
 
-* **deps:** update dependency @playwright/test to v1.62.1 ([#6197](https://github.com/mochajs/mocha/issues/6197)) ([dcc539a](https://github.com/mochajs/mocha/commit/dcc539ad05427c010136bd17f57e9d3148f3ebee))
-* **deps:** update dependency eslint to v10.8.0 ([#6196](https://github.com/mochajs/mocha/issues/6196)) ([deeeec6](https://github.com/mochajs/mocha/commit/deeeec61f2f40fafa035dfd25dffa8fed672a877))
-* **deps:** update dependency globals to v17.9.0 ([#6201](https://github.com/mochajs/mocha/issues/6201)) ([c2c6d63](https://github.com/mochajs/mocha/commit/c2c6d63967a7def05452c9f2074ec092ef80e4c0))
-* **deps:** update dependency knip to v6.31.0 ([#6166](https://github.com/mochajs/mocha/issues/6166)) ([b7cd1bd](https://github.com/mochajs/mocha/commit/b7cd1bd9d75cef7d6f350dd038fdaaf553e27e82))
-* **deps:** update dependency sinon to v22.1.0 ([#6188](https://github.com/mochajs/mocha/issues/6188)) ([284f0c2](https://github.com/mochajs/mocha/commit/284f0c23082e3e55106d61c3e69e29f6637b86bd))
-* **deps:** update dependency webpack to v5.109.2 ([#6194](https://github.com/mochajs/mocha/issues/6194)) ([badf733](https://github.com/mochajs/mocha/commit/badf73375430c5352fcf0314417b2d87ce1f7c3d))
-* extract stripLeadingDashes helper + cover CLI arg-parsing edge cases ([#6171](https://github.com/mochajs/mocha/issues/6171)) ([867e175](https://github.com/mochajs/mocha/commit/867e17566beb8f7077e969e9c58e9383bcf6d657))
-* fix esm-utils tests when run without coverage ([#6160](https://github.com/mochajs/mocha/issues/6160)) ([c54539f](https://github.com/mochajs/mocha/commit/c54539f570c005ea1a6b74b283664e0aee7972b1))
-* keep stderr out of the JSON parsed by the FIFO test ([#6187](https://github.com/mochajs/mocha/issues/6187)) ([ea6489e](https://github.com/mochajs/mocha/commit/ea6489e973fde53ef2a9e3455110befc064f5ed0))
-* limit token perms in protect-manifest workflow ([#6175](https://github.com/mochajs/mocha/issues/6175)) ([8cf0030](https://github.com/mochajs/mocha/commit/8cf003021a4184dfce85367c6622a08b0c8d0891))
-* **repo:** change stale threshold from 2+2 to 1+1 ([#6179](https://github.com/mochajs/mocha/issues/6179)) ([7cb2678](https://github.com/mochajs/mocha/commit/7cb267830c51d0b9a851086eb8d87013ee7663bd))
-
+- **deps:** update dependency [**@playwright/test**](https://github.com/playwright/test) to v1.62.1 ([#6197](https://github.com/mochajs/mocha/issues/6197)) ([dcc539a](https://github.com/mochajs/mocha/commit/dcc539ad05427c010136bd17f57e9d3148f3ebee))
+- **deps:** update dependency eslint to v10.8.0 ([#6196](https://github.com/mochajs/mocha/issues/6196)) ([deeeec6](https://github.com/mochajs/mocha/commit/deeeec61f2f40fafa035dfd25dffa8fed672a877))
+- **deps:** update dependency globals to v17.9.0 ([#6201](https://github.com/mochajs/mocha/issues/6201)) ([c2c6d63](https://github.com/mochajs/mocha/commit/c2c6d63967a7def05452c9f2074ec092ef80e4c0))
+- **deps:** update dependency knip to v6.31.0 ([#6166](https://github.com/mochajs/mocha/issues/6166)) ([b7cd1bd](https://github.com/mochajs/mocha/commit/b7cd1bd9d75cef7d6f350dd038fdaaf553e27e82))
+- **deps:** update dependency sinon to v22.1.0 ([#6188](https://github.com/mochajs/mocha/issues/6188)) ([284f0c2](https://github.com/mochajs/mocha/commit/284f0c23082e3e55106d61c3e69e29f6637b86bd))
+- **deps:** update dependency webpack to v5.109.2 ([#6194](https://github.com/mochajs/mocha/issues/6194)) ([badf733](https://github.com/mochajs/mocha/commit/badf73375430c5352fcf0314417b2d87ce1f7c3d))
+- extract stripLeadingDashes helper + cover CLI arg-parsing edge cases ([#6171](https://github.com/mochajs/mocha/issues/6171)) ([867e175](https://github.com/mochajs/mocha/commit/867e17566beb8f7077e969e9c58e9383bcf6d657))
+- fix esm-utils tests when run without coverage ([#6160](https://github.com/mochajs/mocha/issues/6160)) ([c54539f](https://github.com/mochajs/mocha/commit/c54539f570c005ea1a6b74b283664e0aee7972b1))
+- keep stderr out of the JSON parsed by the FIFO test ([#6187](https://github.com/mochajs/mocha/issues/6187)) ([ea6489e](https://github.com/mochajs/mocha/commit/ea6489e973fde53ef2a9e3455110befc064f5ed0))
+- limit token perms in protect-manifest workflow ([#6175](https://github.com/mochajs/mocha/issues/6175)) ([8cf0030](https://github.com/mochajs/mocha/commit/8cf003021a4184dfce85367c6622a08b0c8d0891))
+- **repo:** change stale threshold from 2+2 to 1+1 ([#6179](https://github.com/mochajs/mocha/issues/6179)) ([7cb2678](https://github.com/mochajs/mocha/commit/7cb267830c51d0b9a851086eb8d87013ee7663bd))
 
 ### 🤖 Automation
 
-* **deps:** bump actions/stale from 10 to 11 in the github-actions group ([#6207](https://github.com/mochajs/mocha/issues/6207)) ([ce13809](https://github.com/mochajs/mocha/commit/ce1380932dbc47e02cbaf969875f0cc8534e6ccd))
+- **deps:** bump actions/stale from 10 to 11 in the github-actions group ([#6207](https://github.com/mochajs/mocha/issues/6207)) ([ce13809](https://github.com/mochajs/mocha/commit/ce1380932dbc47e02cbaf969875f0cc8534e6ccd))
 
 ## [12.0.0-rc.5](https://github.com/mochajs/mocha/compare/v12.0.0-rc.4...v12.0.0-rc.5) (2026-07-23)
 
-
 ### 🩹 Fixes
 
-* add package.json exports to avoid DEP0151 warning ([#6168](https://github.com/mochajs/mocha/issues/6168)) ([3031567](https://github.com/mochajs/mocha/commit/3031567913b544a97402f449722cc110e9890420))
+- add package.json exports to avoid DEP0151 warning ([#6168](https://github.com/mochajs/mocha/issues/6168)) ([3031567](https://github.com/mochajs/mocha/commit/3031567913b544a97402f449722cc110e9890420))
 
 ## [12.0.0-rc.4](https://github.com/mochajs/mocha/compare/v12.0.0-rc.3...v12.0.0-rc.4) (2026-07-23)
 
-
 ### ⚠ BREAKING CHANGES
 
-* replace yargs with Node.js util.parseArgs ([#6164](https://github.com/mochajs/mocha/issues/6164))
+- replace yargs with Node.js util.parseArgs ([#6164](https://github.com/mochajs/mocha/issues/6164))
 
 ### 🧹 Chores
 
-* replace yargs with Node.js util.parseArgs ([#6164](https://github.com/mochajs/mocha/issues/6164)) ([21a3902](https://github.com/mochajs/mocha/commit/21a39022861e08a3a8836f365f313f6274dcf485))
+- replace yargs with Node.js util.parseArgs ([#6164](https://github.com/mochajs/mocha/issues/6164)) ([21a3902](https://github.com/mochajs/mocha/commit/21a39022861e08a3a8836f365f313f6274dcf485))
 
 ## [12.0.0-rc.3](https://github.com/mochajs/mocha/compare/v12.0.0-rc.2...v12.0.0-rc.3) (2026-07-22)
 
-
 ### ⚠ BREAKING CHANGES
 
-* replace yargs-unparser in CLI respawn paths ([#6125](https://github.com/mochajs/mocha/issues/6125))
-* replace yargs-parser in CLI option loading ([#6124](https://github.com/mochajs/mocha/issues/6124))
+- replace yargs-unparser in CLI respawn paths ([#6125](https://github.com/mochajs/mocha/issues/6125))
+- replace yargs-parser in CLI option loading ([#6124](https://github.com/mochajs/mocha/issues/6124))
 
 ### 🌟 Features
 
-* replace yargs-parser in CLI option loading ([#6124](https://github.com/mochajs/mocha/issues/6124)) ([e846f8f](https://github.com/mochajs/mocha/commit/e846f8f54754ecbbfca868885e255bbce51e0582))
-* replace yargs-unparser in CLI respawn paths ([#6125](https://github.com/mochajs/mocha/issues/6125)) ([1d2bb2e](https://github.com/mochajs/mocha/commit/1d2bb2efea721474b7fcaac4e209a844e5a463a0))
+- replace yargs-parser in CLI option loading ([#6124](https://github.com/mochajs/mocha/issues/6124)) ([e846f8f](https://github.com/mochajs/mocha/commit/e846f8f54754ecbbfca868885e255bbce51e0582))
+- replace yargs-unparser in CLI respawn paths ([#6125](https://github.com/mochajs/mocha/issues/6125)) ([1d2bb2e](https://github.com/mochajs/mocha/commit/1d2bb2efea721474b7fcaac4e209a844e5a463a0))
 
 ## [12.0.0-rc.2](https://github.com/mochajs/mocha/compare/v12.0.0-rc.1...v12.0.0-rc.2) (2026-07-20)
 
-
 ### ⚠ BREAKING CHANGES
 
-* replace he dependency with manual HTML encoding
+- replace he dependency with manual HTML encoding
 
 ### 🌟 Features
 
-* add --clear-screen option for watch mode ([#6133](https://github.com/mochajs/mocha/issues/6133)) ([3301ed7](https://github.com/mochajs/mocha/commit/3301ed7578d2e60cf0e303083d9d6c2d220d13a4))
-* add built-in github-actions reporter ([#6088](https://github.com/mochajs/mocha/issues/6088)) ([a99b8ba](https://github.com/mochajs/mocha/commit/a99b8ba1d621dc1e1a4e718091f3c7a799e71f39))
-
+- add --clear-screen option for watch mode ([#6133](https://github.com/mochajs/mocha/issues/6133)) ([3301ed7](https://github.com/mochajs/mocha/commit/3301ed7578d2e60cf0e303083d9d6c2d220d13a4))
+- add built-in github-actions reporter ([#6088](https://github.com/mochajs/mocha/issues/6088)) ([a99b8ba](https://github.com/mochajs/mocha/commit/a99b8ba1d621dc1e1a4e718091f3c7a799e71f39))
 
 ### 🩹 Fixes
 
-* **deps:** update dependency js-yaml to v5 ([#6117](https://github.com/mochajs/mocha/issues/6117)) ([2fb44ff](https://github.com/mochajs/mocha/commit/2fb44ffd9eaff5ea86a7f9cfdc4e24c7e4e25c61))
-* replace he dependency with manual HTML encoding ([9f85d71](https://github.com/mochajs/mocha/commit/9f85d71769250e515c1a48caf5f31352e16e2c82))
-* strip ANSI sequences from xunit output ([bf76999](https://github.com/mochajs/mocha/commit/bf76999b2b2a99a4442aba34a4ceaa3679898806))
-
+- **deps:** update dependency js-yaml to v5 ([#6117](https://github.com/mochajs/mocha/issues/6117)) ([2fb44ff](https://github.com/mochajs/mocha/commit/2fb44ffd9eaff5ea86a7f9cfdc4e24c7e4e25c61))
+- replace he dependency with manual HTML encoding ([9f85d71](https://github.com/mochajs/mocha/commit/9f85d71769250e515c1a48caf5f31352e16e2c82))
+- strip ANSI sequences from xunit output ([bf76999](https://github.com/mochajs/mocha/commit/bf76999b2b2a99a4442aba34a4ceaa3679898806))
 
 ### 📚 Documentation
 
-* move legacy site link to bottom of homepage ([#6093](https://github.com/mochajs/mocha/issues/6093)) ([f3e7d37](https://github.com/mochajs/mocha/commit/f3e7d374c717cb1a61297233237c8be53ba5e68e))
-
+- move legacy site link to bottom of homepage ([#6093](https://github.com/mochajs/mocha/issues/6093)) ([f3e7d37](https://github.com/mochajs/mocha/commit/f3e7d374c717cb1a61297233237c8be53ba5e68e))
 
 ### 🧹 Chores
 
-* add "Protect Release Please Manifest" workflow ([#6099](https://github.com/mochajs/mocha/issues/6099)) ([2d7bc22](https://github.com/mochajs/mocha/commit/2d7bc22dda9d14beeae1bf89ae7ea5bdbfa8f56a))
-* add v12 RC 1 release notes ([#5848](https://github.com/mochajs/mocha/issues/5848)) ([275ce51](https://github.com/mochajs/mocha/commit/275ce519122c154cdd75434de9fde2800416dad1))
-* **deps:** bump unexpected to 13 and remove unused plugins ([#6135](https://github.com/mochajs/mocha/issues/6135)) ([b587012](https://github.com/mochajs/mocha/commit/b587012724d490d4d3ce79890efaf6ec235ae21b))
-* **deps:** update actions/checkout action to v7 ([#6114](https://github.com/mochajs/mocha/issues/6114)) ([857945d](https://github.com/mochajs/mocha/commit/857945dbf650ea6bdcdfb2c74cd97a0a391df6ad))
-* **deps:** update actions/github-script action to v9 ([#6091](https://github.com/mochajs/mocha/issues/6091)) ([a017f08](https://github.com/mochajs/mocha/commit/a017f08f4d784489949e2b9744716a4f1e705b6d))
-* **deps:** update dependency eslint to v10.7.0 ([#6134](https://github.com/mochajs/mocha/issues/6134)) ([26d73d3](https://github.com/mochajs/mocha/commit/26d73d36e345b3ef5d04fa2dce7225ec28598d91))
-* **deps:** update dependency eslint-plugin-n to v18.2.2 ([#6137](https://github.com/mochajs/mocha/issues/6137)) ([9d925f0](https://github.com/mochajs/mocha/commit/9d925f0969ded263bb7e98cc8ff25bf400694dd8))
-* **deps:** update dependency globals to v17.7.0 ([#6126](https://github.com/mochajs/mocha/issues/6126)) ([864fb80](https://github.com/mochajs/mocha/commit/864fb806078f068797317dfab2f513b16ccb66d9))
-* **deps:** update dependency js-yaml to v4.3.0 ([#6141](https://github.com/mochajs/mocha/issues/6141)) ([bd4fcf4](https://github.com/mochajs/mocha/commit/bd4fcf484bb52e33e9cf57077e6900122f66a25b))
-* **deps:** update dependency knip to v6.24.0 ([#6110](https://github.com/mochajs/mocha/issues/6110)) ([bab1d4e](https://github.com/mochajs/mocha/commit/bab1d4e9dff4bc2514466fc1afba2de9d376f4e9))
-* **deps:** update dependency knip to v6.26.0 ([#6145](https://github.com/mochajs/mocha/issues/6145)) ([c7cfbe9](https://github.com/mochajs/mocha/commit/c7cfbe9ef945b1422316cf58f19afc9c243397d9))
-* **deps:** update dependency prettier to v3.9.5 ([#6142](https://github.com/mochajs/mocha/issues/6142)) ([55df0d1](https://github.com/mochajs/mocha/commit/55df0d141a866b142f53410aa3a5816a82646d2f))
-* **deps:** update dependency webpack to v5.108.4 ([#6150](https://github.com/mochajs/mocha/issues/6150)) ([4e072d1](https://github.com/mochajs/mocha/commit/4e072d14618a2a631077eb9ebce8efabf0b9435a))
-* **deps:** update dependency webpack-cli to v7.2.1 ([#6151](https://github.com/mochajs/mocha/issues/6151)) ([19978d7](https://github.com/mochajs/mocha/commit/19978d7b0689b3b6924cdc682c6bb1af2aa49172))
-* **deps:** update playwright monorepo to v1.61.0 ([#6108](https://github.com/mochajs/mocha/issues/6108)) ([7ad398e](https://github.com/mochajs/mocha/commit/7ad398ebf14e4a9255984338619907bf485d6a17))
-* fix RC 1 blog publish time, rename to `...-rc-1` ([#6106](https://github.com/mochajs/mocha/issues/6106)) ([00d59bc](https://github.com/mochajs/mocha/commit/00d59bc5ff3f8c95235c0b7f500521dc6320440b))
-* raise timeout for node-unit Mocha spec to fix flaky hook ([#6118](https://github.com/mochajs/mocha/issues/6118)) ([31ee8c5](https://github.com/mochajs/mocha/commit/31ee8c5af3ac3a6e7540d7475089d5d054d4a340))
-* require exact fixture references in integration tests ([#6096](https://github.com/mochajs/mocha/issues/6096)) ([d602cc7](https://github.com/mochajs/mocha/commit/d602cc7ab9b93169916d267e19071fbeb6cd0468))
-* retry touch in dir-add watch test to reduce flakiness ([#6119](https://github.com/mochajs/mocha/issues/6119)) ([061cb52](https://github.com/mochajs/mocha/commit/061cb529cdec6265d7f8366ad97fd2a054fac21c))
-* upgrade Astro to 7.1.1 ([#6149](https://github.com/mochajs/mocha/issues/6149)) ([a5f1caa](https://github.com/mochajs/mocha/commit/a5f1caa61d6f48d7d970401e22cc8cd205b7ce3a))
-
+- add "Protect Release Please Manifest" workflow ([#6099](https://github.com/mochajs/mocha/issues/6099)) ([2d7bc22](https://github.com/mochajs/mocha/commit/2d7bc22dda9d14beeae1bf89ae7ea5bdbfa8f56a))
+- add v12 RC 1 release notes ([#5848](https://github.com/mochajs/mocha/issues/5848)) ([275ce51](https://github.com/mochajs/mocha/commit/275ce519122c154cdd75434de9fde2800416dad1))
+- **deps:** bump unexpected to 13 and remove unused plugins ([#6135](https://github.com/mochajs/mocha/issues/6135)) ([b587012](https://github.com/mochajs/mocha/commit/b587012724d490d4d3ce79890efaf6ec235ae21b))
+- **deps:** update actions/checkout action to v7 ([#6114](https://github.com/mochajs/mocha/issues/6114)) ([857945d](https://github.com/mochajs/mocha/commit/857945dbf650ea6bdcdfb2c74cd97a0a391df6ad))
+- **deps:** update actions/github-script action to v9 ([#6091](https://github.com/mochajs/mocha/issues/6091)) ([a017f08](https://github.com/mochajs/mocha/commit/a017f08f4d784489949e2b9744716a4f1e705b6d))
+- **deps:** update dependency eslint to v10.7.0 ([#6134](https://github.com/mochajs/mocha/issues/6134)) ([26d73d3](https://github.com/mochajs/mocha/commit/26d73d36e345b3ef5d04fa2dce7225ec28598d91))
+- **deps:** update dependency eslint-plugin-n to v18.2.2 ([#6137](https://github.com/mochajs/mocha/issues/6137)) ([9d925f0](https://github.com/mochajs/mocha/commit/9d925f0969ded263bb7e98cc8ff25bf400694dd8))
+- **deps:** update dependency globals to v17.7.0 ([#6126](https://github.com/mochajs/mocha/issues/6126)) ([864fb80](https://github.com/mochajs/mocha/commit/864fb806078f068797317dfab2f513b16ccb66d9))
+- **deps:** update dependency js-yaml to v4.3.0 ([#6141](https://github.com/mochajs/mocha/issues/6141)) ([bd4fcf4](https://github.com/mochajs/mocha/commit/bd4fcf484bb52e33e9cf57077e6900122f66a25b))
+- **deps:** update dependency knip to v6.24.0 ([#6110](https://github.com/mochajs/mocha/issues/6110)) ([bab1d4e](https://github.com/mochajs/mocha/commit/bab1d4e9dff4bc2514466fc1afba2de9d376f4e9))
+- **deps:** update dependency knip to v6.26.0 ([#6145](https://github.com/mochajs/mocha/issues/6145)) ([c7cfbe9](https://github.com/mochajs/mocha/commit/c7cfbe9ef945b1422316cf58f19afc9c243397d9))
+- **deps:** update dependency prettier to v3.9.5 ([#6142](https://github.com/mochajs/mocha/issues/6142)) ([55df0d1](https://github.com/mochajs/mocha/commit/55df0d141a866b142f53410aa3a5816a82646d2f))
+- **deps:** update dependency webpack to v5.108.4 ([#6150](https://github.com/mochajs/mocha/issues/6150)) ([4e072d1](https://github.com/mochajs/mocha/commit/4e072d14618a2a631077eb9ebce8efabf0b9435a))
+- **deps:** update dependency webpack-cli to v7.2.1 ([#6151](https://github.com/mochajs/mocha/issues/6151)) ([19978d7](https://github.com/mochajs/mocha/commit/19978d7b0689b3b6924cdc682c6bb1af2aa49172))
+- **deps:** update playwright monorepo to v1.61.0 ([#6108](https://github.com/mochajs/mocha/issues/6108)) ([7ad398e](https://github.com/mochajs/mocha/commit/7ad398ebf14e4a9255984338619907bf485d6a17))
+- fix RC 1 blog publish time, rename to `...-rc-1` ([#6106](https://github.com/mochajs/mocha/issues/6106)) ([00d59bc](https://github.com/mochajs/mocha/commit/00d59bc5ff3f8c95235c0b7f500521dc6320440b))
+- raise timeout for node-unit Mocha spec to fix flaky hook ([#6118](https://github.com/mochajs/mocha/issues/6118)) ([31ee8c5](https://github.com/mochajs/mocha/commit/31ee8c5af3ac3a6e7540d7475089d5d054d4a340))
+- require exact fixture references in integration tests ([#6096](https://github.com/mochajs/mocha/issues/6096)) ([d602cc7](https://github.com/mochajs/mocha/commit/d602cc7ab9b93169916d267e19071fbeb6cd0468))
+- retry touch in dir-add watch test to reduce flakiness ([#6119](https://github.com/mochajs/mocha/issues/6119)) ([061cb52](https://github.com/mochajs/mocha/commit/061cb529cdec6265d7f8366ad97fd2a054fac21c))
+- upgrade Astro to 7.1.1 ([#6149](https://github.com/mochajs/mocha/issues/6149)) ([a5f1caa](https://github.com/mochajs/mocha/commit/a5f1caa61d6f48d7d970401e22cc8cd205b7ce3a))
 
 ### 🤖 Automation
 
-* **deps:** bump actions/setup-node from 6 to 7 in the github-actions group across 1 directory ([#6146](https://github.com/mochajs/mocha/issues/6146)) ([a73e34c](https://github.com/mochajs/mocha/commit/a73e34ceda600818ad6d7f5edad5dd9d61014b5f))
+- **deps:** bump actions/setup-node from 6 to 7 in the github-actions group across 1 directory ([#6146](https://github.com/mochajs/mocha/issues/6146)) ([a73e34c](https://github.com/mochajs/mocha/commit/a73e34ceda600818ad6d7f5edad5dd9d61014b5f))
 
 ## [12.0.0-rc.1](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.6...v12.0.0-rc.1) (2026-06-20)
 
-
 ### ⚠ BREAKING CHANGES
 
-* change root package.json type to module ([#6078](https://github.com/mochajs/mocha/issues/6078))
+- change root package.json type to module ([#6078](https://github.com/mochajs/mocha/issues/6078))
 
 ### 🌟 Features
 
-* change root package.json type to module ([#6078](https://github.com/mochajs/mocha/issues/6078)) ([da015de](https://github.com/mochajs/mocha/commit/da015de4493f6f497802c4fc35ab294e46a59dad))
-
+- change root package.json type to module ([#6078](https://github.com/mochajs/mocha/issues/6078)) ([da015de](https://github.com/mochajs/mocha/commit/da015de4493f6f497802c4fc35ab294e46a59dad))
 
 ### 📚 Documentation
 
-* add blog ([#6095](https://github.com/mochajs/mocha/issues/6095)) ([c0280ba](https://github.com/mochajs/mocha/commit/c0280baad8e07d3d7e6f4bce524bf47c102836c1))
-* switch util.inherits to class extends ([#5677](https://github.com/mochajs/mocha/issues/5677)) ([f6e8d9a](https://github.com/mochajs/mocha/commit/f6e8d9ab58217971e24fd1fb0a4569f50a6ff488))
-
+- add blog ([#6095](https://github.com/mochajs/mocha/issues/6095)) ([c0280ba](https://github.com/mochajs/mocha/commit/c0280baad8e07d3d7e6f4bce524bf47c102836c1))
+- switch util.inherits to class extends ([#5677](https://github.com/mochajs/mocha/issues/5677)) ([f6e8d9a](https://github.com/mochajs/mocha/commit/f6e8d9ab58217971e24fd1fb0a4569f50a6ff488))
 
 ### 🧹 Chores
 
-* configure Release Please for RC ([#6083](https://github.com/mochajs/mocha/issues/6083)) ([8f3a61c](https://github.com/mochajs/mocha/commit/8f3a61c7137632062105e0fdaa6abdd82fe1627d))
-* **deps:** update dependency @types/node to v24.13.0 ([#6066](https://github.com/mochajs/mocha/issues/6066)) ([fb1998a](https://github.com/mochajs/mocha/commit/fb1998a350dec3f424015b5b5f01ba98309e5b95))
-* **deps:** update dependency eslint-plugin-n to v18.1.0 ([#6072](https://github.com/mochajs/mocha/issues/6072)) ([6f56135](https://github.com/mochajs/mocha/commit/6f56135a3d64cd450782f442417a731f40e1a97c))
-* **deps:** update dependency knip to v6.16.1 ([#6067](https://github.com/mochajs/mocha/issues/6067)) ([b204395](https://github.com/mochajs/mocha/commit/b20439531ef88cf766eadc1b8d4c1a12cae17240))
-* **deps:** update dependency rollup to v4.61.0 ([#6050](https://github.com/mochajs/mocha/issues/6050)) ([87696d5](https://github.com/mochajs/mocha/commit/87696d57e4418899e2289c9a2f03143a2ccd92e0))
-* **deps:** update dependency rollup to v4.62.0 ([#6103](https://github.com/mochajs/mocha/issues/6103)) ([69e04bf](https://github.com/mochajs/mocha/commit/69e04bf0b9a9becf4875732bbdeca587d8e21b3f))
-* **deps:** update eslint monorepo to v10.5.0 ([#6100](https://github.com/mochajs/mocha/issues/6100)) ([ac372e0](https://github.com/mochajs/mocha/commit/ac372e07960f1d41ddba0fe9632c278cfdde0284))
-* explain "trivial changes", update PR template ([#6075](https://github.com/mochajs/mocha/issues/6075)) ([6cbe3d5](https://github.com/mochajs/mocha/commit/6cbe3d5f9fd2e83ef10e97cc2a2cc49aa484a4d4))
-* fix "remove 'waiting for author' " workflow ([#6090](https://github.com/mochajs/mocha/issues/6090)) ([b80d44b](https://github.com/mochajs/mocha/commit/b80d44b3bea01cb4cd7e0bda295ea00a1d6e157d))
-* fix formatting on new remove-waiting-label file ([#6062](https://github.com/mochajs/mocha/issues/6062)) ([bfcb02a](https://github.com/mochajs/mocha/commit/bfcb02a1d12c0f03e8be6771e27aa4135f377bc9))
-* fix Release Please manifest ([#6097](https://github.com/mochajs/mocha/issues/6097)) ([cfd9cf7](https://github.com/mochajs/mocha/commit/cfd9cf7610f436384ef23d8dcd32f55492fa350c))
-* remove "status: waiting for author" label on review request ([#5983](https://github.com/mochajs/mocha/issues/5983)) ([fa3488d](https://github.com/mochajs/mocha/commit/fa3488d80db56ee328348c4901e25bd9eff8fb4b))
-* replace Karma with Playwright for browser tests ([#6031](https://github.com/mochajs/mocha/issues/6031)) ([7c9b004](https://github.com/mochajs/mocha/commit/7c9b0046f30076b39f1cb161adad0416ea827606))
-* restore cursor in watch failure diagnostics ([#6102](https://github.com/mochajs/mocha/issues/6102)) ([d640269](https://github.com/mochajs/mocha/commit/d640269413414b401980d676d1383b5974010681))
-* synchronize watch integration tests on observed runs instead of sleeps ([#6058](https://github.com/mochajs/mocha/issues/6058)) ([84af186](https://github.com/mochajs/mocha/commit/84af186b327ac44dd832ae272e31705c4ce19c70))
-* upgrade Astro and its deps ([#6089](https://github.com/mochajs/mocha/issues/6089)) ([66cdd8f](https://github.com/mochajs/mocha/commit/66cdd8f02ce420803d70532215ea9b588e7e78c9))
-* use 1st-party script for blocked-pr.yml ([#6085](https://github.com/mochajs/mocha/issues/6085)) ([54aee06](https://github.com/mochajs/mocha/commit/54aee06a9c49a0bb7827b217ab8ef6986cb071af))
-
+- configure Release Please for RC ([#6083](https://github.com/mochajs/mocha/issues/6083)) ([8f3a61c](https://github.com/mochajs/mocha/commit/8f3a61c7137632062105e0fdaa6abdd82fe1627d))
+- **deps:** update dependency [**@types/node**](https://github.com/types/node) to v24.13.0 ([#6066](https://github.com/mochajs/mocha/issues/6066)) ([fb1998a](https://github.com/mochajs/mocha/commit/fb1998a350dec3f424015b5b5f01ba98309e5b95))
+- **deps:** update dependency eslint-plugin-n to v18.1.0 ([#6072](https://github.com/mochajs/mocha/issues/6072)) ([6f56135](https://github.com/mochajs/mocha/commit/6f56135a3d64cd450782f442417a731f40e1a97c))
+- **deps:** update dependency knip to v6.16.1 ([#6067](https://github.com/mochajs/mocha/issues/6067)) ([b204395](https://github.com/mochajs/mocha/commit/b20439531ef88cf766eadc1b8d4c1a12cae17240))
+- **deps:** update dependency rollup to v4.61.0 ([#6050](https://github.com/mochajs/mocha/issues/6050)) ([87696d5](https://github.com/mochajs/mocha/commit/87696d57e4418899e2289c9a2f03143a2ccd92e0))
+- **deps:** update dependency rollup to v4.62.0 ([#6103](https://github.com/mochajs/mocha/issues/6103)) ([69e04bf](https://github.com/mochajs/mocha/commit/69e04bf0b9a9becf4875732bbdeca587d8e21b3f))
+- **deps:** update eslint monorepo to v10.5.0 ([#6100](https://github.com/mochajs/mocha/issues/6100)) ([ac372e0](https://github.com/mochajs/mocha/commit/ac372e07960f1d41ddba0fe9632c278cfdde0284))
+- explain "trivial changes", update PR template ([#6075](https://github.com/mochajs/mocha/issues/6075)) ([6cbe3d5](https://github.com/mochajs/mocha/commit/6cbe3d5f9fd2e83ef10e97cc2a2cc49aa484a4d4))
+- fix "remove 'waiting for author' " workflow ([#6090](https://github.com/mochajs/mocha/issues/6090)) ([b80d44b](https://github.com/mochajs/mocha/commit/b80d44b3bea01cb4cd7e0bda295ea00a1d6e157d))
+- fix formatting on new remove-waiting-label file ([#6062](https://github.com/mochajs/mocha/issues/6062)) ([bfcb02a](https://github.com/mochajs/mocha/commit/bfcb02a1d12c0f03e8be6771e27aa4135f377bc9))
+- fix Release Please manifest ([#6097](https://github.com/mochajs/mocha/issues/6097)) ([cfd9cf7](https://github.com/mochajs/mocha/commit/cfd9cf7610f436384ef23d8dcd32f55492fa350c))
+- remove "status: waiting for author" label on review request ([#5983](https://github.com/mochajs/mocha/issues/5983)) ([fa3488d](https://github.com/mochajs/mocha/commit/fa3488d80db56ee328348c4901e25bd9eff8fb4b))
+- replace Karma with Playwright for browser tests ([#6031](https://github.com/mochajs/mocha/issues/6031)) ([7c9b004](https://github.com/mochajs/mocha/commit/7c9b0046f30076b39f1cb161adad0416ea827606))
+- restore cursor in watch failure diagnostics ([#6102](https://github.com/mochajs/mocha/issues/6102)) ([d640269](https://github.com/mochajs/mocha/commit/d640269413414b401980d676d1383b5974010681))
+- synchronize watch integration tests on observed runs instead of sleeps ([#6058](https://github.com/mochajs/mocha/issues/6058)) ([84af186](https://github.com/mochajs/mocha/commit/84af186b327ac44dd832ae272e31705c4ce19c70))
+- upgrade Astro and its deps ([#6089](https://github.com/mochajs/mocha/issues/6089)) ([66cdd8f](https://github.com/mochajs/mocha/commit/66cdd8f02ce420803d70532215ea9b588e7e78c9))
+- use 1st-party script for blocked-pr.yml ([#6085](https://github.com/mochajs/mocha/issues/6085)) ([54aee06](https://github.com/mochajs/mocha/commit/54aee06a9c49a0bb7827b217ab8ef6986cb071af))
 
 ### 🤖 Automation
 
-* **deps:** bump codecov/codecov-action from 6 to 7 in the github-actions group ([#6051](https://github.com/mochajs/mocha/issues/6051)) ([00db758](https://github.com/mochajs/mocha/commit/00db758fdbd61762d735ce7d7f76972da43561aa))
+- **deps:** bump codecov/codecov-action from 6 to 7 in the github-actions group ([#6051](https://github.com/mochajs/mocha/issues/6051)) ([00db758](https://github.com/mochajs/mocha/commit/00db758fdbd61762d735ce7d7f76972da43561aa))
 
 ## [12.0.0-beta-9.6](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.5...v12.0.0-beta-9.6) (2026-06-10)
 
-
 ### 🩹 Fixes
 
-* require serializer.mjs in parallel worker pool files ([#6055](https://github.com/mochajs/mocha/issues/6055)) ([ffdf37c](https://github.com/mochajs/mocha/commit/ffdf37c513481856ee953a9c1ae6418cf435634a))
-* surface global setup/teardown errors with a non-zero exit code ([#5994](https://github.com/mochajs/mocha/issues/5994)) ([ad81ec6](https://github.com/mochajs/mocha/commit/ad81ec68b5182b155937a123e14490e15ae217fe))
-
+- require serializer.mjs in parallel worker pool files ([#6055](https://github.com/mochajs/mocha/issues/6055)) ([ffdf37c](https://github.com/mochajs/mocha/commit/ffdf37c513481856ee953a9c1ae6418cf435634a))
+- surface global setup/teardown errors with a non-zero exit code ([#5994](https://github.com/mochajs/mocha/issues/5994)) ([ad81ec6](https://github.com/mochajs/mocha/commit/ad81ec68b5182b155937a123e14490e15ae217fe))
 
 ### 📚 Documentation
 
-* clarify supported mocha version for ESM configuration ([#6027](https://github.com/mochajs/mocha/issues/6027)) ([5921837](https://github.com/mochajs/mocha/commit/5921837be8d53ea2f6d41e0ca0419aafd428f69e))
-* fix inconsistencies in docs ([#6000](https://github.com/mochajs/mocha/issues/6000)) ([6310d0e](https://github.com/mochajs/mocha/commit/6310d0ef5e20272d6cc885c5e10534cbed0db662))
-* include the released version in the npm badge alt text ([#5959](https://github.com/mochajs/mocha/issues/5959)) ([de924ba](https://github.com/mochajs/mocha/commit/de924bab471e3570415ed2585db4fbd8becd21ff))
-* modernize spies example, drop should.js ([#6016](https://github.com/mochajs/mocha/issues/6016)) ([3b321a3](https://github.com/mochajs/mocha/commit/3b321a36f13e7317f748547508f376a5f02d1066))
-
+- clarify supported mocha version for ESM configuration ([#6027](https://github.com/mochajs/mocha/issues/6027)) ([5921837](https://github.com/mochajs/mocha/commit/5921837be8d53ea2f6d41e0ca0419aafd428f69e))
+- fix inconsistencies in docs ([#6000](https://github.com/mochajs/mocha/issues/6000)) ([6310d0e](https://github.com/mochajs/mocha/commit/6310d0ef5e20272d6cc885c5e10534cbed0db662))
+- include the released version in the npm badge alt text ([#5959](https://github.com/mochajs/mocha/issues/5959)) ([de924ba](https://github.com/mochajs/mocha/commit/de924bab471e3570415ed2585db4fbd8becd21ff))
+- modernize spies example, drop should.js ([#6016](https://github.com/mochajs/mocha/issues/6016)) ([3b321a3](https://github.com/mochajs/mocha/commit/3b321a36f13e7317f748547508f376a5f02d1066))
 
 ### 🧹 Chores
 
-* add "descriptions" item to "AI-generated code" ([#6041](https://github.com/mochajs/mocha/issues/6041)) ([efe6167](https://github.com/mochajs/mocha/commit/efe6167abef9f79001af163924bd8fb3582c4145))
-* **deps:** update dependency js-yaml to v4.2.0 ([#6047](https://github.com/mochajs/mocha/issues/6047)) ([8df3ba6](https://github.com/mochajs/mocha/commit/8df3ba64950fe264fb9ed446b91f58af3e55bd32))
-* **deps:** update dependency knip to v6.15.0 ([#6043](https://github.com/mochajs/mocha/issues/6043)) ([0c03d7d](https://github.com/mochajs/mocha/commit/0c03d7d0681dc5fcc5e1128dd6c0b74a7bbf221a))
-* rollback devDep npm-run-all2 to v8 for Node 20 ([#6040](https://github.com/mochajs/mocha/issues/6040)) ([d7d095b](https://github.com/mochajs/mocha/commit/d7d095b6d5e7e0d33e783c4f196c106102d3b82f))
-
+- add "descriptions" item to "AI-generated code" ([#6041](https://github.com/mochajs/mocha/issues/6041)) ([efe6167](https://github.com/mochajs/mocha/commit/efe6167abef9f79001af163924bd8fb3582c4145))
+- **deps:** update dependency js-yaml to v4.2.0 ([#6047](https://github.com/mochajs/mocha/issues/6047)) ([8df3ba6](https://github.com/mochajs/mocha/commit/8df3ba64950fe264fb9ed446b91f58af3e55bd32))
+- **deps:** update dependency knip to v6.15.0 ([#6043](https://github.com/mochajs/mocha/issues/6043)) ([0c03d7d](https://github.com/mochajs/mocha/commit/0c03d7d0681dc5fcc5e1128dd6c0b74a7bbf221a))
+- rollback devDep npm-run-all2 to v8 for Node 20 ([#6040](https://github.com/mochajs/mocha/issues/6040)) ([d7d095b](https://github.com/mochajs/mocha/commit/d7d095b6d5e7e0d33e783c4f196c106102d3b82f))
 
 ### 🤖 Automation
 
-* **deps:** bump astro from 6.1.9 to 6.4.4 in /docs ([#6046](https://github.com/mochajs/mocha/issues/6046)) ([f47bcf5](https://github.com/mochajs/mocha/commit/f47bcf5ee91f1a7b747bc82ae9c1642c5e1985ad))
+- **deps:** bump astro from 6.1.9 to 6.4.4 in /docs ([#6046](https://github.com/mochajs/mocha/issues/6046)) ([f47bcf5](https://github.com/mochajs/mocha/commit/f47bcf5ee91f1a7b747bc82ae9c1642c5e1985ad))
 
 ## [12.0.0-beta-9.5](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.4...v12.0.0-beta-9.5) (2026-06-03)
 
-
 ### ⚠ BREAKING CHANGES
 
-* remove `bin/_mocha` and convert `bin/` and entry points to ESM ([#6017](https://github.com/mochajs/mocha/issues/6017))
+- remove `bin/_mocha` and convert `bin/` and entry points to ESM ([#6017](https://github.com/mochajs/mocha/issues/6017))
 
 ### 🌟 Features
 
-* remove `bin/_mocha` and convert `bin/` and entry points to ESM ([#6017](https://github.com/mochajs/mocha/issues/6017)) ([930972a](https://github.com/mochajs/mocha/commit/930972a9a705e0b2953d518c0f7ef8ec36c0b9db))
-
+- remove `bin/_mocha` and convert `bin/` and entry points to ESM ([#6017](https://github.com/mochajs/mocha/issues/6017)) ([930972a](https://github.com/mochajs/mocha/commit/930972a9a705e0b2953d518c0f7ef8ec36c0b9db))
 
 ### 🩹 Fixes
 
-* lookupFiles() now returns string[] for direct file paths ([#5941](https://github.com/mochajs/mocha/issues/5941)) ([4718476](https://github.com/mochajs/mocha/commit/4718476be9727d8ce1c22be65d8f5cca5babc78b)), closes [#5940](https://github.com/mochajs/mocha/issues/5940)
-* prevent diff hang on large/complex objects ([#5898](https://github.com/mochajs/mocha/issues/5898)) ([6695fba](https://github.com/mochajs/mocha/commit/6695fba397a6d1ca2d7cd4de86d9dda2d3fba342))
-
+- lookupFiles() now returns string\[] for direct file paths ([#5941](https://github.com/mochajs/mocha/issues/5941)) ([4718476](https://github.com/mochajs/mocha/commit/4718476be9727d8ce1c22be65d8f5cca5babc78b)), closes [#5940](https://github.com/mochajs/mocha/issues/5940)
+- prevent diff hang on large/complex objects ([#5898](https://github.com/mochajs/mocha/issues/5898)) ([6695fba](https://github.com/mochajs/mocha/commit/6695fba397a6d1ca2d7cd4de86d9dda2d3fba342))
 
 ### 🧹 Chores
 
-* convert `lib/nodejs/` utility files to ESM ([#6011](https://github.com/mochajs/mocha/issues/6011)) ([a8ffaa9](https://github.com/mochajs/mocha/commit/a8ffaa9375e5b8bce9fe8d692474660540586a91))
-* convert `lib/reporters/base` to ESM ([#6012](https://github.com/mochajs/mocha/issues/6012)) ([d12dd90](https://github.com/mochajs/mocha/commit/d12dd906aeb7d092a6834586b0c5a4c7d32a0fe3))
-* **deps:** update dependency eslint to v10.4.0 ([#5996](https://github.com/mochajs/mocha/issues/5996)) ([f2dd26b](https://github.com/mochajs/mocha/commit/f2dd26b996bfc6c902847a14246486bbfa233b58))
-* **deps:** update dependency knip to v6.14.2 ([#5982](https://github.com/mochajs/mocha/issues/5982)) ([b40e85b](https://github.com/mochajs/mocha/commit/b40e85be119b666981997369f582b3e2e1406e4d))
-* **deps:** update dependency npm-run-all2 to v9 ([#6019](https://github.com/mochajs/mocha/issues/6019)) ([70bea83](https://github.com/mochajs/mocha/commit/70bea8379aa5b76c50bbad4e4e9b584a0d0fbffc))
-* **deps:** update dependency webpack to v5.107.2 ([#6022](https://github.com/mochajs/mocha/issues/6022)) ([5eca67d](https://github.com/mochajs/mocha/commit/5eca67d149cf96474d5a5d18f553222da9d83439))
-
+- convert `lib/nodejs/` utility files to ESM ([#6011](https://github.com/mochajs/mocha/issues/6011)) ([a8ffaa9](https://github.com/mochajs/mocha/commit/a8ffaa9375e5b8bce9fe8d692474660540586a91))
+- convert `lib/reporters/base` to ESM ([#6012](https://github.com/mochajs/mocha/issues/6012)) ([d12dd90](https://github.com/mochajs/mocha/commit/d12dd906aeb7d092a6834586b0c5a4c7d32a0fe3))
+- **deps:** update dependency eslint to v10.4.0 ([#5996](https://github.com/mochajs/mocha/issues/5996)) ([f2dd26b](https://github.com/mochajs/mocha/commit/f2dd26b996bfc6c902847a14246486bbfa233b58))
+- **deps:** update dependency knip to v6.14.2 ([#5982](https://github.com/mochajs/mocha/issues/5982)) ([b40e85b](https://github.com/mochajs/mocha/commit/b40e85be119b666981997369f582b3e2e1406e4d))
+- **deps:** update dependency npm-run-all2 to v9 ([#6019](https://github.com/mochajs/mocha/issues/6019)) ([70bea83](https://github.com/mochajs/mocha/commit/70bea8379aa5b76c50bbad4e4e9b584a0d0fbffc))
+- **deps:** update dependency webpack to v5.107.2 ([#6022](https://github.com/mochajs/mocha/issues/6022)) ([5eca67d](https://github.com/mochajs/mocha/commit/5eca67d149cf96474d5a5d18f553222da9d83439))
 
 ### 🤖 Automation
 
-* **deps:** bump joelwmale/webhook-action in the github-actions group ([#6032](https://github.com/mochajs/mocha/issues/6032)) ([75c618d](https://github.com/mochajs/mocha/commit/75c618d6d85d9754b0d9bb8b2e1709be737de970))
+- **deps:** bump joelwmale/webhook-action in the github-actions group ([#6032](https://github.com/mochajs/mocha/issues/6032)) ([75c618d](https://github.com/mochajs/mocha/commit/75c618d6d85d9754b0d9bb8b2e1709be737de970))
 
 ## [12.0.0-beta-9.4](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.3...v12.0.0-beta-9.4) (2026-05-16)
 
-
 ### ⚠ BREAKING CHANGES
 
-* remove unused legacy `errors.js` functions ([#5835](https://github.com/mochajs/mocha/issues/5835))
+- remove unused legacy `errors.js` functions ([#5835](https://github.com/mochajs/mocha/issues/5835))
 
 ### 🩹 Fixes
 
-* **deps:** update dependency @astrojs/starlight to ^0.39.0 ([#5952](https://github.com/mochajs/mocha/issues/5952)) ([eed10ac](https://github.com/mochajs/mocha/commit/eed10acdad8f075488beadedb872a43d4f781285))
-
+- **deps:** update dependency [**@astrojs/starlight**](https://github.com/astrojs/starlight) to ^0.39.0 ([#5952](https://github.com/mochajs/mocha/issues/5952)) ([eed10ac](https://github.com/mochajs/mocha/commit/eed10acdad8f075488beadedb872a43d4f781285))
 
 ### 📚 Documentation
 
-* add TypeScript setup guide ([#5863](https://github.com/mochajs/mocha/issues/5863)) ([af63dcf](https://github.com/mochajs/mocha/commit/af63dcf772b0884695b3c447df78c62d41cb6472))
-* fix correctness issues in error codes, CLI defaults, and config docs ([#5860](https://github.com/mochajs/mocha/issues/5860)) ([bd54205](https://github.com/mochajs/mocha/commit/bd54205584abe47f4b1588e0ceb7db4dc2cc924b))
-* modernize DEVELOPMENT.md for new contributors ([#5865](https://github.com/mochajs/mocha/issues/5865)) ([5122ad7](https://github.com/mochajs/mocha/commit/5122ad74d717f29e5c7d59466db774cb6a8b144b))
-
+- add TypeScript setup guide ([#5863](https://github.com/mochajs/mocha/issues/5863)) ([af63dcf](https://github.com/mochajs/mocha/commit/af63dcf772b0884695b3c447df78c62d41cb6472))
+- fix correctness issues in error codes, CLI defaults, and config docs ([#5860](https://github.com/mochajs/mocha/issues/5860)) ([bd54205](https://github.com/mochajs/mocha/commit/bd54205584abe47f4b1588e0ceb7db4dc2cc924b))
+- modernize DEVELOPMENT.md for new contributors ([#5865](https://github.com/mochajs/mocha/issues/5865)) ([5122ad7](https://github.com/mochajs/mocha/commit/5122ad74d717f29e5c7d59466db774cb6a8b144b))
 
 ### 🧹 Chores
 
-* convert `lib/cli/cli.mjs` to ESM ([#5909](https://github.com/mochajs/mocha/issues/5909)) ([6e91a89](https://github.com/mochajs/mocha/commit/6e91a8915e55924a6186e6ac1f5994a81191956c))
-* convert dot, min, and list reporters to esm ([#5907](https://github.com/mochajs/mocha/issues/5907)) ([b19b696](https://github.com/mochajs/mocha/commit/b19b69691b3b0725acacad1e1e3268a6d4762cca))
-* convert run-option-metadata and exports interface to ESM ([#5910](https://github.com/mochajs/mocha/issues/5910)) ([27b0814](https://github.com/mochajs/mocha/commit/27b081488b05e9c673b7fc9acd51ffb4fca77904))
-* **deps:** update dependency @types/node to v24 ([#5958](https://github.com/mochajs/mocha/issues/5958)) ([ef113d7](https://github.com/mochajs/mocha/commit/ef113d7262e8f5d6b602c75a84204863870a4fd5))
-* **deps:** update dependency eslint to v10.3.0 ([#5945](https://github.com/mochajs/mocha/issues/5945)) ([18cf178](https://github.com/mochajs/mocha/commit/18cf17847379f0b80dacdfe7b37c7625209b2bea))
-* **deps:** update dependency eslint-plugin-n to v18 ([#5948](https://github.com/mochajs/mocha/issues/5948)) ([99f0e4a](https://github.com/mochajs/mocha/commit/99f0e4a39e44508384e992f2edec03a1c37200c2))
-* **deps:** update dependency globals to v17.6.0 ([#5946](https://github.com/mochajs/mocha/issues/5946)) ([412070c](https://github.com/mochajs/mocha/commit/412070c7f6570e3bc18cb9769a8b4c85246805db))
-* **deps:** update dependency knip to v6.12.1 ([#5942](https://github.com/mochajs/mocha/issues/5942)) ([e29003d](https://github.com/mochajs/mocha/commit/e29003d049979204689a6a7aee2fa0b6bf73dd30))
-* **deps:** update dependency knip to v6.6.1 ([#5927](https://github.com/mochajs/mocha/issues/5927)) ([7c48496](https://github.com/mochajs/mocha/commit/7c4849672dd5192fd3bc33f4427281ae22f68fc3))
-* **deps:** update dependency knip to v6.7.0 ([#5933](https://github.com/mochajs/mocha/issues/5933)) ([441c32a](https://github.com/mochajs/mocha/commit/441c32aa076f2b0e1c1ba39d67f267c46c1dee4b))
-* **deps:** update dependency nyc to v18 ([#5846](https://github.com/mochajs/mocha/issues/5846)) ([1fea247](https://github.com/mochajs/mocha/commit/1fea247b4e7ba0dafa1a338d438b042ac431d997))
-* **deps:** update dependency semver to v7.8.0 ([#5957](https://github.com/mochajs/mocha/issues/5957)) ([0cbb43c](https://github.com/mochajs/mocha/commit/0cbb43c120c5ce48b6f9df0969c2160bcc6150db))
-* **deps:** update dependency sinon to v22 ([#5949](https://github.com/mochajs/mocha/issues/5949)) ([54dcfda](https://github.com/mochajs/mocha/commit/54dcfda422f5260a2a9705c04213db7f37ac7e75))
-* **deps:** update dependency webpack-cli to v7 ([#5871](https://github.com/mochajs/mocha/issues/5871)) ([9d367e1](https://github.com/mochajs/mocha/commit/9d367e1d31fc03cb744979665a3252aaf47259b4))
-* **deps:** update googleapis/release-please-action action to v5 ([#5929](https://github.com/mochajs/mocha/issues/5929)) ([f32085f](https://github.com/mochajs/mocha/commit/f32085ff2e9794b329b45f06761e710a5baeb4f8))
-* **dev-deps:** upgrade `webpack` from v6 to v7 + remove obsolete `fail-on-errors-webpack-plugin` ([#5908](https://github.com/mochajs/mocha/issues/5908)) ([103ad41](https://github.com/mochajs/mocha/commit/103ad416546bc33804c680cde46de4d0b9ff1c9a))
-* document CJS and MJS config file priority ([#5923](https://github.com/mochajs/mocha/issues/5923)) ([09a1106](https://github.com/mochajs/mocha/commit/09a11062c701b6776937e3f9b53fd879f71b608c))
-* fix Knip issues ([#5919](https://github.com/mochajs/mocha/issues/5919)) ([1b3d604](https://github.com/mochajs/mocha/commit/1b3d60429e484bde837b86e6eb12b497e2c73c40))
-* migrate core interfaces and utilities to ESM ([#5930](https://github.com/mochajs/mocha/issues/5930)) ([1ad23ab](https://github.com/mochajs/mocha/commit/1ad23ab544ac7344b0e2840ce91e0817ce71079a))
-* migrate reporters to ESM ([#5928](https://github.com/mochajs/mocha/issues/5928)) ([f6a62ca](https://github.com/mochajs/mocha/commit/f6a62cae13bf84dda64d1e12978ace049af89369))
-* remove unused legacy `errors.js` functions ([#5835](https://github.com/mochajs/mocha/issues/5835)) ([4116368](https://github.com/mochajs/mocha/commit/41163689264c3ae80c25d168954532b10337aa75))
-* tag alpha releases as `alpha`, not `next` ([#5951](https://github.com/mochajs/mocha/issues/5951)) ([8e29413](https://github.com/mochajs/mocha/commit/8e29413678a36a87f41ba4730af3db6507f1b719)), closes [#5947](https://github.com/mochajs/mocha/issues/5947)
+- convert `lib/cli/cli.mjs` to ESM ([#5909](https://github.com/mochajs/mocha/issues/5909)) ([6e91a89](https://github.com/mochajs/mocha/commit/6e91a8915e55924a6186e6ac1f5994a81191956c))
+- convert dot, min, and list reporters to esm ([#5907](https://github.com/mochajs/mocha/issues/5907)) ([b19b696](https://github.com/mochajs/mocha/commit/b19b69691b3b0725acacad1e1e3268a6d4762cca))
+- convert run-option-metadata and exports interface to ESM ([#5910](https://github.com/mochajs/mocha/issues/5910)) ([27b0814](https://github.com/mochajs/mocha/commit/27b081488b05e9c673b7fc9acd51ffb4fca77904))
+- **deps:** update dependency [**@types/node**](https://github.com/types/node) to v24 ([#5958](https://github.com/mochajs/mocha/issues/5958)) ([ef113d7](https://github.com/mochajs/mocha/commit/ef113d7262e8f5d6b602c75a84204863870a4fd5))
+- **deps:** update dependency eslint to v10.3.0 ([#5945](https://github.com/mochajs/mocha/issues/5945)) ([18cf178](https://github.com/mochajs/mocha/commit/18cf17847379f0b80dacdfe7b37c7625209b2bea))
+- **deps:** update dependency eslint-plugin-n to v18 ([#5948](https://github.com/mochajs/mocha/issues/5948)) ([99f0e4a](https://github.com/mochajs/mocha/commit/99f0e4a39e44508384e992f2edec03a1c37200c2))
+- **deps:** update dependency globals to v17.6.0 ([#5946](https://github.com/mochajs/mocha/issues/5946)) ([412070c](https://github.com/mochajs/mocha/commit/412070c7f6570e3bc18cb9769a8b4c85246805db))
+- **deps:** update dependency knip to v6.12.1 ([#5942](https://github.com/mochajs/mocha/issues/5942)) ([e29003d](https://github.com/mochajs/mocha/commit/e29003d049979204689a6a7aee2fa0b6bf73dd30))
+- **deps:** update dependency knip to v6.6.1 ([#5927](https://github.com/mochajs/mocha/issues/5927)) ([7c48496](https://github.com/mochajs/mocha/commit/7c4849672dd5192fd3bc33f4427281ae22f68fc3))
+- **deps:** update dependency knip to v6.7.0 ([#5933](https://github.com/mochajs/mocha/issues/5933)) ([441c32a](https://github.com/mochajs/mocha/commit/441c32aa076f2b0e1c1ba39d67f267c46c1dee4b))
+- **deps:** update dependency nyc to v18 ([#5846](https://github.com/mochajs/mocha/issues/5846)) ([1fea247](https://github.com/mochajs/mocha/commit/1fea247b4e7ba0dafa1a338d438b042ac431d997))
+- **deps:** update dependency semver to v7.8.0 ([#5957](https://github.com/mochajs/mocha/issues/5957)) ([0cbb43c](https://github.com/mochajs/mocha/commit/0cbb43c120c5ce48b6f9df0969c2160bcc6150db))
+- **deps:** update dependency sinon to v22 ([#5949](https://github.com/mochajs/mocha/issues/5949)) ([54dcfda](https://github.com/mochajs/mocha/commit/54dcfda422f5260a2a9705c04213db7f37ac7e75))
+- **deps:** update dependency webpack-cli to v7 ([#5871](https://github.com/mochajs/mocha/issues/5871)) ([9d367e1](https://github.com/mochajs/mocha/commit/9d367e1d31fc03cb744979665a3252aaf47259b4))
+- **deps:** update googleapis/release-please-action action to v5 ([#5929](https://github.com/mochajs/mocha/issues/5929)) ([f32085f](https://github.com/mochajs/mocha/commit/f32085ff2e9794b329b45f06761e710a5baeb4f8))
+- **dev-deps:** upgrade `webpack` from v6 to v7 + remove obsolete `fail-on-errors-webpack-plugin` ([#5908](https://github.com/mochajs/mocha/issues/5908)) ([103ad41](https://github.com/mochajs/mocha/commit/103ad416546bc33804c680cde46de4d0b9ff1c9a))
+- document CJS and MJS config file priority ([#5923](https://github.com/mochajs/mocha/issues/5923)) ([09a1106](https://github.com/mochajs/mocha/commit/09a11062c701b6776937e3f9b53fd879f71b608c))
+- fix Knip issues ([#5919](https://github.com/mochajs/mocha/issues/5919)) ([1b3d604](https://github.com/mochajs/mocha/commit/1b3d60429e484bde837b86e6eb12b497e2c73c40))
+- migrate core interfaces and utilities to ESM ([#5930](https://github.com/mochajs/mocha/issues/5930)) ([1ad23ab](https://github.com/mochajs/mocha/commit/1ad23ab544ac7344b0e2840ce91e0817ce71079a))
+- migrate reporters to ESM ([#5928](https://github.com/mochajs/mocha/issues/5928)) ([f6a62ca](https://github.com/mochajs/mocha/commit/f6a62cae13bf84dda64d1e12978ace049af89369))
+- remove unused legacy `errors.js` functions ([#5835](https://github.com/mochajs/mocha/issues/5835)) ([4116368](https://github.com/mochajs/mocha/commit/41163689264c3ae80c25d168954532b10337aa75))
+- tag alpha releases as `alpha`, not `next` ([#5951](https://github.com/mochajs/mocha/issues/5951)) ([8e29413](https://github.com/mochajs/mocha/commit/8e29413678a36a87f41ba4730af3db6507f1b719)), closes [#5947](https://github.com/mochajs/mocha/issues/5947)
 
 ## [12.0.0-beta-9.3](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.2...v12.0.0-beta-9.3) (2026-04-28)
 
-
 ### 🩹 Fixes
 
-* begin running tests immediately instead of waiting for watcher, reload required files in watch mode ([#5409](https://github.com/mochajs/mocha/issues/5409)) ([7d9ade6](https://github.com/mochajs/mocha/commit/7d9ade6bffbe09959d4e8acaf33dd22b4edb2b39))
-* **deps:** update dependency diff to v9 ([#5917](https://github.com/mochajs/mocha/issues/5917)) ([fbd831e](https://github.com/mochajs/mocha/commit/fbd831e9c93e2a704bfa5dca587eb3e664569414))
-* support file: URLs in loadFilesAsync ([#5833](https://github.com/mochajs/mocha/issues/5833)) ([f9f9436](https://github.com/mochajs/mocha/commit/f9f9436aadc68ab496a30e5d9b7ffb72dfe4c32b)), closes [#4993](https://github.com/mochajs/mocha/issues/4993)
-* support modern RegExp flags in Mocha#grep ([#5825](https://github.com/mochajs/mocha/issues/5825)) ([35413b6](https://github.com/mochajs/mocha/commit/35413b661023ff3e5e27b120843ee2ebf5902aa4))
-
+- begin running tests immediately instead of waiting for watcher, reload required files in watch mode ([#5409](https://github.com/mochajs/mocha/issues/5409)) ([7d9ade6](https://github.com/mochajs/mocha/commit/7d9ade6bffbe09959d4e8acaf33dd22b4edb2b39))
+- **deps:** update dependency diff to v9 ([#5917](https://github.com/mochajs/mocha/issues/5917)) ([fbd831e](https://github.com/mochajs/mocha/commit/fbd831e9c93e2a704bfa5dca587eb3e664569414))
+- support file: URLs in loadFilesAsync ([#5833](https://github.com/mochajs/mocha/issues/5833)) ([f9f9436](https://github.com/mochajs/mocha/commit/f9f9436aadc68ab496a30e5d9b7ffb72dfe4c32b)), closes [#4993](https://github.com/mochajs/mocha/issues/4993)
+- support modern RegExp flags in Mocha#grep ([#5825](https://github.com/mochajs/mocha/issues/5825)) ([35413b6](https://github.com/mochajs/mocha/commit/35413b661023ff3e5e27b120843ee2ebf5902aa4))
 
 ### 📚 Documentation
 
-* agent instructions to help review agents ([#5839](https://github.com/mochajs/mocha/issues/5839)) ([badac5b](https://github.com/mochajs/mocha/commit/badac5b1632235d40ec77fe0365690076ae5e1ae))
-* clarify --delay option behavior ([#5862](https://github.com/mochajs/mocha/issues/5862)) ([0b88137](https://github.com/mochajs/mocha/commit/0b88137c7d72c11e0dcc0b7b73661061ad8bac8c))
-* clarify that parallel mode does not provide test isolation ([#5864](https://github.com/mochajs/mocha/issues/5864)) ([274c3d2](https://github.com/mochajs/mocha/commit/274c3d268bd4703d8b1416038eae27e068a0b5b4))
-* document parent directory lookup for config files ([#5861](https://github.com/mochajs/mocha/issues/5861)) ([e7a98ef](https://github.com/mochajs/mocha/commit/e7a98ef8c232448e44e4e239294e7117df1cee4d))
-* fix various typos in source and documentation ([#5834](https://github.com/mochajs/mocha/issues/5834)) ([e15bbda](https://github.com/mochajs/mocha/commit/e15bbdacebdc8651d0bfcb2a0c16bfeb367911e5))
-* modernize code examples ([#5687](https://github.com/mochajs/mocha/issues/5687)) ([9c4966a](https://github.com/mochajs/mocha/commit/9c4966a47e7d503fb77704d7559ecab5ce399234))
-
+- agent instructions to help review agents ([#5839](https://github.com/mochajs/mocha/issues/5839)) ([badac5b](https://github.com/mochajs/mocha/commit/badac5b1632235d40ec77fe0365690076ae5e1ae))
+- clarify --delay option behavior ([#5862](https://github.com/mochajs/mocha/issues/5862)) ([0b88137](https://github.com/mochajs/mocha/commit/0b88137c7d72c11e0dcc0b7b73661061ad8bac8c))
+- clarify that parallel mode does not provide test isolation ([#5864](https://github.com/mochajs/mocha/issues/5864)) ([274c3d2](https://github.com/mochajs/mocha/commit/274c3d268bd4703d8b1416038eae27e068a0b5b4))
+- document parent directory lookup for config files ([#5861](https://github.com/mochajs/mocha/issues/5861)) ([e7a98ef](https://github.com/mochajs/mocha/commit/e7a98ef8c232448e44e4e239294e7117df1cee4d))
+- fix various typos in source and documentation ([#5834](https://github.com/mochajs/mocha/issues/5834)) ([e15bbda](https://github.com/mochajs/mocha/commit/e15bbdacebdc8651d0bfcb2a0c16bfeb367911e5))
+- modernize code examples ([#5687](https://github.com/mochajs/mocha/issues/5687)) ([9c4966a](https://github.com/mochajs/mocha/commit/9c4966a47e7d503fb77704d7559ecab5ce399234))
 
 ### 🧹 Chores
 
-* add transient error note to Release Please workflow ([#5847](https://github.com/mochajs/mocha/issues/5847)) ([7288278](https://github.com/mochajs/mocha/commit/7288278faec3f8d021cd6dcc4f4d0d7b4ccc2e75))
-* convert commands, init, and lookup-files to ESM ([#5891](https://github.com/mochajs/mocha/issues/5891)) ([46d09d1](https://github.com/mochajs/mocha/commit/46d09d1a8e259300e09b3bc546894878290acac8))
-* convert context, hook, and stats-collector to ESM ([#5853](https://github.com/mochajs/mocha/issues/5853)) ([5ac4070](https://github.com/mochajs/mocha/commit/5ac40707fd219c5623eac5802853022d0e8c1a05))
-* convert highlight-tags and parse-query to ESM ([#5855](https://github.com/mochajs/mocha/issues/5855)) ([aad7997](https://github.com/mochajs/mocha/commit/aad799751af28d0979d72e21c1d2a9c183cab46c))
-* convert node-flags and options to ESM, fix ESLint issue ([#5900](https://github.com/mochajs/mocha/issues/5900)) ([cd2e461](https://github.com/mochajs/mocha/commit/cd2e46160196fae35b86c3880f70c6d598b94d7f))
-* **deps:** update dependency @eslint/markdown to v8 ([#5845](https://github.com/mochajs/mocha/issues/5845)) ([bd05089](https://github.com/mochajs/mocha/commit/bd05089ea6d5c68952b3e881be846d9321277ca9))
-* **deps:** update dependency eslint to v10.2.0 ([#5884](https://github.com/mochajs/mocha/issues/5884)) ([2829fe3](https://github.com/mochajs/mocha/commit/2829fe3824fc5b1b06215b23599cbab06972888b))
-* **deps:** update dependency globals to v17.5.0 ([#5914](https://github.com/mochajs/mocha/issues/5914)) ([96eaa7c](https://github.com/mochajs/mocha/commit/96eaa7c32a3dfb538f63f9fe717e13da739229da))
-* **deps:** update dependency knip to v6.3.1 ([#5892](https://github.com/mochajs/mocha/issues/5892)) ([a2675f1](https://github.com/mochajs/mocha/commit/a2675f15e0043d06bf0d19cf98e28def2294ed0b))
-* **deps:** update dependency knip to v6.4.0 ([#5901](https://github.com/mochajs/mocha/issues/5901)) ([17ce208](https://github.com/mochajs/mocha/commit/17ce2081912a2e3fbff949469da400c14a1d9529))
-* **deps:** update dependency knip to v6.5.0 ([#5916](https://github.com/mochajs/mocha/issues/5916)) ([34465f6](https://github.com/mochajs/mocha/commit/34465f65c0ae0fbdd7c157ba99782da0bbfe27df))
-* **deps:** update dependency unexpected-sinon to v11 ([#5737](https://github.com/mochajs/mocha/issues/5737)) ([e652121](https://github.com/mochajs/mocha/commit/e652121271238f3eca117f465d3d4edad691fdc6))
-* **deps:** update dependency webpack to v5.106.1 ([#5893](https://github.com/mochajs/mocha/issues/5893)) ([db85960](https://github.com/mochajs/mocha/commit/db85960a5fda4e9b25da9df5270f19321ec654e5))
-* fix format workflow permissions for npm-script.yml ([#5903](https://github.com/mochajs/mocha/issues/5903)) ([88a9806](https://github.com/mochajs/mocha/commit/88a9806f39da78110865a591a2cab6253a2a1ad6))
-* fix formatting in lib/cli/lookup-files.mjs ([#5912](https://github.com/mochajs/mocha/issues/5912)) ([a3c3a1c](https://github.com/mochajs/mocha/commit/a3c3a1cb295cd177542846004eae735467b31122))
-* fix line numbers in stack traces ([#5664](https://github.com/mochajs/mocha/issues/5664)) ([f49aca5](https://github.com/mochajs/mocha/commit/f49aca510c653ad408e8bd433ef190b868f54348))
-* format AGENTS.md ([#5852](https://github.com/mochajs/mocha/issues/5852)) ([16497f2](https://github.com/mochajs/mocha/commit/16497f20f66266d6c8323e4bd2530b2b403f6e8b))
-* inline `escape-string-regexp` (single-regex utility) ([#5883](https://github.com/mochajs/mocha/issues/5883)) ([25e6538](https://github.com/mochajs/mocha/commit/25e65385d849e33f33704785dd6058469bf25cca))
-* migrate 5 unit test files from unexpected to chai ([#5896](https://github.com/mochajs/mocha/issues/5896)) ([fa06dde](https://github.com/mochajs/mocha/commit/fa06dde40cdbcd1bc6e98af19112b1a68a059a29))
-* migrate lib/pending and lib/error-constants to ESM ([#5767](https://github.com/mochajs/mocha/issues/5767)) ([5aacbce](https://github.com/mochajs/mocha/commit/5aacbce08ff25ebe5991cc7ed85a4a8e13b5d3f5))
-* upgrade site to Astro 6 ([#5913](https://github.com/mochajs/mocha/issues/5913)) ([1afd6c7](https://github.com/mochajs/mocha/commit/1afd6c7bd847f67c0a8f8e81000fd45ccec22d91))
+- add transient error note to Release Please workflow ([#5847](https://github.com/mochajs/mocha/issues/5847)) ([7288278](https://github.com/mochajs/mocha/commit/7288278faec3f8d021cd6dcc4f4d0d7b4ccc2e75))
+- convert commands, init, and lookup-files to ESM ([#5891](https://github.com/mochajs/mocha/issues/5891)) ([46d09d1](https://github.com/mochajs/mocha/commit/46d09d1a8e259300e09b3bc546894878290acac8))
+- convert context, hook, and stats-collector to ESM ([#5853](https://github.com/mochajs/mocha/issues/5853)) ([5ac4070](https://github.com/mochajs/mocha/commit/5ac40707fd219c5623eac5802853022d0e8c1a05))
+- convert highlight-tags and parse-query to ESM ([#5855](https://github.com/mochajs/mocha/issues/5855)) ([aad7997](https://github.com/mochajs/mocha/commit/aad799751af28d0979d72e21c1d2a9c183cab46c))
+- convert node-flags and options to ESM, fix ESLint issue ([#5900](https://github.com/mochajs/mocha/issues/5900)) ([cd2e461](https://github.com/mochajs/mocha/commit/cd2e46160196fae35b86c3880f70c6d598b94d7f))
+- **deps:** update dependency [**@eslint/markdown**](https://github.com/eslint/markdown) to v8 ([#5845](https://github.com/mochajs/mocha/issues/5845)) ([bd05089](https://github.com/mochajs/mocha/commit/bd05089ea6d5c68952b3e881be846d9321277ca9))
+- **deps:** update dependency eslint to v10.2.0 ([#5884](https://github.com/mochajs/mocha/issues/5884)) ([2829fe3](https://github.com/mochajs/mocha/commit/2829fe3824fc5b1b06215b23599cbab06972888b))
+- **deps:** update dependency globals to v17.5.0 ([#5914](https://github.com/mochajs/mocha/issues/5914)) ([96eaa7c](https://github.com/mochajs/mocha/commit/96eaa7c32a3dfb538f63f9fe717e13da739229da))
+- **deps:** update dependency knip to v6.3.1 ([#5892](https://github.com/mochajs/mocha/issues/5892)) ([a2675f1](https://github.com/mochajs/mocha/commit/a2675f15e0043d06bf0d19cf98e28def2294ed0b))
+- **deps:** update dependency knip to v6.4.0 ([#5901](https://github.com/mochajs/mocha/issues/5901)) ([17ce208](https://github.com/mochajs/mocha/commit/17ce2081912a2e3fbff949469da400c14a1d9529))
+- **deps:** update dependency knip to v6.5.0 ([#5916](https://github.com/mochajs/mocha/issues/5916)) ([34465f6](https://github.com/mochajs/mocha/commit/34465f65c0ae0fbdd7c157ba99782da0bbfe27df))
+- **deps:** update dependency unexpected-sinon to v11 ([#5737](https://github.com/mochajs/mocha/issues/5737)) ([e652121](https://github.com/mochajs/mocha/commit/e652121271238f3eca117f465d3d4edad691fdc6))
+- **deps:** update dependency webpack to v5.106.1 ([#5893](https://github.com/mochajs/mocha/issues/5893)) ([db85960](https://github.com/mochajs/mocha/commit/db85960a5fda4e9b25da9df5270f19321ec654e5))
+- fix format workflow permissions for npm-script.yml ([#5903](https://github.com/mochajs/mocha/issues/5903)) ([88a9806](https://github.com/mochajs/mocha/commit/88a9806f39da78110865a591a2cab6253a2a1ad6))
+- fix formatting in lib/cli/lookup-files.mjs ([#5912](https://github.com/mochajs/mocha/issues/5912)) ([a3c3a1c](https://github.com/mochajs/mocha/commit/a3c3a1cb295cd177542846004eae735467b31122))
+- fix line numbers in stack traces ([#5664](https://github.com/mochajs/mocha/issues/5664)) ([f49aca5](https://github.com/mochajs/mocha/commit/f49aca510c653ad408e8bd433ef190b868f54348))
+- format AGENTS.md ([#5852](https://github.com/mochajs/mocha/issues/5852)) ([16497f2](https://github.com/mochajs/mocha/commit/16497f20f66266d6c8323e4bd2530b2b403f6e8b))
+- inline `escape-string-regexp` (single-regex utility) ([#5883](https://github.com/mochajs/mocha/issues/5883)) ([25e6538](https://github.com/mochajs/mocha/commit/25e65385d849e33f33704785dd6058469bf25cca))
+- migrate 5 unit test files from unexpected to chai ([#5896](https://github.com/mochajs/mocha/issues/5896)) ([fa06dde](https://github.com/mochajs/mocha/commit/fa06dde40cdbcd1bc6e98af19112b1a68a059a29))
+- migrate lib/pending and lib/error-constants to ESM ([#5767](https://github.com/mochajs/mocha/issues/5767)) ([5aacbce](https://github.com/mochajs/mocha/commit/5aacbce08ff25ebe5991cc7ed85a4a8e13b5d3f5))
+- upgrade site to Astro 6 ([#5913](https://github.com/mochajs/mocha/issues/5913)) ([1afd6c7](https://github.com/mochajs/mocha/commit/1afd6c7bd847f67c0a8f8e81000fd45ccec22d91))
 
 ## [12.0.0-beta-9.2](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9.1...v12.0.0-beta-9.2) (2026-04-03)
 
-
 ### 🩹 Fixes
 
-* **deps:** update dependency workerpool to v10 ([#5751](https://github.com/mochajs/mocha/issues/5751)) ([96a4768](https://github.com/mochajs/mocha/commit/96a476831b2852e440357a450c3aebaec0bdb20f))
-* use semver dot separator for beta pre-release versions (beta-X → beta.X) ([#5764](https://github.com/mochajs/mocha/issues/5764)) ([5574738](https://github.com/mochajs/mocha/commit/557473828570f8883c55cb0e450f153f3f9f8f74))
-
+- **deps:** update dependency workerpool to v10 ([#5751](https://github.com/mochajs/mocha/issues/5751)) ([96a4768](https://github.com/mochajs/mocha/commit/96a476831b2852e440357a450c3aebaec0bdb20f))
+- use semver dot separator for beta pre-release versions (beta-X → beta.X) ([#5764](https://github.com/mochajs/mocha/issues/5764)) ([5574738](https://github.com/mochajs/mocha/commit/557473828570f8883c55cb0e450f153f3f9f8f74))
 
 ### 📚 Documentation
 
-* add "failing workaround" and new dash to sec-vuln-reports.mdx ([#5783](https://github.com/mochajs/mocha/issues/5783)) ([f9e553e](https://github.com/mochajs/mocha/commit/f9e553e1acd8d2b09be35ebfc13d2803e0a1ff14))
-* add FAQ explainer for dependency security vulnerability reports ([#5691](https://github.com/mochajs/mocha/issues/5691)) ([2517693](https://github.com/mochajs/mocha/commit/2517693683fdd47471a0b6e442adde7487af8b89))
-* add FAQ section to CONTRIBUTING.md for "can I work on this?" ([#5689](https://github.com/mochajs/mocha/issues/5689)) ([682c307](https://github.com/mochajs/mocha/commit/682c3076cb3c15530b05bbac265fece99e7db985))
-* add major release strategy, fix typos ([#5551](https://github.com/mochajs/mocha/issues/5551)) ([ec0fe0d](https://github.com/mochajs/mocha/commit/ec0fe0d17401495ad01db3b5bc1adad1f5547009))
-* cleanup third party UI code examples for issue 5570 ([#5784](https://github.com/mochajs/mocha/issues/5784)) ([8d86811](https://github.com/mochajs/mocha/commit/8d86811ecbba26750d2afb3cfab46c99b4bb9440))
-* document AI-generated code policies ([#5693](https://github.com/mochajs/mocha/issues/5693)) ([3533316](https://github.com/mochajs/mocha/commit/353331663ff65239eb0c3b722978e8f88c773ba5))
-* document many "external" services ([#5685](https://github.com/mochajs/mocha/issues/5685)) ([30f8fe6](https://github.com/mochajs/mocha/commit/30f8fe6599cd9e35f7853d7110333d979ff5810c))
-* fix typo in configuring.mdx ([#5699](https://github.com/mochajs/mocha/issues/5699)) ([fdf1a11](https://github.com/mochajs/mocha/commit/fdf1a11338e5c446ba967dbd2b1324079c8077fc))
-* Updates COC Policy To Match OpenJS Guidelines ([#5802](https://github.com/mochajs/mocha/issues/5802)) ([9029f66](https://github.com/mochajs/mocha/commit/9029f668e62a953b8ce52a4b9a479d457faab718))
-
+- add "failing workaround" and new dash to sec-vuln-reports.mdx ([#5783](https://github.com/mochajs/mocha/issues/5783)) ([f9e553e](https://github.com/mochajs/mocha/commit/f9e553e1acd8d2b09be35ebfc13d2803e0a1ff14))
+- add FAQ explainer for dependency security vulnerability reports ([#5691](https://github.com/mochajs/mocha/issues/5691)) ([2517693](https://github.com/mochajs/mocha/commit/2517693683fdd47471a0b6e442adde7487af8b89))
+- add FAQ section to CONTRIBUTING.md for "can I work on this?" ([#5689](https://github.com/mochajs/mocha/issues/5689)) ([682c307](https://github.com/mochajs/mocha/commit/682c3076cb3c15530b05bbac265fece99e7db985))
+- add major release strategy, fix typos ([#5551](https://github.com/mochajs/mocha/issues/5551)) ([ec0fe0d](https://github.com/mochajs/mocha/commit/ec0fe0d17401495ad01db3b5bc1adad1f5547009))
+- cleanup third party UI code examples for issue 5570 ([#5784](https://github.com/mochajs/mocha/issues/5784)) ([8d86811](https://github.com/mochajs/mocha/commit/8d86811ecbba26750d2afb3cfab46c99b4bb9440))
+- document AI-generated code policies ([#5693](https://github.com/mochajs/mocha/issues/5693)) ([3533316](https://github.com/mochajs/mocha/commit/353331663ff65239eb0c3b722978e8f88c773ba5))
+- document many "external" services ([#5685](https://github.com/mochajs/mocha/issues/5685)) ([30f8fe6](https://github.com/mochajs/mocha/commit/30f8fe6599cd9e35f7853d7110333d979ff5810c))
+- fix typo in configuring.mdx ([#5699](https://github.com/mochajs/mocha/issues/5699)) ([fdf1a11](https://github.com/mochajs/mocha/commit/fdf1a11338e5c446ba967dbd2b1324079c8077fc))
+- Updates COC Policy To Match OpenJS Guidelines ([#5802](https://github.com/mochajs/mocha/issues/5802)) ([9029f66](https://github.com/mochajs/mocha/commit/9029f668e62a953b8ce52a4b9a479d457faab718))
 
 ### 🧹 Chores
 
-* add Knip to docs-next, remove unused deps, and cleanup links ([#5726](https://github.com/mochajs/mocha/issues/5726)) ([a3908e9](https://github.com/mochajs/mocha/commit/a3908e9008c946f3bcc321c2ef630b587727fce4))
-* add link from bug template to security explainer ([#5782](https://github.com/mochajs/mocha/issues/5782)) ([ab8fc25](https://github.com/mochajs/mocha/commit/ab8fc2504975c34792027cc681f1a96cd79a5b33))
-* add workflow to handle stale items ([#5831](https://github.com/mochajs/mocha/issues/5831)) ([dd08f6f](https://github.com/mochajs/mocha/commit/dd08f6fab89e29f6f1c157fcf406fe6ceff40fb0))
-* add workflow_dispatch to all workflows ([#5793](https://github.com/mochajs/mocha/issues/5793)) ([cca0a2c](https://github.com/mochajs/mocha/commit/cca0a2c9efa20719a2be233a5bd0d9256cc69964))
-* **deps:** update actions/stale action to v10 ([#5842](https://github.com/mochajs/mocha/issues/5842)) ([e75b14f](https://github.com/mochajs/mocha/commit/e75b14fa87616ccafe329e4c21a32980dbf30990))
-* **deps:** update dependency astro to v5.18.1 ([#5786](https://github.com/mochajs/mocha/issues/5786)) ([bf99e30](https://github.com/mochajs/mocha/commit/bf99e300510879259e04115d0961287a16bb3fae))
-* **deps:** update dependency chai to v6 ([#5720](https://github.com/mochajs/mocha/issues/5720)) ([2e07be1](https://github.com/mochajs/mocha/commit/2e07be139e3ab89c0c882e51ed948d032af4edc5))
-* **deps:** update dependency eslint to v10.1.0 ([#5827](https://github.com/mochajs/mocha/issues/5827)) ([2c8eeb0](https://github.com/mochajs/mocha/commit/2c8eeb0296aa9ed8e8acd5baba7de8a45126b591))
-* **deps:** update dependency eslint-plugin-n to v17.24.0 ([#5798](https://github.com/mochajs/mocha/issues/5798)) ([bb66555](https://github.com/mochajs/mocha/commit/bb66555ea7e917041869faef1934b8ed26368ed2))
-* **deps:** update dependency globals to v17 ([#5722](https://github.com/mochajs/mocha/issues/5722)) ([acf9357](https://github.com/mochajs/mocha/commit/acf93578cc6ca9e424f37410bd3b72d38f233aa7))
-* **deps:** update dependency installed-check to v10 ([#5738](https://github.com/mochajs/mocha/issues/5738)) ([5905ed9](https://github.com/mochajs/mocha/commit/5905ed9c2c411dfa0e7189ce0d446b2e213422e3))
-* **deps:** update dependency knip to v5.88.0 ([#5799](https://github.com/mochajs/mocha/issues/5799)) ([40ec9b8](https://github.com/mochajs/mocha/commit/40ec9b81403140c198d966f61d954ca5901e5382))
-* **deps:** update dependency knip to v6 ([#5828](https://github.com/mochajs/mocha/issues/5828)) ([661f349](https://github.com/mochajs/mocha/commit/661f349ac29e4dbc32c9532ce25fdfd8ba996f01))
-* **deps:** update dependency rollup to v4.59.0 ([#5813](https://github.com/mochajs/mocha/issues/5813)) ([1ef2020](https://github.com/mochajs/mocha/commit/1ef2020023163bd38386e466ab311ec2f5fc3b37))
-* **deps:** update dependency rollup to v4.60.0 ([#5829](https://github.com/mochajs/mocha/issues/5829)) ([4ab5813](https://github.com/mochajs/mocha/commit/4ab581328166d828af939be99e69089996d99697))
-* **deps:** update eslint monorepo to v10 (major) ([#5742](https://github.com/mochajs/mocha/issues/5742)) ([fe9dc01](https://github.com/mochajs/mocha/commit/fe9dc01850f1c191e758fd60a71d1db8b13cc968))
-* **deps:** update joelwmale/webhook-action digest to 6cebc9d ([#5702](https://github.com/mochajs/mocha/issues/5702)) ([e61c8d5](https://github.com/mochajs/mocha/commit/e61c8d5ff69a91f039fd42bed7d7f4988740d0ca))
-* **docs:** rename `docs-next` to `docs` ([#5770](https://github.com/mochajs/mocha/issues/5770)) ([39c15a8](https://github.com/mochajs/mocha/commit/39c15a8918e6ec8ebb11d4a2b2b3606b69da4745))
-* fix supporters file extension in knip config ([#5796](https://github.com/mochajs/mocha/issues/5796)) ([53ca72f](https://github.com/mochajs/mocha/commit/53ca72ffcff8162a25a1a6cdb5a636faa0afce17))
-* have `Tests` workflow ignore more relevant paths ([#5762](https://github.com/mochajs/mocha/issues/5762)) ([8e2cebe](https://github.com/mochajs/mocha/commit/8e2cebe14505ce62b0597c854bec217c60c00020))
-* remove `global.setImmediate` fallback ([#5836](https://github.com/mochajs/mocha/issues/5836)) ([5e69d16](https://github.com/mochajs/mocha/commit/5e69d1659e0f20b8d1b83b6c188ae3e7a3dcf413))
-* remove `repeat()` polyfill ([#5837](https://github.com/mochajs/mocha/issues/5837)) ([f988a80](https://github.com/mochajs/mocha/commit/f988a8054044593c7854e92f422014de621df63f))
-* remove now-unused `utils.inherits` ([#5766](https://github.com/mochajs/mocha/issues/5766)) ([d0a636b](https://github.com/mochajs/mocha/commit/d0a636b5e9bd5a4b1c8864b91aec94f12f16490f))
-* remove unused `libc` props from `package-lock.json` ([#5817](https://github.com/mochajs/mocha/issues/5817)) ([b0a89ce](https://github.com/mochajs/mocha/commit/b0a89ce5eb727cb1f09bb2bf19ec509a792cff54))
-* remove unused fossaignore ([#5769](https://github.com/mochajs/mocha/issues/5769)) ([8a0eaf7](https://github.com/mochajs/mocha/commit/8a0eaf7997ca8f97676412e0e89c1a7df9c0b5c3))
-* run tests when PR is retargeted ([#5761](https://github.com/mochajs/mocha/issues/5761)) ([3481b1e](https://github.com/mochajs/mocha/commit/3481b1e32c3ad85e38af9639fc39b53685dd1922))
-* switch reporters from util.inherits to ES2015 classes ([#5180](https://github.com/mochajs/mocha/issues/5180)) ([c3f32ce](https://github.com/mochajs/mocha/commit/c3f32ce7e2f39d14beb325892953d3fb1c4922e6))
-* switch Runnable, Hook, and Test from util.inherits to ES2015 classes ([#5178](https://github.com/mochajs/mocha/issues/5178)) ([1378fd8](https://github.com/mochajs/mocha/commit/1378fd86071a0c59c0a991569441fe398d0911d8))
-* use `beta-9.1` instead of `beta.10` ([#5821](https://github.com/mochajs/mocha/issues/5821)) ([bc1eff2](https://github.com/mochajs/mocha/commit/bc1eff2e44d68c1e06bf3d64a649af96bb00c120))
-
+- add Knip to docs-next, remove unused deps, and cleanup links ([#5726](https://github.com/mochajs/mocha/issues/5726)) ([a3908e9](https://github.com/mochajs/mocha/commit/a3908e9008c946f3bcc321c2ef630b587727fce4))
+- add link from bug template to security explainer ([#5782](https://github.com/mochajs/mocha/issues/5782)) ([ab8fc25](https://github.com/mochajs/mocha/commit/ab8fc2504975c34792027cc681f1a96cd79a5b33))
+- add workflow to handle stale items ([#5831](https://github.com/mochajs/mocha/issues/5831)) ([dd08f6f](https://github.com/mochajs/mocha/commit/dd08f6fab89e29f6f1c157fcf406fe6ceff40fb0))
+- add workflow\_dispatch to all workflows ([#5793](https://github.com/mochajs/mocha/issues/5793)) ([cca0a2c](https://github.com/mochajs/mocha/commit/cca0a2c9efa20719a2be233a5bd0d9256cc69964))
+- **deps:** update actions/stale action to v10 ([#5842](https://github.com/mochajs/mocha/issues/5842)) ([e75b14f](https://github.com/mochajs/mocha/commit/e75b14fa87616ccafe329e4c21a32980dbf30990))
+- **deps:** update dependency astro to v5.18.1 ([#5786](https://github.com/mochajs/mocha/issues/5786)) ([bf99e30](https://github.com/mochajs/mocha/commit/bf99e300510879259e04115d0961287a16bb3fae))
+- **deps:** update dependency chai to v6 ([#5720](https://github.com/mochajs/mocha/issues/5720)) ([2e07be1](https://github.com/mochajs/mocha/commit/2e07be139e3ab89c0c882e51ed948d032af4edc5))
+- **deps:** update dependency eslint to v10.1.0 ([#5827](https://github.com/mochajs/mocha/issues/5827)) ([2c8eeb0](https://github.com/mochajs/mocha/commit/2c8eeb0296aa9ed8e8acd5baba7de8a45126b591))
+- **deps:** update dependency eslint-plugin-n to v17.24.0 ([#5798](https://github.com/mochajs/mocha/issues/5798)) ([bb66555](https://github.com/mochajs/mocha/commit/bb66555ea7e917041869faef1934b8ed26368ed2))
+- **deps:** update dependency globals to v17 ([#5722](https://github.com/mochajs/mocha/issues/5722)) ([acf9357](https://github.com/mochajs/mocha/commit/acf93578cc6ca9e424f37410bd3b72d38f233aa7))
+- **deps:** update dependency installed-check to v10 ([#5738](https://github.com/mochajs/mocha/issues/5738)) ([5905ed9](https://github.com/mochajs/mocha/commit/5905ed9c2c411dfa0e7189ce0d446b2e213422e3))
+- **deps:** update dependency knip to v5.88.0 ([#5799](https://github.com/mochajs/mocha/issues/5799)) ([40ec9b8](https://github.com/mochajs/mocha/commit/40ec9b81403140c198d966f61d954ca5901e5382))
+- **deps:** update dependency knip to v6 ([#5828](https://github.com/mochajs/mocha/issues/5828)) ([661f349](https://github.com/mochajs/mocha/commit/661f349ac29e4dbc32c9532ce25fdfd8ba996f01))
+- **deps:** update dependency rollup to v4.59.0 ([#5813](https://github.com/mochajs/mocha/issues/5813)) ([1ef2020](https://github.com/mochajs/mocha/commit/1ef2020023163bd38386e466ab311ec2f5fc3b37))
+- **deps:** update dependency rollup to v4.60.0 ([#5829](https://github.com/mochajs/mocha/issues/5829)) ([4ab5813](https://github.com/mochajs/mocha/commit/4ab581328166d828af939be99e69089996d99697))
+- **deps:** update eslint monorepo to v10 (major) ([#5742](https://github.com/mochajs/mocha/issues/5742)) ([fe9dc01](https://github.com/mochajs/mocha/commit/fe9dc01850f1c191e758fd60a71d1db8b13cc968))
+- **deps:** update joelwmale/webhook-action digest to [`6cebc9d`](https://github.com/mochajs/mocha/commit/6cebc9d) ([#5702](https://github.com/mochajs/mocha/issues/5702)) ([e61c8d5](https://github.com/mochajs/mocha/commit/e61c8d5ff69a91f039fd42bed7d7f4988740d0ca))
+- **docs:** rename `docs-next` to `docs` ([#5770](https://github.com/mochajs/mocha/issues/5770)) ([39c15a8](https://github.com/mochajs/mocha/commit/39c15a8918e6ec8ebb11d4a2b2b3606b69da4745))
+- fix supporters file extension in knip config ([#5796](https://github.com/mochajs/mocha/issues/5796)) ([53ca72f](https://github.com/mochajs/mocha/commit/53ca72ffcff8162a25a1a6cdb5a636faa0afce17))
+- have `Tests` workflow ignore more relevant paths ([#5762](https://github.com/mochajs/mocha/issues/5762)) ([8e2cebe](https://github.com/mochajs/mocha/commit/8e2cebe14505ce62b0597c854bec217c60c00020))
+- remove `global.setImmediate` fallback ([#5836](https://github.com/mochajs/mocha/issues/5836)) ([5e69d16](https://github.com/mochajs/mocha/commit/5e69d1659e0f20b8d1b83b6c188ae3e7a3dcf413))
+- remove `repeat()` polyfill ([#5837](https://github.com/mochajs/mocha/issues/5837)) ([f988a80](https://github.com/mochajs/mocha/commit/f988a8054044593c7854e92f422014de621df63f))
+- remove now-unused `utils.inherits` ([#5766](https://github.com/mochajs/mocha/issues/5766)) ([d0a636b](https://github.com/mochajs/mocha/commit/d0a636b5e9bd5a4b1c8864b91aec94f12f16490f))
+- remove unused `libc` props from `package-lock.json` ([#5817](https://github.com/mochajs/mocha/issues/5817)) ([b0a89ce](https://github.com/mochajs/mocha/commit/b0a89ce5eb727cb1f09bb2bf19ec509a792cff54))
+- remove unused fossaignore ([#5769](https://github.com/mochajs/mocha/issues/5769)) ([8a0eaf7](https://github.com/mochajs/mocha/commit/8a0eaf7997ca8f97676412e0e89c1a7df9c0b5c3))
+- run tests when PR is retargeted ([#5761](https://github.com/mochajs/mocha/issues/5761)) ([3481b1e](https://github.com/mochajs/mocha/commit/3481b1e32c3ad85e38af9639fc39b53685dd1922))
+- switch reporters from util.inherits to ES2015 classes ([#5180](https://github.com/mochajs/mocha/issues/5180)) ([c3f32ce](https://github.com/mochajs/mocha/commit/c3f32ce7e2f39d14beb325892953d3fb1c4922e6))
+- switch Runnable, Hook, and Test from util.inherits to ES2015 classes ([#5178](https://github.com/mochajs/mocha/issues/5178)) ([1378fd8](https://github.com/mochajs/mocha/commit/1378fd86071a0c59c0a991569441fe398d0911d8))
+- use `beta-9.1` instead of `beta.10` ([#5821](https://github.com/mochajs/mocha/issues/5821)) ([bc1eff2](https://github.com/mochajs/mocha/commit/bc1eff2e44d68c1e06bf3d64a649af96bb00c120))
 
 ### 🤖 Automation
 
-* **deps:** bump codecov/codecov-action in the github-actions group ([#5832](https://github.com/mochajs/mocha/issues/5832)) ([525b50a](https://github.com/mochajs/mocha/commit/525b50a2a3f4965b6f663bfba6b9d5dd4f0f5d01))
-* **deps:** bump OctoGuide/bot in the github-actions group ([#5791](https://github.com/mochajs/mocha/issues/5791)) ([fb6bfd6](https://github.com/mochajs/mocha/commit/fb6bfd6425729a3516c60933298988a5711a6edc))
+- **deps:** bump codecov/codecov-action in the github-actions group ([#5832](https://github.com/mochajs/mocha/issues/5832)) ([525b50a](https://github.com/mochajs/mocha/commit/525b50a2a3f4965b6f663bfba6b9d5dd4f0f5d01))
+- **deps:** bump OctoGuide/bot in the github-actions group ([#5791](https://github.com/mochajs/mocha/issues/5791)) ([fb6bfd6](https://github.com/mochajs/mocha/commit/fb6bfd6425729a3516c60933298988a5711a6edc))
 
 ## [12.0.0-beta-9.1](https://github.com/mochajs/mocha/compare/v12.0.0-beta-9...v12.0.0-beta-9.1) (2026-02-21)
 
-
 ### 🌟 Features
 
-* remove Sauce Labs ([#5700](https://github.com/mochajs/mocha/issues/5700)) ([625c34e](https://github.com/mochajs/mocha/commit/625c34e8469562dbde8440c2b4d64e820f7019fa))
-
+- remove Sauce Labs ([#5700](https://github.com/mochajs/mocha/issues/5700)) ([625c34e](https://github.com/mochajs/mocha/commit/625c34e8469562dbde8440c2b4d64e820f7019fa))
 
 ### 🩹 Fixes
 
-* change Pending to properly extend Error ([#5679](https://github.com/mochajs/mocha/issues/5679)) ([158effd](https://github.com/mochajs/mocha/commit/158effd7de677c21b3a4ccd79ce0879fe0f97f8b))
-* **deps:** update dependency chokidar to v5 ([#5734](https://github.com/mochajs/mocha/issues/5734)) ([ff2f17f](https://github.com/mochajs/mocha/commit/ff2f17fb25e5001420d48035f81f5b19a5f0974f))
-* **deps:** update dependency minimatch to v10 ([#5743](https://github.com/mochajs/mocha/issues/5743)) ([3f3e449](https://github.com/mochajs/mocha/commit/3f3e449f889cb2ddcf950e7bf2268091000b9f7c))
-* **deps:** update dependency starlight-package-managers to ^0.12.0 ([#5717](https://github.com/mochajs/mocha/issues/5717)) ([aa4ba48](https://github.com/mochajs/mocha/commit/aa4ba483a4a25f5dfc36334439caf2b8935874d2))
-
+- change Pending to properly extend Error ([#5679](https://github.com/mochajs/mocha/issues/5679)) ([158effd](https://github.com/mochajs/mocha/commit/158effd7de677c21b3a4ccd79ce0879fe0f97f8b))
+- **deps:** update dependency chokidar to v5 ([#5734](https://github.com/mochajs/mocha/issues/5734)) ([ff2f17f](https://github.com/mochajs/mocha/commit/ff2f17fb25e5001420d48035f81f5b19a5f0974f))
+- **deps:** update dependency minimatch to v10 ([#5743](https://github.com/mochajs/mocha/issues/5743)) ([3f3e449](https://github.com/mochajs/mocha/commit/3f3e449f889cb2ddcf950e7bf2268091000b9f7c))
+- **deps:** update dependency starlight-package-managers to ^0.12.0 ([#5717](https://github.com/mochajs/mocha/issues/5717)) ([aa4ba48](https://github.com/mochajs/mocha/commit/aa4ba483a4a25f5dfc36334439caf2b8935874d2))
 
 ### 📚 Documentation
 
-* fix client redirects ([#5697](https://github.com/mochajs/mocha/issues/5697)) ([dd9145d](https://github.com/mochajs/mocha/commit/dd9145dd9c5a684aa918ca5ed10155293df2bb91)), closes [#5696](https://github.com/mochajs/mocha/issues/5696)
-
+- fix client redirects ([#5697](https://github.com/mochajs/mocha/issues/5697)) ([dd9145d](https://github.com/mochajs/mocha/commit/dd9145dd9c5a684aa918ca5ed10155293df2bb91)), closes [#5696](https://github.com/mochajs/mocha/issues/5696)
 
 ### 🧹 Chores
 
-* Configure Renovate ([#5678](https://github.com/mochajs/mocha/issues/5678)) ([a9c9b90](https://github.com/mochajs/mocha/commit/a9c9b90098a831d82e69d82bfc7ce8c7aa749911))
-* **deps:** update dependency @rollup/plugin-alias to v6 ([#5718](https://github.com/mochajs/mocha/issues/5718)) ([267d751](https://github.com/mochajs/mocha/commit/267d751dd05270de4e18e0348584fbb12d90ce04))
-* **deps:** update dependency @rollup/plugin-commonjs to v29 ([#5719](https://github.com/mochajs/mocha/issues/5719)) ([9ed4ee5](https://github.com/mochajs/mocha/commit/9ed4ee55d975281ea54f237d23666d7b0307a596))
-* **deps:** update dependency astro to v5.17.1 ([#5703](https://github.com/mochajs/mocha/issues/5703)) ([ec3d1fa](https://github.com/mochajs/mocha/commit/ec3d1fa02e285a4430942942c11c376e63d395ca))
-* **deps:** update dependency chai to v4.5.0 ([#5705](https://github.com/mochajs/mocha/issues/5705)) ([870f9f8](https://github.com/mochajs/mocha/commit/870f9f8df7d1f9cace40bfc29a9b5b79a26ccb4e))
-* **deps:** update dependency cross-env to v10 ([#5721](https://github.com/mochajs/mocha/issues/5721)) ([20b7476](https://github.com/mochajs/mocha/commit/20b7476904592b356a48c3f89817e930c78f15cb))
-* **deps:** update dependency knip to v5.83.1 ([#5708](https://github.com/mochajs/mocha/issues/5708)) ([d833413](https://github.com/mochajs/mocha/commit/d833413622807c91cc2dea243c2be3518e2fe10b))
-* **deps:** update dependency npm-run-all2 to v8 ([#5727](https://github.com/mochajs/mocha/issues/5727)) ([e38e0ec](https://github.com/mochajs/mocha/commit/e38e0ec3dd91be11b2b999959e6245ec721168e3))
-* **deps:** update dependency prettier to v3.8.1 ([#5709](https://github.com/mochajs/mocha/issues/5709)) ([2f98cfd](https://github.com/mochajs/mocha/commit/2f98cfd1e3e9fce8a3c1a645f99a6b4b3b69ea6c))
-* **deps:** update dependency rimraf to v6 ([#5728](https://github.com/mochajs/mocha/issues/5728)) ([ba124e9](https://github.com/mochajs/mocha/commit/ba124e9161e5efd052df77dda50925c5666ccd6d))
-* **deps:** update dependency rollup to v4.57.1 ([#5710](https://github.com/mochajs/mocha/issues/5710)) ([178749d](https://github.com/mochajs/mocha/commit/178749da1bee978b5ef109a253337ae88206365c))
-* **deps:** update dependency unexpected-map to v3 ([#5736](https://github.com/mochajs/mocha/issues/5736)) ([c1f3379](https://github.com/mochajs/mocha/commit/c1f33798ab925c76c5f9a69dcb8c1ce71da2fbc9))
-* **deps:** update dependency unist-util-visit to v5.1.0 ([#5711](https://github.com/mochajs/mocha/issues/5711)) ([7ede894](https://github.com/mochajs/mocha/commit/7ede8943ff8f7925b51d4e4a226ee76b0a77619d))
-* **deps:** update dependency webdriverio to v9 ([#5739](https://github.com/mochajs/mocha/issues/5739)) ([ff334df](https://github.com/mochajs/mocha/commit/ff334df744c93f27c7cce08ced320833ee69cb2f))
-* **deps:** update dependency webpack-cli to v6 ([#5741](https://github.com/mochajs/mocha/issues/5741)) ([95c9d75](https://github.com/mochajs/mocha/commit/95c9d75120078e4c1fbb87d23f4fd7ec1f8a5405))
-* **deps:** update dependency workerpool to v9.3.4 ([#5715](https://github.com/mochajs/mocha/issues/5715)) ([c030a3b](https://github.com/mochajs/mocha/commit/c030a3bd4774db679ac8dc7d56e705975f1a1b6e))
-* **deps:** update remark ([#5745](https://github.com/mochajs/mocha/issues/5745)) ([37a25f1](https://github.com/mochajs/mocha/commit/37a25f174e6f3f16cae34923b86ab7d2504985ce))
-* fix timeout issue with some XUnit tests ([53cc467](https://github.com/mochajs/mocha/commit/53cc46755571ed53e32254fb7d896f599a1a7d1f))
-* switch Suite from util.inherits to ES2015 classes ([#5179](https://github.com/mochajs/mocha/issues/5179)) ([1ce690e](https://github.com/mochajs/mocha/commit/1ce690e590ca7bff7f47b108d3a5cc61dde6aa1b))
-
+- Configure Renovate ([#5678](https://github.com/mochajs/mocha/issues/5678)) ([a9c9b90](https://github.com/mochajs/mocha/commit/a9c9b90098a831d82e69d82bfc7ce8c7aa749911))
+- **deps:** update dependency [**@rollup/plugin-alias**](https://github.com/rollup/plugin-alias) to v6 ([#5718](https://github.com/mochajs/mocha/issues/5718)) ([267d751](https://github.com/mochajs/mocha/commit/267d751dd05270de4e18e0348584fbb12d90ce04))
+- **deps:** update dependency [**@rollup/plugin-commonjs**](https://github.com/rollup/plugin-commonjs) to v29 ([#5719](https://github.com/mochajs/mocha/issues/5719)) ([9ed4ee5](https://github.com/mochajs/mocha/commit/9ed4ee55d975281ea54f237d23666d7b0307a596))
+- **deps:** update dependency astro to v5.17.1 ([#5703](https://github.com/mochajs/mocha/issues/5703)) ([ec3d1fa](https://github.com/mochajs/mocha/commit/ec3d1fa02e285a4430942942c11c376e63d395ca))
+- **deps:** update dependency chai to v4.5.0 ([#5705](https://github.com/mochajs/mocha/issues/5705)) ([870f9f8](https://github.com/mochajs/mocha/commit/870f9f8df7d1f9cace40bfc29a9b5b79a26ccb4e))
+- **deps:** update dependency cross-env to v10 ([#5721](https://github.com/mochajs/mocha/issues/5721)) ([20b7476](https://github.com/mochajs/mocha/commit/20b7476904592b356a48c3f89817e930c78f15cb))
+- **deps:** update dependency knip to v5.83.1 ([#5708](https://github.com/mochajs/mocha/issues/5708)) ([d833413](https://github.com/mochajs/mocha/commit/d833413622807c91cc2dea243c2be3518e2fe10b))
+- **deps:** update dependency npm-run-all2 to v8 ([#5727](https://github.com/mochajs/mocha/issues/5727)) ([e38e0ec](https://github.com/mochajs/mocha/commit/e38e0ec3dd91be11b2b999959e6245ec721168e3))
+- **deps:** update dependency prettier to v3.8.1 ([#5709](https://github.com/mochajs/mocha/issues/5709)) ([2f98cfd](https://github.com/mochajs/mocha/commit/2f98cfd1e3e9fce8a3c1a645f99a6b4b3b69ea6c))
+- **deps:** update dependency rimraf to v6 ([#5728](https://github.com/mochajs/mocha/issues/5728)) ([ba124e9](https://github.com/mochajs/mocha/commit/ba124e9161e5efd052df77dda50925c5666ccd6d))
+- **deps:** update dependency rollup to v4.57.1 ([#5710](https://github.com/mochajs/mocha/issues/5710)) ([178749d](https://github.com/mochajs/mocha/commit/178749da1bee978b5ef109a253337ae88206365c))
+- **deps:** update dependency unexpected-map to v3 ([#5736](https://github.com/mochajs/mocha/issues/5736)) ([c1f3379](https://github.com/mochajs/mocha/commit/c1f33798ab925c76c5f9a69dcb8c1ce71da2fbc9))
+- **deps:** update dependency unist-util-visit to v5.1.0 ([#5711](https://github.com/mochajs/mocha/issues/5711)) ([7ede894](https://github.com/mochajs/mocha/commit/7ede8943ff8f7925b51d4e4a226ee76b0a77619d))
+- **deps:** update dependency webdriverio to v9 ([#5739](https://github.com/mochajs/mocha/issues/5739)) ([ff334df](https://github.com/mochajs/mocha/commit/ff334df744c93f27c7cce08ced320833ee69cb2f))
+- **deps:** update dependency webpack-cli to v6 ([#5741](https://github.com/mochajs/mocha/issues/5741)) ([95c9d75](https://github.com/mochajs/mocha/commit/95c9d75120078e4c1fbb87d23f4fd7ec1f8a5405))
+- **deps:** update dependency workerpool to v9.3.4 ([#5715](https://github.com/mochajs/mocha/issues/5715)) ([c030a3b](https://github.com/mochajs/mocha/commit/c030a3bd4774db679ac8dc7d56e705975f1a1b6e))
+- **deps:** update remark ([#5745](https://github.com/mochajs/mocha/issues/5745)) ([37a25f1](https://github.com/mochajs/mocha/commit/37a25f174e6f3f16cae34923b86ab7d2504985ce))
+- fix timeout issue with some XUnit tests ([53cc467](https://github.com/mochajs/mocha/commit/53cc46755571ed53e32254fb7d896f599a1a7d1f))
+- switch Suite from util.inherits to ES2015 classes ([#5179](https://github.com/mochajs/mocha/issues/5179)) ([1ce690e](https://github.com/mochajs/mocha/commit/1ce690e590ca7bff7f47b108d3a5cc61dde6aa1b))
 
 ### 🤖 Automation
 
-* **deps:** bump OctoGuide/bot in the github-actions group ([#5724](https://github.com/mochajs/mocha/issues/5724)) ([87224d8](https://github.com/mochajs/mocha/commit/87224d8400fa3b074f77a8ba1baadf7e0b99d864))
-* run `npm audit fix` ([#5695](https://github.com/mochajs/mocha/issues/5695)) ([c7b00b0](https://github.com/mochajs/mocha/commit/c7b00b0e4f03583c4dcc407f28a5453df436f32b))
+- **deps:** bump OctoGuide/bot in the github-actions group ([#5724](https://github.com/mochajs/mocha/issues/5724)) ([87224d8](https://github.com/mochajs/mocha/commit/87224d8400fa3b074f77a8ba1baadf7e0b99d864))
+- run `npm audit fix` ([#5695](https://github.com/mochajs/mocha/issues/5695)) ([c7b00b0](https://github.com/mochajs/mocha/commit/c7b00b0e4f03583c4dcc407f28a5453df436f32b))
 
 ## [12.0.0-beta-9](https://github.com/mochajs/mocha/compare/v12.0.0-beta-8...v12.0.0-beta-9) (2026-02-13)
 
-
 ### 🌟 Features
 
-* remove `log-symbols` dependency ([#5469](https://github.com/mochajs/mocha/issues/5469)) ([b92168f](https://github.com/mochajs/mocha/commit/b92168f5625be7343fb94d458d8a055cca8ff0a4))
+- remove `log-symbols` dependency ([#5469](https://github.com/mochajs/mocha/issues/5469)) ([b92168f](https://github.com/mochajs/mocha/commit/b92168f5625be7343fb94d458d8a055cca8ff0a4))
 
 ## [12.0.0-beta-8](https://github.com/mochajs/mocha/compare/v12.0.0-beta-7...v12.0.0-beta-8) (2026-02-06)
 
-
 ### 🧹 Chores
 
-* use OIDC to publish to npm ([#5681](https://github.com/mochajs/mocha/issues/5681)) ([5567aed](https://github.com/mochajs/mocha/commit/5567aed50a00b63074d5c7703c6d8196dee92088))
+- use OIDC to publish to npm ([#5681](https://github.com/mochajs/mocha/issues/5681)) ([5567aed](https://github.com/mochajs/mocha/commit/5567aed50a00b63074d5c7703c6d8196dee92088))
 
 ## [12.0.0-beta-7](https://github.com/mochajs/mocha/compare/v12.0.0-beta-6...v12.0.0-beta-7) (2026-02-03)
 
-
 ### 🩹 Fixes
 
-* bump diff dependency to ^8.0.3 ([#5674](https://github.com/mochajs/mocha/issues/5674)) ([15fb31a](https://github.com/mochajs/mocha/commit/15fb31a8b25a4d03242e5c5f901ff3800889263e))
-* print helpful message when internal CLI error happens ([#5344](https://github.com/mochajs/mocha/issues/5344)) ([1e11836](https://github.com/mochajs/mocha/commit/1e118367dbb27f558edb7389985cca97d6d7da4b))
-
+- bump diff dependency to ^8.0.3 ([#5674](https://github.com/mochajs/mocha/issues/5674)) ([15fb31a](https://github.com/mochajs/mocha/commit/15fb31a8b25a4d03242e5c5f901ff3800889263e))
+- print helpful message when internal CLI error happens ([#5344](https://github.com/mochajs/mocha/issues/5344)) ([1e11836](https://github.com/mochajs/mocha/commit/1e118367dbb27f558edb7389985cca97d6d7da4b))
 
 ### 📚 Documentation
 
-* update sponsor image to be larger ([#5659](https://github.com/mochajs/mocha/issues/5659)) ([bbe2bdb](https://github.com/mochajs/mocha/commit/bbe2bdbb69f7aa560645a5ab2cbd596dd0b43448))
-
+- update sponsor image to be larger ([#5659](https://github.com/mochajs/mocha/issues/5659)) ([bbe2bdb](https://github.com/mochajs/mocha/commit/bbe2bdbb69f7aa560645a5ab2cbd596dd0b43448))
 
 ### 🧹 Chores
 
-* move nyc config changes from package.json into .nycrc ([#5668](https://github.com/mochajs/mocha/issues/5668)) ([e923e40](https://github.com/mochajs/mocha/commit/e923e4063f6a24dcaf7c6d7c7a3c8be998cb7980))
-* remove extra newline ([bbe2bdb](https://github.com/mochajs/mocha/commit/bbe2bdbb69f7aa560645a5ab2cbd596dd0b43448))
+- move nyc config changes from package.json into .nycrc ([#5668](https://github.com/mochajs/mocha/issues/5668)) ([e923e40](https://github.com/mochajs/mocha/commit/e923e4063f6a24dcaf7c6d7c7a3c8be998cb7980))
+- remove extra newline ([bbe2bdb](https://github.com/mochajs/mocha/commit/bbe2bdbb69f7aa560645a5ab2cbd596dd0b43448))
 
 ## [12.0.0-beta-6](https://github.com/mochajs/mocha/compare/v12.0.0-beta-5...v12.0.0-beta-6) (2026-01-23)
 
-
 ### 🩹 Fixes
 
-* allow chain call timeout to override nested items timeout ([#5612](https://github.com/mochajs/mocha/issues/5612)) ([5525da6](https://github.com/mochajs/mocha/commit/5525da60cf8d2596e14ff5441ea518d47bd732da))
-* import() fallback prevention ([#5647](https://github.com/mochajs/mocha/issues/5647)) ([6a78fa3](https://github.com/mochajs/mocha/commit/6a78fa39576ffb42700811661a94c9ac996707f2))
-
+- allow chain call timeout to override nested items timeout ([#5612](https://github.com/mochajs/mocha/issues/5612)) ([5525da6](https://github.com/mochajs/mocha/commit/5525da60cf8d2596e14ff5441ea518d47bd732da))
+- import() fallback prevention ([#5647](https://github.com/mochajs/mocha/issues/5647)) ([6a78fa3](https://github.com/mochajs/mocha/commit/6a78fa39576ffb42700811661a94c9ac996707f2))
 
 ### 🤖 Automation
 
-* **deps:** bump OctoGuide/bot in the github-actions group ([#5653](https://github.com/mochajs/mocha/issues/5653)) ([e06cce7](https://github.com/mochajs/mocha/commit/e06cce7a49b79a163e33db166e9b078b0d7b4001))
+- **deps:** bump OctoGuide/bot in the github-actions group ([#5653](https://github.com/mochajs/mocha/issues/5653)) ([e06cce7](https://github.com/mochajs/mocha/commit/e06cce7a49b79a163e33db166e9b078b0d7b4001))
 
 ## [12.0.0-beta-5](https://github.com/mochajs/mocha/compare/v12.0.0-beta-4...v12.0.0-beta-5) (2026-01-16)
 
-
 ### 🌟 Features
 
-* add --fail-hook-affected-tests option to report skipped tests as failed ([#5519](https://github.com/mochajs/mocha/issues/5519)) ([0ed524a](https://github.com/mochajs/mocha/commit/0ed524af347b59200e03b972c2450d36f6818a45))
-
+- add --fail-hook-affected-tests option to report skipped tests as failed ([#5519](https://github.com/mochajs/mocha/issues/5519)) ([0ed524a](https://github.com/mochajs/mocha/commit/0ed524af347b59200e03b972c2450d36f6818a45))
 
 ### 📚 Documentation
 
-* add missing /next/* redirects ([#5627](https://github.com/mochajs/mocha/issues/5627)) ([8fa183d](https://github.com/mochajs/mocha/commit/8fa183d592b29346901b55e2fa479c8f598a1ec3))
-
+- add missing /next/\* redirects ([#5627](https://github.com/mochajs/mocha/issues/5627)) ([8fa183d](https://github.com/mochajs/mocha/commit/8fa183d592b29346901b55e2fa479c8f598a1ec3))
 
 ### 🧹 Chores
 
-* cleanup issue templates ([#5624](https://github.com/mochajs/mocha/issues/5624)) ([1972dd7](https://github.com/mochajs/mocha/commit/1972dd76ec66e8e11532bb6aca9157c4f8892d3c))
-* remove unused assets folder ([#5638](https://github.com/mochajs/mocha/issues/5638)) ([ddf8644](https://github.com/mochajs/mocha/commit/ddf864482ff66b1ca46ef7f08e63ca923222e717))
-* update spam filter ([#5645](https://github.com/mochajs/mocha/issues/5645)) ([cf945fb](https://github.com/mochajs/mocha/commit/cf945fb73b7c5a74f0856cabca5b5b1c8a6ff1c8))
-* update tagline ([#5635](https://github.com/mochajs/mocha/issues/5635)) ([8ff0209](https://github.com/mochajs/mocha/commit/8ff0209db575c8231eea77e6ab23e6fe95620c92))
-
+- cleanup issue templates ([#5624](https://github.com/mochajs/mocha/issues/5624)) ([1972dd7](https://github.com/mochajs/mocha/commit/1972dd76ec66e8e11532bb6aca9157c4f8892d3c))
+- remove unused assets folder ([#5638](https://github.com/mochajs/mocha/issues/5638)) ([ddf8644](https://github.com/mochajs/mocha/commit/ddf864482ff66b1ca46ef7f08e63ca923222e717))
+- update spam filter ([#5645](https://github.com/mochajs/mocha/issues/5645)) ([cf945fb](https://github.com/mochajs/mocha/commit/cf945fb73b7c5a74f0856cabca5b5b1c8a6ff1c8))
+- update tagline ([#5635](https://github.com/mochajs/mocha/issues/5635)) ([8ff0209](https://github.com/mochajs/mocha/commit/8ff0209db575c8231eea77e6ab23e6fe95620c92))
 
 ### 🤖 Automation
 
-* **deps:** bump OctoGuide/bot in the github-actions group ([#5648](https://github.com/mochajs/mocha/issues/5648)) ([fed6bbd](https://github.com/mochajs/mocha/commit/fed6bbdb891c518e61e8ef4bbf07ed46b469f860))
-* **docs/dev-deps:** use JS-native `fetch` to get supporters data instead of external `needle` ([#5643](https://github.com/mochajs/mocha/issues/5643)) ([e37e56f](https://github.com/mochajs/mocha/commit/e37e56fbe6a1072f1784ef87278d46f7ac48cdb8))
-* initial file implementation for ocotoguide ([#5608](https://github.com/mochajs/mocha/issues/5608)) ([a5f5c64](https://github.com/mochajs/mocha/commit/a5f5c6442505069573a17798a515f267c24a38f3))
+- **deps:** bump OctoGuide/bot in the github-actions group ([#5648](https://github.com/mochajs/mocha/issues/5648)) ([fed6bbd](https://github.com/mochajs/mocha/commit/fed6bbdb891c518e61e8ef4bbf07ed46b469f860))
+- **docs/dev-deps:** use JS-native `fetch` to get supporters data instead of external `needle` ([#5643](https://github.com/mochajs/mocha/issues/5643)) ([e37e56f](https://github.com/mochajs/mocha/commit/e37e56fbe6a1072f1784ef87278d46f7ac48cdb8))
+- initial file implementation for ocotoguide ([#5608](https://github.com/mochajs/mocha/issues/5608)) ([a5f5c64](https://github.com/mochajs/mocha/commit/a5f5c6442505069573a17798a515f267c24a38f3))
 
 ## [12.0.0-beta-4](https://github.com/mochajs/mocha/compare/v12.0.0-beta-3...v12.0.0-beta-4) (2026-01-04)
 
-
 ### 🌟 Features
 
-* ESM configuration file ([#5397](https://github.com/mochajs/mocha/issues/5397)) ([dff9d78](https://github.com/mochajs/mocha/commit/dff9d7873f2d47a799e0adef338a7d6045ba0731))
-* migrate Markdown lint to `@eslint/markdown` ([#5593](https://github.com/mochajs/mocha/issues/5593)) ([d9e1f0a](https://github.com/mochajs/mocha/commit/d9e1f0aa7e39caa11edb81581c14cd02b3f40b3f))
-
+- ESM configuration file ([#5397](https://github.com/mochajs/mocha/issues/5397)) ([dff9d78](https://github.com/mochajs/mocha/commit/dff9d7873f2d47a799e0adef338a7d6045ba0731))
+- migrate Markdown lint to `@eslint/markdown` ([#5593](https://github.com/mochajs/mocha/issues/5593)) ([d9e1f0a](https://github.com/mochajs/mocha/commit/d9e1f0aa7e39caa11edb81581c14cd02b3f40b3f))
 
 ### 🩹 Fixes
 
-* remove `run` and use globalThis `setup` ([#5592](https://github.com/mochajs/mocha/issues/5592)) ([1544c39](https://github.com/mochajs/mocha/commit/1544c39dcd76916cca23a111c88eee8cbb781c24))
-
+- remove `run` and use globalThis `setup` ([#5592](https://github.com/mochajs/mocha/issues/5592)) ([1544c39](https://github.com/mochajs/mocha/commit/1544c39dcd76916cca23a111c88eee8cbb781c24))
 
 ### 📚 Documentation
 
-* fix v3_older changelog duplicate headings ([#5602](https://github.com/mochajs/mocha/issues/5602)) ([a750518](https://github.com/mochajs/mocha/commit/a7505180b64541ac71639ec3d1193f26e73527d9))
-
+- fix v3\_older changelog duplicate headings ([#5602](https://github.com/mochajs/mocha/issues/5602)) ([a750518](https://github.com/mochajs/mocha/commit/a7505180b64541ac71639ec3d1193f26e73527d9))
 
 ### 🧹 Chores
 
-* **ci:** use OIDC token for trusted publishing to `npm` ([#5610](https://github.com/mochajs/mocha/issues/5610)) ([dc0fdb7](https://github.com/mochajs/mocha/commit/dc0fdb767fe46b885f7a0ccfb67acfb453156a3b))
-* create exclusions for nyc ([#5609](https://github.com/mochajs/mocha/issues/5609)) ([702473a](https://github.com/mochajs/mocha/commit/702473a54d9348948a63b4600171afa6956ccb0b))
-* **main:** release 12.0.0-beta-4 ([#5598](https://github.com/mochajs/mocha/issues/5598)) ([424516e](https://github.com/mochajs/mocha/commit/424516ed3c34c6716afbf554425cf5df439cd86c))
-* prevent unwanted Prettier rewrites ([#5591](https://github.com/mochajs/mocha/issues/5591)) ([3ea1578](https://github.com/mochajs/mocha/commit/3ea15789ddb4b77c591d9da36d2476ac359de00d))
-* remove broken browser-test.yml ([#5615](https://github.com/mochajs/mocha/issues/5615)) ([33ce345](https://github.com/mochajs/mocha/commit/33ce345f9ab4f47573a4994c5c01de6eda2af45d))
-* remove legacy `docs/` ([#5583](https://github.com/mochajs/mocha/issues/5583)) ([d8c310e](https://github.com/mochajs/mocha/commit/d8c310e3eddd235be55ad1891cde84c3be6f56f3))
-* revert "chore(main): release 12.0.0-beta-4 ([#5598](https://github.com/mochajs/mocha/issues/5598))" ([#5619](https://github.com/mochajs/mocha/issues/5619)) ([dba8091](https://github.com/mochajs/mocha/commit/dba809196541df415fac2681822f5cd35cf20442))
-
+- **ci:** use OIDC token for trusted publishing to `npm` ([#5610](https://github.com/mochajs/mocha/issues/5610)) ([dc0fdb7](https://github.com/mochajs/mocha/commit/dc0fdb767fe46b885f7a0ccfb67acfb453156a3b))
+- create exclusions for nyc ([#5609](https://github.com/mochajs/mocha/issues/5609)) ([702473a](https://github.com/mochajs/mocha/commit/702473a54d9348948a63b4600171afa6956ccb0b))
+- **main:** release 12.0.0-beta-4 ([#5598](https://github.com/mochajs/mocha/issues/5598)) ([424516e](https://github.com/mochajs/mocha/commit/424516ed3c34c6716afbf554425cf5df439cd86c))
+- prevent unwanted Prettier rewrites ([#5591](https://github.com/mochajs/mocha/issues/5591)) ([3ea1578](https://github.com/mochajs/mocha/commit/3ea15789ddb4b77c591d9da36d2476ac359de00d))
+- remove broken browser-test.yml ([#5615](https://github.com/mochajs/mocha/issues/5615)) ([33ce345](https://github.com/mochajs/mocha/commit/33ce345f9ab4f47573a4994c5c01de6eda2af45d))
+- remove legacy `docs/` ([#5583](https://github.com/mochajs/mocha/issues/5583)) ([d8c310e](https://github.com/mochajs/mocha/commit/d8c310e3eddd235be55ad1891cde84c3be6f56f3))
+- revert "chore(main): release 12.0.0-beta-4 ([#5598](https://github.com/mochajs/mocha/issues/5598))" ([#5619](https://github.com/mochajs/mocha/issues/5619)) ([dba8091](https://github.com/mochajs/mocha/commit/dba809196541df415fac2681822f5cd35cf20442))
 
 ### 🤖 Automation
 
-* **dep:** update `diff` from v7 to v8 ([#5605](https://github.com/mochajs/mocha/issues/5605)) ([8ca311c](https://github.com/mochajs/mocha/commit/8ca311c6c9b0d353b1c9d65b5751296d9baddd83))
-* update npm command for format ([#5603](https://github.com/mochajs/mocha/issues/5603)) ([c6a29cc](https://github.com/mochajs/mocha/commit/c6a29ccb38f81d65100cb2a0e6d73ad4303f58fb))
+- **dep:** update `diff` from v7 to v8 ([#5605](https://github.com/mochajs/mocha/issues/5605)) ([8ca311c](https://github.com/mochajs/mocha/commit/8ca311c6c9b0d353b1c9d65b5751296d9baddd83))
+- update npm command for format ([#5603](https://github.com/mochajs/mocha/issues/5603)) ([c6a29cc](https://github.com/mochajs/mocha/commit/c6a29ccb38f81d65100cb2a0e6d73ad4303f58fb))
 
 ## [12.0.0-beta-3](https://github.com/mochajs/mocha/compare/v12.0.0-beta-2...v12.0.0-beta-3) (2026-01-01)
 
-
 ### 🌟 Features
 
-* add mocha.mjs export ([#5527](https://github.com/mochajs/mocha/issues/5527)) ([e1cf23c](https://github.com/mochajs/mocha/commit/e1cf23cbc2049a375ab9980337dbf2486450f7cb))
-* bump serialize-javascript from 6.0.2 to 7.0.2 ([#5589](https://github.com/mochajs/mocha/issues/5589)) ([24fb1b6](https://github.com/mochajs/mocha/commit/24fb1b6f8a45b4ca93b4577838bc1d9a47c74ec1))
-* bump strip-json-comments from 3 to 5 ([#5484](https://github.com/mochajs/mocha/issues/5484)) ([9b0db24](https://github.com/mochajs/mocha/commit/9b0db24740c65717dcd1838dcafccbfc1c538d3b))
-
+- add mocha.mjs export ([#5527](https://github.com/mochajs/mocha/issues/5527)) ([e1cf23c](https://github.com/mochajs/mocha/commit/e1cf23cbc2049a375ab9980337dbf2486450f7cb))
+- bump serialize-javascript from 6.0.2 to 7.0.2 ([#5589](https://github.com/mochajs/mocha/issues/5589)) ([24fb1b6](https://github.com/mochajs/mocha/commit/24fb1b6f8a45b4ca93b4577838bc1d9a47c74ec1))
+- bump strip-json-comments from 3 to 5 ([#5484](https://github.com/mochajs/mocha/issues/5484)) ([9b0db24](https://github.com/mochajs/mocha/commit/9b0db24740c65717dcd1838dcafccbfc1c538d3b))
 
 ### 🩹 Fixes
 
-* allow importing ESM interface and reporters ([#5563](https://github.com/mochajs/mocha/issues/5563)) ([bc9fc84](https://github.com/mochajs/mocha/commit/bc9fc842213d00cf7ac4a4b0de898bf29e38bdad))
-* **docs-next:** backer's logo is consistent regardless of size ([#5594](https://github.com/mochajs/mocha/issues/5594)) ([1a53a10](https://github.com/mochajs/mocha/commit/1a53a100a4f3b83a725ccf3c166dcbefebca8602))
-* surface ts-node compile errors ([#5572](https://github.com/mochajs/mocha/issues/5572)) ([add4cf8](https://github.com/mochajs/mocha/commit/add4cf8166b330c9af4342def643c606459331d7))
-
+- allow importing ESM interface and reporters ([#5563](https://github.com/mochajs/mocha/issues/5563)) ([bc9fc84](https://github.com/mochajs/mocha/commit/bc9fc842213d00cf7ac4a4b0de898bf29e38bdad))
+- **docs-next:** backer's logo is consistent regardless of size ([#5594](https://github.com/mochajs/mocha/issues/5594)) ([1a53a10](https://github.com/mochajs/mocha/commit/1a53a100a4f3b83a725ccf3c166dcbefebca8602))
+- surface ts-node compile errors ([#5572](https://github.com/mochajs/mocha/issues/5572)) ([add4cf8](https://github.com/mochajs/mocha/commit/add4cf8166b330c9af4342def643c606459331d7))
 
 ### 📚 Documentation
 
-* bumped docs-next Astro to ^5.16.6 ([#5574](https://github.com/mochajs/mocha/issues/5574)) ([806222b](https://github.com/mochajs/mocha/commit/806222b0998ffb4d09399090f4ec638e90974427))
-* fix light mode Astro accent text color ([#5585](https://github.com/mochajs/mocha/issues/5585)) ([9cc3ada](https://github.com/mochajs/mocha/commit/9cc3ada85b4ab4a4f2a8c7dc1b9d9ff8f101ffc1))
-* update Contributor License Agreement link in CONTRIBUTING.md ([#5567](https://github.com/mochajs/mocha/issues/5567)) ([410ce0d](https://github.com/mochajs/mocha/commit/410ce0d2a0f799aaca2c0bc627294d70c62dd3f4))
-
+- bumped docs-next Astro to ^5.16.6 ([#5574](https://github.com/mochajs/mocha/issues/5574)) ([806222b](https://github.com/mochajs/mocha/commit/806222b0998ffb4d09399090f4ec638e90974427))
+- fix light mode Astro accent text color ([#5585](https://github.com/mochajs/mocha/issues/5585)) ([9cc3ada](https://github.com/mochajs/mocha/commit/9cc3ada85b4ab4a4f2a8c7dc1b9d9ff8f101ffc1))
+- update Contributor License Agreement link in CONTRIBUTING.md ([#5567](https://github.com/mochajs/mocha/issues/5567)) ([410ce0d](https://github.com/mochajs/mocha/commit/410ce0d2a0f799aaca2c0bc627294d70c62dd3f4))
 
 ### 🧹 Chores
 
-* normalized ESLint config to v9's recommended structure ([#5575](https://github.com/mochajs/mocha/issues/5575)) ([7f9ed1f](https://github.com/mochajs/mocha/commit/7f9ed1fb3480e0658c2c7d84c60a1b505c941ce5))
-* update Rollup to v4 ([#5510](https://github.com/mochajs/mocha/issues/5510)) ([cafa782](https://github.com/mochajs/mocha/commit/cafa782f010021e7055f8482ede2c02c6503f0a0))
-
+- normalized ESLint config to v9's recommended structure ([#5575](https://github.com/mochajs/mocha/issues/5575)) ([7f9ed1f](https://github.com/mochajs/mocha/commit/7f9ed1fb3480e0658c2c7d84c60a1b505c941ce5))
+- update Rollup to v4 ([#5510](https://github.com/mochajs/mocha/issues/5510)) ([cafa782](https://github.com/mochajs/mocha/commit/cafa782f010021e7055f8482ede2c02c6503f0a0))
 
 ### 🤖 Automation
 
-* **dev-deps:** upgrade `eslint` from v8 to v9 ([#5559](https://github.com/mochajs/mocha/issues/5559)) ([bb24ca8](https://github.com/mochajs/mocha/commit/bb24ca8fde15471ff68d5b01b74c2d7e6047d966))
-* **dev-deps:** upgrade `markdownlint-cli` to latest v0.46.0  ([#5560](https://github.com/mochajs/mocha/issues/5560)) ([a124f1d](https://github.com/mochajs/mocha/commit/a124f1d3b7d0f8277962cae295cd43878294e183))
-* **dev-deps:** upgrade `nyc` from 15 to 17 ([#5556](https://github.com/mochajs/mocha/issues/5556)) ([599ab01](https://github.com/mochajs/mocha/commit/599ab013f526e78b3888a092a928ea4bc67138c0))
+- **dev-deps:** upgrade `eslint` from v8 to v9 ([#5559](https://github.com/mochajs/mocha/issues/5559)) ([bb24ca8](https://github.com/mochajs/mocha/commit/bb24ca8fde15471ff68d5b01b74c2d7e6047d966))
+- **dev-deps:** upgrade `markdownlint-cli` to latest v0.46.0  ([#5560](https://github.com/mochajs/mocha/issues/5560)) ([a124f1d](https://github.com/mochajs/mocha/commit/a124f1d3b7d0f8277962cae295cd43878294e183))
+- **dev-deps:** upgrade `nyc` from 15 to 17 ([#5556](https://github.com/mochajs/mocha/issues/5556)) ([599ab01](https://github.com/mochajs/mocha/commit/599ab013f526e78b3888a092a928ea4bc67138c0))
 
 ## [12.0.0-beta-2](https://github.com/mochajs/mocha/compare/v12.0.0-beta-1...v12.0.0-beta-2) (2025-11-25)
 
-
 ### 🧹 Chores
 
-* bump glob to version 13 ([#5546](https://github.com/mochajs/mocha/issues/5546)) ([f4d4ad2](https://github.com/mochajs/mocha/commit/f4d4ad23e9e994668c7d95c5a9bf59f581dccebf))
+- bump glob to version 13 ([#5546](https://github.com/mochajs/mocha/issues/5546)) ([f4d4ad2](https://github.com/mochajs/mocha/commit/f4d4ad23e9e994668c7d95c5a9bf59f581dccebf))
 
 ## [12.0.0-beta-1](https://github.com/mochajs/mocha/compare/v11.7.4...v12.0.0-beta-1) (2025-11-25)
 
-
 ### ⚠ BREAKING CHANGES
 
-* cleanup references of --compilers ([#5403](https://github.com/mochajs/mocha/issues/5403))
-* change the default of --forbid-only to check for process.env.CI ([#5496](https://github.com/mochajs/mocha/issues/5496))
-* bump minimum Node.js version from 18.18.0 to 20.19.0 ([#5477](https://github.com/mochajs/mocha/issues/5477))
+- cleanup references of --compilers ([#5403](https://github.com/mochajs/mocha/issues/5403))
+- change the default of --forbid-only to check for process.env.CI ([#5496](https://github.com/mochajs/mocha/issues/5496))
+- bump minimum Node.js version from 18.18.0 to 20.19.0 ([#5477](https://github.com/mochajs/mocha/issues/5477))
 
 ### 🌟 Features
 
-* allow FIFOs as test files ([#5512](https://github.com/mochajs/mocha/issues/5512)) ([ca4af43](https://github.com/mochajs/mocha/commit/ca4af439d5766fdfb2b5a7d7e06db0280b1abb6e))
-* bump minimum Node.js version from 18.18.0 to 20.19.0 ([#5477](https://github.com/mochajs/mocha/issues/5477)) ([1c34eef](https://github.com/mochajs/mocha/commit/1c34eef426f29e5e46ec348272ccaa869ae43922))
-* change the default of --forbid-only to check for process.env.CI ([#5496](https://github.com/mochajs/mocha/issues/5496)) ([3d94dde](https://github.com/mochajs/mocha/commit/3d94ddea2f45d18473bf00e71db2b9766ab227fe))
-* cleanup references of --compilers ([#5403](https://github.com/mochajs/mocha/issues/5403)) ([f75d150](https://github.com/mochajs/mocha/commit/f75d150cf6115334e7f14b8ee1fbbda04eb87087))
-
+- allow FIFOs as test files ([#5512](https://github.com/mochajs/mocha/issues/5512)) ([ca4af43](https://github.com/mochajs/mocha/commit/ca4af439d5766fdfb2b5a7d7e06db0280b1abb6e))
+- bump minimum Node.js version from 18.18.0 to 20.19.0 ([#5477](https://github.com/mochajs/mocha/issues/5477)) ([1c34eef](https://github.com/mochajs/mocha/commit/1c34eef426f29e5e46ec348272ccaa869ae43922))
+- change the default of --forbid-only to check for process.env.CI ([#5496](https://github.com/mochajs/mocha/issues/5496)) ([3d94dde](https://github.com/mochajs/mocha/commit/3d94ddea2f45d18473bf00e71db2b9766ab227fe))
+- cleanup references of --compilers ([#5403](https://github.com/mochajs/mocha/issues/5403)) ([f75d150](https://github.com/mochajs/mocha/commit/f75d150cf6115334e7f14b8ee1fbbda04eb87087))
 
 ### 🩹 Fixes
 
-* correct assertion import syntax in getting-started guide ([#5526](https://github.com/mochajs/mocha/issues/5526)) ([fb0215b](https://github.com/mochajs/mocha/commit/fb0215bd4fba44fde0cc7b8f9b91a4f07020a13b))
-* handle empty null-prototyped objects ([#5506](https://github.com/mochajs/mocha/issues/5506)) ([2a0bce0](https://github.com/mochajs/mocha/commit/2a0bce02f6f696c74fb8fdcd9f72089e82935903))
-
+- correct assertion import syntax in getting-started guide ([#5526](https://github.com/mochajs/mocha/issues/5526)) ([fb0215b](https://github.com/mochajs/mocha/commit/fb0215bd4fba44fde0cc7b8f9b91a4f07020a13b))
+- handle empty null-prototyped objects ([#5506](https://github.com/mochajs/mocha/issues/5506)) ([2a0bce0](https://github.com/mochajs/mocha/commit/2a0bce02f6f696c74fb8fdcd9f72089e82935903))
 
 ### 📚 Documentation
 
-* add maintainer expectations to MAINTAINERS.md ([#5514](https://github.com/mochajs/mocha/issues/5514)) ([76f95a1](https://github.com/mochajs/mocha/commit/76f95a1113ea0472800ff6b1781f2750836a6db7))
-* migrate how-to wiki pages to main documentation ([#5463](https://github.com/mochajs/mocha/issues/5463)) ([b85aec6](https://github.com/mochajs/mocha/commit/b85aec6e4307903f31b2b8039dd749efc44ffcf5))
-* migrate programmatic usage to docs, development content to DEVELOPMENT.md ([#5464](https://github.com/mochajs/mocha/issues/5464)) ([cb47925](https://github.com/mochajs/mocha/commit/cb47925f99b39bd66bdd09218395bf5e0a54802d))
-* test/integration/README: remove ref to non-existent dir ([#5516](https://github.com/mochajs/mocha/issues/5516)) ([d2c2d40](https://github.com/mochajs/mocha/commit/d2c2d4026d0f6a09b96344f034e9cba9ee6277af))
-
+- add maintainer expectations to MAINTAINERS.md ([#5514](https://github.com/mochajs/mocha/issues/5514)) ([76f95a1](https://github.com/mochajs/mocha/commit/76f95a1113ea0472800ff6b1781f2750836a6db7))
+- migrate how-to wiki pages to main documentation ([#5463](https://github.com/mochajs/mocha/issues/5463)) ([b85aec6](https://github.com/mochajs/mocha/commit/b85aec6e4307903f31b2b8039dd749efc44ffcf5))
+- migrate programmatic usage to docs, development content to DEVELOPMENT.md ([#5464](https://github.com/mochajs/mocha/issues/5464)) ([cb47925](https://github.com/mochajs/mocha/commit/cb47925f99b39bd66bdd09218395bf5e0a54802d))
+- test/integration/README: remove ref to non-existent dir ([#5516](https://github.com/mochajs/mocha/issues/5516)) ([d2c2d40](https://github.com/mochajs/mocha/commit/d2c2d4026d0f6a09b96344f034e9cba9ee6277af))
 
 ### 🧹 Chores
 
-* applied formatting to all files ([#5493](https://github.com/mochajs/mocha/issues/5493)) ([76d7194](https://github.com/mochajs/mocha/commit/76d719495d09dc4afb37d1179ede8911c52a011e))
-* fix broken link in .github/CONTRIBUTING.md ([681e843](https://github.com/mochajs/mocha/commit/681e843800051a9d3ab66c1bfb7ad71428e34315))
-* remove Node.js 18 from test-smoke in CI too ([d643105](https://github.com/mochajs/mocha/commit/d643105aa6f3fbac9d13e8a44f4c4c7302512193))
-* switch from Coveralls to Codecov ([#5447](https://github.com/mochajs/mocha/issues/5447)) ([f4e7e54](https://github.com/mochajs/mocha/commit/f4e7e54eb285765d7c50bce9c501db2e1b1e22be))
-* unpin node-version in release-please ([#5550](https://github.com/mochajs/mocha/issues/5550)) ([62c90cd](https://github.com/mochajs/mocha/commit/62c90cd2aea4c719d2014e7134b2a1d7c189fd7a))
-* use `ps-list` instead of `pidtree` to remove wmic ([#5479](https://github.com/mochajs/mocha/issues/5479)) ([b2985b3](https://github.com/mochajs/mocha/commit/b2985b3428b4b88ca220a14a26e9eb7139e8d445))
-
+- applied formatting to all files ([#5493](https://github.com/mochajs/mocha/issues/5493)) ([76d7194](https://github.com/mochajs/mocha/commit/76d719495d09dc4afb37d1179ede8911c52a011e))
+- fix broken link in .github/CONTRIBUTING.md ([681e843](https://github.com/mochajs/mocha/commit/681e843800051a9d3ab66c1bfb7ad71428e34315))
+- remove Node.js 18 from test-smoke in CI too ([d643105](https://github.com/mochajs/mocha/commit/d643105aa6f3fbac9d13e8a44f4c4c7302512193))
+- switch from Coveralls to Codecov ([#5447](https://github.com/mochajs/mocha/issues/5447)) ([f4e7e54](https://github.com/mochajs/mocha/commit/f4e7e54eb285765d7c50bce9c501db2e1b1e22be))
+- unpin node-version in release-please ([#5550](https://github.com/mochajs/mocha/issues/5550)) ([62c90cd](https://github.com/mochajs/mocha/commit/62c90cd2aea4c719d2014e7134b2a1d7c189fd7a))
+- use `ps-list` instead of `pidtree` to remove wmic ([#5479](https://github.com/mochajs/mocha/issues/5479)) ([b2985b3](https://github.com/mochajs/mocha/commit/b2985b3428b4b88ca220a14a26e9eb7139e8d445))
 
 ### 🤖 Automation
 
-* **deps:** bump actions/checkout in the github-actions group ([#5547](https://github.com/mochajs/mocha/issues/5547)) ([561eb03](https://github.com/mochajs/mocha/commit/561eb039f7cfc36563a9583b17c7d4cb7ec30652))
-* **deps:** bump actions/setup-node in the github-actions group ([#5503](https://github.com/mochajs/mocha/issues/5503)) ([9a70533](https://github.com/mochajs/mocha/commit/9a7053349589344236b20301de965030eaabfea9))
+- **deps:** bump actions/checkout in the github-actions group ([#5547](https://github.com/mochajs/mocha/issues/5547)) ([561eb03](https://github.com/mochajs/mocha/commit/561eb039f7cfc36563a9583b17c7d4cb7ec30652))
+- **deps:** bump actions/setup-node in the github-actions group ([#5503](https://github.com/mochajs/mocha/issues/5503)) ([9a70533](https://github.com/mochajs/mocha/commit/9a7053349589344236b20301de965030eaabfea9))
 
 ## [11.7.4](https://github.com/mochajs/mocha/compare/v11.7.3...v11.7.4) (2025-10-01)
 
-
 ### 🩹 Fixes
 
-* watch mode using chokidar v4 ([#5379](https://github.com/mochajs/mocha/issues/5379)) ([c2667c3](https://github.com/mochajs/mocha/commit/c2667c3b3fca33c21306f59a1cca55bb7e1dac1f))
-
+- watch mode using chokidar v4 ([#5379](https://github.com/mochajs/mocha/issues/5379)) ([c2667c3](https://github.com/mochajs/mocha/commit/c2667c3b3fca33c21306f59a1cca55bb7e1dac1f))
 
 ### 📚 Documentation
 
-* migrate remaining legacy wiki pages to main documentation ([#5465](https://github.com/mochajs/mocha/issues/5465)) ([bff9166](https://github.com/mochajs/mocha/commit/bff91660733b71b124aad939538dee7747cfbeb8))
-
+- migrate remaining legacy wiki pages to main documentation ([#5465](https://github.com/mochajs/mocha/issues/5465)) ([bff9166](https://github.com/mochajs/mocha/commit/bff91660733b71b124aad939538dee7747cfbeb8))
 
 ### 🧹 Chores
 
-* remove trailing spaces ([#5475](https://github.com/mochajs/mocha/issues/5475)) ([7f68e5c](https://github.com/mochajs/mocha/commit/7f68e5c1565606bcebeb715b8591c52973d00dff))
+- remove trailing spaces ([#5475](https://github.com/mochajs/mocha/issues/5475)) ([7f68e5c](https://github.com/mochajs/mocha/commit/7f68e5c1565606bcebeb715b8591c52973d00dff))
 
 ## [11.7.3](https://github.com/mochajs/mocha/compare/v11.7.2...v11.7.3) (2025-09-30)
 
-
 ### 🩹 Fixes
 
-* use original require() error for TS files if ERR_UNKNOWN_FILE_EXTENSION ([#5408](https://github.com/mochajs/mocha/issues/5408)) ([ebdbc48](https://github.com/mochajs/mocha/commit/ebdbc487693254498de62068c59e3e43d078eff1))
-
+- use original require() error for TS files if ERR\_UNKNOWN\_FILE\_EXTENSION ([#5408](https://github.com/mochajs/mocha/issues/5408)) ([ebdbc48](https://github.com/mochajs/mocha/commit/ebdbc487693254498de62068c59e3e43d078eff1))
 
 ### 📚 Documentation
 
-* add security escalation policy ([#5466](https://github.com/mochajs/mocha/issues/5466)) ([4122c7d](https://github.com/mochajs/mocha/commit/4122c7d13d0941be451365397fbf43e1f3103027))
-* fix duplicate global leak documentation ([#5461](https://github.com/mochajs/mocha/issues/5461)) ([1164b9d](https://github.com/mochajs/mocha/commit/1164b9da895e56cf745acda2792e634080018ff6))
-* migrate third party UIs wiki page to docs ([#5434](https://github.com/mochajs/mocha/issues/5434)) ([6654704](https://github.com/mochajs/mocha/commit/66547045cb9bd2fa8209b34c36da2a5ef49d23fc))
-* update maintainer release notes for release-please ([#5453](https://github.com/mochajs/mocha/issues/5453)) ([185ae1e](https://github.com/mochajs/mocha/commit/185ae1eabe5c1e92c758bdfb398f7f47b6ef9483))
-
+- add security escalation policy ([#5466](https://github.com/mochajs/mocha/issues/5466)) ([4122c7d](https://github.com/mochajs/mocha/commit/4122c7d13d0941be451365397fbf43e1f3103027))
+- fix duplicate global leak documentation ([#5461](https://github.com/mochajs/mocha/issues/5461)) ([1164b9d](https://github.com/mochajs/mocha/commit/1164b9da895e56cf745acda2792e634080018ff6))
+- migrate third party UIs wiki page to docs ([#5434](https://github.com/mochajs/mocha/issues/5434)) ([6654704](https://github.com/mochajs/mocha/commit/66547045cb9bd2fa8209b34c36da2a5ef49d23fc))
+- update maintainer release notes for release-please ([#5453](https://github.com/mochajs/mocha/issues/5453)) ([185ae1e](https://github.com/mochajs/mocha/commit/185ae1eabe5c1e92c758bdfb398f7f47b6ef9483))
 
 ### 🤖 Automation
 
-* **deps:** bump actions/setup-node in the github-actions group ([#5459](https://github.com/mochajs/mocha/issues/5459)) ([48c6f40](https://github.com/mochajs/mocha/commit/48c6f4068b5d22ebc49220900f0b53f8ecdc2b74))
+- **deps:** bump actions/setup-node in the github-actions group ([#5459](https://github.com/mochajs/mocha/issues/5459)) ([48c6f40](https://github.com/mochajs/mocha/commit/48c6f4068b5d22ebc49220900f0b53f8ecdc2b74))
 
 ## [11.7.2](https://github.com/mochajs/mocha/compare/v11.7.1...v11.7.2) (2025-09-01)
 
-
 ### 🩹 Fixes
 
-* fail with an informative error message on a file with a broken default import ([#5413](https://github.com/mochajs/mocha/issues/5413)) ([b0e6135](https://github.com/mochajs/mocha/commit/b0e61350594f2a044bf34ea153d1fab1e82e80cc))
-* load mjs files correctly ([#5429](https://github.com/mochajs/mocha/issues/5429)) ([a947b9b](https://github.com/mochajs/mocha/commit/a947b9b95501a35efa73c18aa57a74dad555c03a))
-
+- fail with an informative error message on a file with a broken default import ([#5413](https://github.com/mochajs/mocha/issues/5413)) ([b0e6135](https://github.com/mochajs/mocha/commit/b0e61350594f2a044bf34ea153d1fab1e82e80cc))
+- load mjs files correctly ([#5429](https://github.com/mochajs/mocha/issues/5429)) ([a947b9b](https://github.com/mochajs/mocha/commit/a947b9b95501a35efa73c18aa57a74dad555c03a))
 
 ### 📚 Documentation
 
-* add banner from old site to new site, link from new to old ([#5414](https://github.com/mochajs/mocha/issues/5414)) ([dedef11](https://github.com/mochajs/mocha/commit/dedef110a2af2f8632fb6c1b864fa0a46ad6ca9c))
-* add info on spies to legacy docs ([#5421](https://github.com/mochajs/mocha/issues/5421)) ([21f5544](https://github.com/mochajs/mocha/commit/21f554459c75f5a75b22556b6e2ac70d6ac0e9fc))
-* explain node import swallowing error ([#5401](https://github.com/mochajs/mocha/issues/5401)) ([09f5b2c](https://github.com/mochajs/mocha/commit/09f5b2c9de67ef40d5bd1775c3fca3bdb138f371))
-* fix links in new site ([#5416](https://github.com/mochajs/mocha/issues/5416)) ([b2bc769](https://github.com/mochajs/mocha/commit/b2bc769c6c8d87311ba0bdc9df8b9b588494eba5))
-* migrate assertion libraries wiki link to main docs ([#5442](https://github.com/mochajs/mocha/issues/5442)) ([95f3ca8](https://github.com/mochajs/mocha/commit/95f3ca8bc3a6c6af2932f7fd59a404768c0c6693))
-* migrate count assertions wiki page to docs ([#5438](https://github.com/mochajs/mocha/issues/5438)) ([02a306c](https://github.com/mochajs/mocha/commit/02a306c6cbf31f4eef7d4c9bf5e06c917d3efc11))
-* migrate shared behaviours to docs-next ([#5432](https://github.com/mochajs/mocha/issues/5432)) ([1dc4aa9](https://github.com/mochajs/mocha/commit/1dc4aa98eb3793865fa2a4da3373534dafc1c9a7))
-* migrate Spies wiki page to explainers ([#5420](https://github.com/mochajs/mocha/issues/5420)) ([cbcf007](https://github.com/mochajs/mocha/commit/cbcf007c5ae25f203863aac0b43eca1e8aefe093))
-* Migrate tagging wiki page to docs ([#5435](https://github.com/mochajs/mocha/issues/5435)) ([876247a](https://github.com/mochajs/mocha/commit/876247a8a636cc7bb1c3bf31390e7771182a090a))
-* migrate third party reporters wiki page to docs ([#5433](https://github.com/mochajs/mocha/issues/5433)) ([f70764c](https://github.com/mochajs/mocha/commit/f70764c9a56fcf12e316d5539788c7be0693b6a9))
-* migrate to global leak wiki page to docs ([#5437](https://github.com/mochajs/mocha/issues/5437)) ([8a6fdca](https://github.com/mochajs/mocha/commit/8a6fdcafccd94c888fae5e8be47dd29a604241b6))
-* update /next bug report link to be docs issue template ([#5424](https://github.com/mochajs/mocha/issues/5424)) ([668cb66](https://github.com/mochajs/mocha/commit/668cb66e1288051369ab144ccb50c840ebe34267))
-
+- add banner from old site to new site, link from new to old ([#5414](https://github.com/mochajs/mocha/issues/5414)) ([dedef11](https://github.com/mochajs/mocha/commit/dedef110a2af2f8632fb6c1b864fa0a46ad6ca9c))
+- add info on spies to legacy docs ([#5421](https://github.com/mochajs/mocha/issues/5421)) ([21f5544](https://github.com/mochajs/mocha/commit/21f554459c75f5a75b22556b6e2ac70d6ac0e9fc))
+- explain node import swallowing error ([#5401](https://github.com/mochajs/mocha/issues/5401)) ([09f5b2c](https://github.com/mochajs/mocha/commit/09f5b2c9de67ef40d5bd1775c3fca3bdb138f371))
+- fix links in new site ([#5416](https://github.com/mochajs/mocha/issues/5416)) ([b2bc769](https://github.com/mochajs/mocha/commit/b2bc769c6c8d87311ba0bdc9df8b9b588494eba5))
+- migrate assertion libraries wiki link to main docs ([#5442](https://github.com/mochajs/mocha/issues/5442)) ([95f3ca8](https://github.com/mochajs/mocha/commit/95f3ca8bc3a6c6af2932f7fd59a404768c0c6693))
+- migrate count assertions wiki page to docs ([#5438](https://github.com/mochajs/mocha/issues/5438)) ([02a306c](https://github.com/mochajs/mocha/commit/02a306c6cbf31f4eef7d4c9bf5e06c917d3efc11))
+- migrate shared behaviours to docs-next ([#5432](https://github.com/mochajs/mocha/issues/5432)) ([1dc4aa9](https://github.com/mochajs/mocha/commit/1dc4aa98eb3793865fa2a4da3373534dafc1c9a7))
+- migrate Spies wiki page to explainers ([#5420](https://github.com/mochajs/mocha/issues/5420)) ([cbcf007](https://github.com/mochajs/mocha/commit/cbcf007c5ae25f203863aac0b43eca1e8aefe093))
+- Migrate tagging wiki page to docs ([#5435](https://github.com/mochajs/mocha/issues/5435)) ([876247a](https://github.com/mochajs/mocha/commit/876247a8a636cc7bb1c3bf31390e7771182a090a))
+- migrate third party reporters wiki page to docs ([#5433](https://github.com/mochajs/mocha/issues/5433)) ([f70764c](https://github.com/mochajs/mocha/commit/f70764c9a56fcf12e316d5539788c7be0693b6a9))
+- migrate to global leak wiki page to docs ([#5437](https://github.com/mochajs/mocha/issues/5437)) ([8a6fdca](https://github.com/mochajs/mocha/commit/8a6fdcafccd94c888fae5e8be47dd29a604241b6))
+- update /next bug report link to be docs issue template ([#5424](https://github.com/mochajs/mocha/issues/5424)) ([668cb66](https://github.com/mochajs/mocha/commit/668cb66e1288051369ab144ccb50c840ebe34267))
 
 ### 🧹 Chores
 
-* add issue form for ⚡️ Performance ([#5406](https://github.com/mochajs/mocha/issues/5406)) ([a908b3b](https://github.com/mochajs/mocha/commit/a908b3b86604d41d5751cccfaff505d7092c114f))
-* add test for `-R import-only-loader` ([#5391](https://github.com/mochajs/mocha/issues/5391)) ([6ee5b48](https://github.com/mochajs/mocha/commit/6ee5b483b8c29e0593c7765ad7a5c7b7f7764fc3))
-* also test Node.js 24 in CI ([#5405](https://github.com/mochajs/mocha/issues/5405)) ([15f5980](https://github.com/mochajs/mocha/commit/15f59805287f4c84ab8d057735a391a795be23f1))
-* bump CI to use 20.19.4, 22.18.0, 24.6.0 ([#5430](https://github.com/mochajs/mocha/issues/5430)) ([ace5eb4](https://github.com/mochajs/mocha/commit/ace5eb47a7926fe9d56ebcd95fd659c557a5be4d))
-* bump Knip to 5.61.2 ([#5394](https://github.com/mochajs/mocha/issues/5394)) ([f3d7430](https://github.com/mochajs/mocha/commit/f3d743061d6523f7077b21749089e6fb2f9c32e3))
-* cleanup references of --opts ([#5402](https://github.com/mochajs/mocha/issues/5402)) ([1096b37](https://github.com/mochajs/mocha/commit/1096b376c3c3bb9d4256c643ad35a459ed750928))
-* enabled ESLint's no-unused-vars ([#5399](https://github.com/mochajs/mocha/issues/5399)) ([d4168ae](https://github.com/mochajs/mocha/commit/d4168aef4c21f8fd119385da1cf1794a1ec5c2e1))
-* move callback and object typedefs to a new types.d.ts ([#5351](https://github.com/mochajs/mocha/issues/5351)) ([3300d21](https://github.com/mochajs/mocha/commit/3300d2155a1b06059fbe89c98a1d8bf979539019))
-* rewrite base path instead of copy-pasting ([#5431](https://github.com/mochajs/mocha/issues/5431)) ([c6c6740](https://github.com/mochajs/mocha/commit/c6c6740fb45da43510f86c1d22ea46ce9ee6a7ae))
-* unify caught errors as err ([#5439](https://github.com/mochajs/mocha/issues/5439)) ([d4912e7](https://github.com/mochajs/mocha/commit/d4912e705cf9ae1c3aa274b6449a6a0ff6d408c5))
-* Update experimental module detection test and pin exact Node versions ([#5417](https://github.com/mochajs/mocha/issues/5417)) ([2489090](https://github.com/mochajs/mocha/commit/2489090223f2629e4a380abe4cc6d46858ada922))
-
+- add issue form for ⚡️ Performance ([#5406](https://github.com/mochajs/mocha/issues/5406)) ([a908b3b](https://github.com/mochajs/mocha/commit/a908b3b86604d41d5751cccfaff505d7092c114f))
+- add test for `-R import-only-loader` ([#5391](https://github.com/mochajs/mocha/issues/5391)) ([6ee5b48](https://github.com/mochajs/mocha/commit/6ee5b483b8c29e0593c7765ad7a5c7b7f7764fc3))
+- also test Node.js 24 in CI ([#5405](https://github.com/mochajs/mocha/issues/5405)) ([15f5980](https://github.com/mochajs/mocha/commit/15f59805287f4c84ab8d057735a391a795be23f1))
+- bump CI to use 20.19.4, 22.18.0, 24.6.0 ([#5430](https://github.com/mochajs/mocha/issues/5430)) ([ace5eb4](https://github.com/mochajs/mocha/commit/ace5eb47a7926fe9d56ebcd95fd659c557a5be4d))
+- bump Knip to 5.61.2 ([#5394](https://github.com/mochajs/mocha/issues/5394)) ([f3d7430](https://github.com/mochajs/mocha/commit/f3d743061d6523f7077b21749089e6fb2f9c32e3))
+- cleanup references of --opts ([#5402](https://github.com/mochajs/mocha/issues/5402)) ([1096b37](https://github.com/mochajs/mocha/commit/1096b376c3c3bb9d4256c643ad35a459ed750928))
+- enabled ESLint's no-unused-vars ([#5399](https://github.com/mochajs/mocha/issues/5399)) ([d4168ae](https://github.com/mochajs/mocha/commit/d4168aef4c21f8fd119385da1cf1794a1ec5c2e1))
+- move callback and object typedefs to a new types.d.ts ([#5351](https://github.com/mochajs/mocha/issues/5351)) ([3300d21](https://github.com/mochajs/mocha/commit/3300d2155a1b06059fbe89c98a1d8bf979539019))
+- rewrite base path instead of copy-pasting ([#5431](https://github.com/mochajs/mocha/issues/5431)) ([c6c6740](https://github.com/mochajs/mocha/commit/c6c6740fb45da43510f86c1d22ea46ce9ee6a7ae))
+- unify caught errors as err ([#5439](https://github.com/mochajs/mocha/issues/5439)) ([d4912e7](https://github.com/mochajs/mocha/commit/d4912e705cf9ae1c3aa274b6449a6a0ff6d408c5))
+- Update experimental module detection test and pin exact Node versions ([#5417](https://github.com/mochajs/mocha/issues/5417)) ([2489090](https://github.com/mochajs/mocha/commit/2489090223f2629e4a380abe4cc6d46858ada922))
 
 ### 🤖 Automation
 
-* **deps:** bump actions/checkout in the github-actions group ([#5419](https://github.com/mochajs/mocha/issues/5419)) ([03ac2d0](https://github.com/mochajs/mocha/commit/03ac2d0e6e75e95b3dc7fb08f2e1a1117d9718ca))
+- **deps:** bump actions/checkout in the github-actions group ([#5419](https://github.com/mochajs/mocha/issues/5419)) ([03ac2d0](https://github.com/mochajs/mocha/commit/03ac2d0e6e75e95b3dc7fb08f2e1a1117d9718ca))
 
 ## [11.7.1](https://github.com/mochajs/mocha/compare/v11.7.0...v11.7.1) (2025-06-24)
 
-
 ### 🩹 Fixes
 
-* always fallback to import() if require() fails ([#5384](https://github.com/mochajs/mocha/issues/5384)) ([295c168](https://github.com/mochajs/mocha/commit/295c168628c2583245fb67d371b640309ba243ba))
-
+- always fallback to import() if require() fails ([#5384](https://github.com/mochajs/mocha/issues/5384)) ([295c168](https://github.com/mochajs/mocha/commit/295c168628c2583245fb67d371b640309ba243ba))
 
 ### 🧹 Chores
 
-* add esm loader test ([#5383](https://github.com/mochajs/mocha/issues/5383)) ([f58e49f](https://github.com/mochajs/mocha/commit/f58e49f08df2066e27f87f93ad7ee9cd6f91d225))
+- add esm loader test ([#5383](https://github.com/mochajs/mocha/issues/5383)) ([f58e49f](https://github.com/mochajs/mocha/commit/f58e49f08df2066e27f87f93ad7ee9cd6f91d225))
 
 ## [11.7.0](https://github.com/mochajs/mocha/compare/v11.6.0...v11.7.0) (2025-06-18)
 
-
 ### 🌟 Features
 
-* use require to load esm ([#5366](https://github.com/mochajs/mocha/issues/5366)) ([41e24a2](https://github.com/mochajs/mocha/commit/41e24a242944da0cfc9d4d6989dede85f648cb40))
+- use require to load esm ([#5366](https://github.com/mochajs/mocha/issues/5366)) ([41e24a2](https://github.com/mochajs/mocha/commit/41e24a242944da0cfc9d4d6989dede85f648cb40))
 
 ## [11.6.0](https://github.com/mochajs/mocha/compare/v11.5.0...v11.6.0) (2025-06-09)
 
-
 ### 🌟 Features
 
-* bump workerpool from ^6.5.1 to ^9.2.0 ([#5350](https://github.com/mochajs/mocha/issues/5350)) ([581a3c5](https://github.com/mochajs/mocha/commit/581a3c554489855ac02860689d3f4ae772c2ea79))
+- bump workerpool from ^6.5.1 to ^9.2.0 ([#5350](https://github.com/mochajs/mocha/issues/5350)) ([581a3c5](https://github.com/mochajs/mocha/commit/581a3c554489855ac02860689d3f4ae772c2ea79))
 
 ## [11.5.0](https://github.com/mochajs/mocha/compare/v11.4.0...v11.5.0) (2025-05-22)
 
-
 ### 🌟 Features
 
-* bump mimimatch from ^5.1.6 to ^9.0.5 ([#5349](https://github.com/mochajs/mocha/issues/5349)) ([a3dea85](https://github.com/mochajs/mocha/commit/a3dea85b316e229ea95f51c715ad61708e9ab9a3))
+- bump mimimatch from ^5.1.6 to ^9.0.5 ([#5349](https://github.com/mochajs/mocha/issues/5349)) ([a3dea85](https://github.com/mochajs/mocha/commit/a3dea85b316e229ea95f51c715ad61708e9ab9a3))
 
 ## [11.4.0](https://github.com/mochajs/mocha/compare/v11.3.0...v11.4.0) (2025-05-19)
 
-
 ### 🌟 Features
 
-* bump diff from ^5.2.0 to ^7.0.0 ([#5348](https://github.com/mochajs/mocha/issues/5348)) ([554d6bb](https://github.com/mochajs/mocha/commit/554d6bbec92c3c938af0a533109749b6f3b7bd2c))
-
+- bump diff from ^5.2.0 to ^7.0.0 ([#5348](https://github.com/mochajs/mocha/issues/5348)) ([554d6bb](https://github.com/mochajs/mocha/commit/554d6bbec92c3c938af0a533109749b6f3b7bd2c))
 
 ### 📚 Documentation
 
-* added CHANGELOG.md note around 11.1 yargs-parser update ([#5362](https://github.com/mochajs/mocha/issues/5362)) ([618415d](https://github.com/mochajs/mocha/commit/618415d9c6fa3ef4e959207c8dd404f4703de7a7))
+- added CHANGELOG.md note around 11.1 yargs-parser update ([#5362](https://github.com/mochajs/mocha/issues/5362)) ([618415d](https://github.com/mochajs/mocha/commit/618415d9c6fa3ef4e959207c8dd404f4703de7a7))
 
 ## [11.3.0](https://github.com/mochajs/mocha/compare/v11.2.2...v11.3.0) (2025-05-16)
 
-
 ### 🌟 Features
 
-* add option to use posix exit code upon fatal signal ([#4989](https://github.com/mochajs/mocha/issues/4989)) ([91bbf85](https://github.com/mochajs/mocha/commit/91bbf855012ee9b83700d3c563b517483de0831c))
-
+- add option to use posix exit code upon fatal signal ([#4989](https://github.com/mochajs/mocha/issues/4989)) ([91bbf85](https://github.com/mochajs/mocha/commit/91bbf855012ee9b83700d3c563b517483de0831c))
 
 ### 📚 Documentation
 
-* Deploy new site alongside old one ([#5360](https://github.com/mochajs/mocha/issues/5360)) ([6c96545](https://github.com/mochajs/mocha/commit/6c96545aee03efeee78c55feedcf70664426514c))
-* mention explicit browser support range ([#5354](https://github.com/mochajs/mocha/issues/5354)) ([c514c0b](https://github.com/mochajs/mocha/commit/c514c0bfad044f8450a63b2f9c6c781b9ce6f164))
-* update Node.js version requirements for 11.x ([#5329](https://github.com/mochajs/mocha/issues/5329)) ([abf3dd9](https://github.com/mochajs/mocha/commit/abf3dd921544b45c4c09eef8f7c9c3c4481a3d66))
-
+- Deploy new site alongside old one ([#5360](https://github.com/mochajs/mocha/issues/5360)) ([6c96545](https://github.com/mochajs/mocha/commit/6c96545aee03efeee78c55feedcf70664426514c))
+- mention explicit browser support range ([#5354](https://github.com/mochajs/mocha/issues/5354)) ([c514c0b](https://github.com/mochajs/mocha/commit/c514c0bfad044f8450a63b2f9c6c781b9ce6f164))
+- update Node.js version requirements for 11.x ([#5329](https://github.com/mochajs/mocha/issues/5329)) ([abf3dd9](https://github.com/mochajs/mocha/commit/abf3dd921544b45c4c09eef8f7c9c3c4481a3d66))
 
 ### 🧹 Chores
 
-* remove prerelease setting in release-please config ([#5363](https://github.com/mochajs/mocha/issues/5363)) ([8878f22](https://github.com/mochajs/mocha/commit/8878f222c418a0bf4fe170c17573c30b5ea2d567))
+- remove prerelease setting in release-please config ([#5363](https://github.com/mochajs/mocha/issues/5363)) ([8878f22](https://github.com/mochajs/mocha/commit/8878f222c418a0bf4fe170c17573c30b5ea2d567))
 
 ## [11.2.2](https://github.com/mochajs/mocha/compare/v11.2.1...v11.2.2) (2025-04-10)
 
-
 ### 🩹 Fixes
 
-* **deps:** update chokidar to v4 ([#5256](https://github.com/mochajs/mocha/issues/5256)) ([8af0f1a](https://github.com/mochajs/mocha/commit/8af0f1a9005a948fbefeb19be618a64dd910d39f))
-
+- **deps:** update chokidar to v4 ([#5256](https://github.com/mochajs/mocha/issues/5256)) ([8af0f1a](https://github.com/mochajs/mocha/commit/8af0f1a9005a948fbefeb19be618a64dd910d39f))
 
 ### 📚 Documentation
 
-* add ClientRedirects.astro ([#5324](https://github.com/mochajs/mocha/issues/5324)) ([b88d441](https://github.com/mochajs/mocha/commit/b88d441cc7616253892572778150998627d746ec))
-* add example/tests.html to docs-next ([#5325](https://github.com/mochajs/mocha/issues/5325)) ([6ec5762](https://github.com/mochajs/mocha/commit/6ec5762edd419578e9d3ce2fcc2b8dedcb0caf06))
+- add ClientRedirects.astro ([#5324](https://github.com/mochajs/mocha/issues/5324)) ([b88d441](https://github.com/mochajs/mocha/commit/b88d441cc7616253892572778150998627d746ec))
+- add example/tests.html to docs-next ([#5325](https://github.com/mochajs/mocha/issues/5325)) ([6ec5762](https://github.com/mochajs/mocha/commit/6ec5762edd419578e9d3ce2fcc2b8dedcb0caf06))
 
 ## [11.2.1](https://github.com/mochajs/mocha/compare/v11.2.0...v11.2.1) (2025-04-10)
 
-
 ### 🩹 Fixes
 
-* switch from ansi-colors to picocolors ([#5323](https://github.com/mochajs/mocha/issues/5323)) ([7c08d09](https://github.com/mochajs/mocha/commit/7c08d0944d2255084bc4415238430b13c90f0df5))
-
+- switch from ansi-colors to picocolors ([#5323](https://github.com/mochajs/mocha/issues/5323)) ([7c08d09](https://github.com/mochajs/mocha/commit/7c08d0944d2255084bc4415238430b13c90f0df5))
 
 ### 📚 Documentation
 
-* fix new website typos, improve readability ([#5312](https://github.com/mochajs/mocha/issues/5312)) ([fbceb19](https://github.com/mochajs/mocha/commit/fbceb19bbdad121f0100ec3434258775bd87aeaf))
-
+- fix new website typos, improve readability ([#5312](https://github.com/mochajs/mocha/issues/5312)) ([fbceb19](https://github.com/mochajs/mocha/commit/fbceb19bbdad121f0100ec3434258775bd87aeaf))
 
 ### 🧹 Chores
 
-* "force" Netlify to use npm to build new site ([#5319](https://github.com/mochajs/mocha/issues/5319)) ([3a46855](https://github.com/mochajs/mocha/commit/3a46855294f82e58a5a414aed3525e394b82aced))
-* Fix tests ([#5320](https://github.com/mochajs/mocha/issues/5320)) ([18699a0](https://github.com/mochajs/mocha/commit/18699a0d668ed2654dd15433f03b74348baf9559))
+- "force" Netlify to use npm to build new site ([#5319](https://github.com/mochajs/mocha/issues/5319)) ([3a46855](https://github.com/mochajs/mocha/commit/3a46855294f82e58a5a414aed3525e394b82aced))
+- Fix tests ([#5320](https://github.com/mochajs/mocha/issues/5320)) ([18699a0](https://github.com/mochajs/mocha/commit/18699a0d668ed2654dd15433f03b74348baf9559))
 
 ## [11.2.0](https://github.com/mochajs/mocha/compare/v11.1.0...v11.2.0) (2025-03-17)
 
-
 ### 🌟 Features
 
-* enable reporters to show relative paths of tests ([#5292](https://github.com/mochajs/mocha/issues/5292)) ([81ea666](https://github.com/mochajs/mocha/commit/81ea6667e9286c55ffa67977448b776a23c6da2d))
-
+- enable reporters to show relative paths of tests ([#5292](https://github.com/mochajs/mocha/issues/5292)) ([81ea666](https://github.com/mochajs/mocha/commit/81ea6667e9286c55ffa67977448b776a23c6da2d))
 
 ### 📚 Documentation
 
-* add instructions for API docs ([#5287](https://github.com/mochajs/mocha/issues/5287)) ([b720ec1](https://github.com/mochajs/mocha/commit/b720ec1b3ca630a90f80311da391b2a0cdfead4e))
-* add new website using Astro Starlight ([#5246](https://github.com/mochajs/mocha/issues/5246)) ([b1f1cb7](https://github.com/mochajs/mocha/commit/b1f1cb78b655191b7a43dc962b513bf1b076890c))
-* improve third-party reporter docs ([#5285](https://github.com/mochajs/mocha/issues/5285)) ([c5a0ef5](https://github.com/mochajs/mocha/commit/c5a0ef523d52d8cab50e4a9b226af3790f54e75f))
-
+- add instructions for API docs ([#5287](https://github.com/mochajs/mocha/issues/5287)) ([b720ec1](https://github.com/mochajs/mocha/commit/b720ec1b3ca630a90f80311da391b2a0cdfead4e))
+- add new website using Astro Starlight ([#5246](https://github.com/mochajs/mocha/issues/5246)) ([b1f1cb7](https://github.com/mochajs/mocha/commit/b1f1cb78b655191b7a43dc962b513bf1b076890c))
+- improve third-party reporter docs ([#5285](https://github.com/mochajs/mocha/issues/5285)) ([c5a0ef5](https://github.com/mochajs/mocha/commit/c5a0ef523d52d8cab50e4a9b226af3790f54e75f))
 
 ### 🧹 Chores
 
-* enabled eslint-plugin-n ([#5280](https://github.com/mochajs/mocha/issues/5280)) ([945d6e3](https://github.com/mochajs/mocha/commit/945d6e3bf5a9de19c3aa26fbdac966a721006b58))
-* pin node-lts tests to 22.11.0 ([#5279](https://github.com/mochajs/mocha/issues/5279)) ([664e1f4](https://github.com/mochajs/mocha/commit/664e1f49f7ae214a9666c90f388407e9fa100309))
-* replace `fs-extra` with newer `fs` built-ins ([#5284](https://github.com/mochajs/mocha/issues/5284)) ([75dcf8c](https://github.com/mochajs/mocha/commit/75dcf8c6c40ed1ce134ae5e174b6f4c4ca4d8c42))
+- enabled eslint-plugin-n ([#5280](https://github.com/mochajs/mocha/issues/5280)) ([945d6e3](https://github.com/mochajs/mocha/commit/945d6e3bf5a9de19c3aa26fbdac966a721006b58))
+- pin node-lts tests to 22.11.0 ([#5279](https://github.com/mochajs/mocha/issues/5279)) ([664e1f4](https://github.com/mochajs/mocha/commit/664e1f49f7ae214a9666c90f388407e9fa100309))
+- replace `fs-extra` with newer `fs` built-ins ([#5284](https://github.com/mochajs/mocha/issues/5284)) ([75dcf8c](https://github.com/mochajs/mocha/commit/75dcf8c6c40ed1ce134ae5e174b6f4c4ca4d8c42))
 
 ## [11.1.0](https://github.com/mochajs/mocha/compare/v11.0.2...v11.1.0) (2025-01-02)
 
-
 ### 🌟 Features
 
-* bump yargs to 17 ([#5165](https://github.com/mochajs/mocha/issues/5165)) ([8f1c8d8](https://github.com/mochajs/mocha/commit/8f1c8d888b0104afcd95ca55a517320399755749))
-  * Note that this also included a version bump of [`yargs-parser`](http://npmjs.com/package/yargs-parser) from `^20.2.9` to `^21.1.`, which fixed a bug that caused extra quotes in file paths to be removed.
+- bump yargs to 17 ([#5165](https://github.com/mochajs/mocha/issues/5165)) ([8f1c8d8](https://github.com/mochajs/mocha/commit/8f1c8d888b0104afcd95ca55a517320399755749))
+  - Note that this also included a version bump of [`yargs-parser`](http://npmjs.com/package/yargs-parser) from `^20.2.9` to `^21.1.`, which fixed a bug that caused extra quotes in file paths to be removed.
     See [#5341](https://github.com/mochajs/mocha/issues/5341) for more information.
-* replace `strip-ansi` with `util.stripVTControlCharacters` ([#5267](https://github.com/mochajs/mocha/issues/5267)) ([3c191c0](https://github.com/mochajs/mocha/commit/3c191c05d9db1e99aec9b600edac2ce10a6b6d71)), closes [#5265](https://github.com/mochajs/mocha/issues/5265)
+- replace `strip-ansi` with `util.stripVTControlCharacters` ([#5267](https://github.com/mochajs/mocha/issues/5267)) ([3c191c0](https://github.com/mochajs/mocha/commit/3c191c05d9db1e99aec9b600edac2ce10a6b6d71)), closes [#5265](https://github.com/mochajs/mocha/issues/5265)
 
 ## [11.0.2](https://github.com/mochajs/mocha/compare/v11.0.1...v11.0.2) (2024-12-09)
 
-
 ### 🩹 Fixes
 
-* catch exceptions setting Error.stackTraceLimit ([#5254](https://github.com/mochajs/mocha/issues/5254)) ([259f8f8](https://github.com/mochajs/mocha/commit/259f8f8ba5709b5d84fa66e17cd10560a11f45c9))
-* error handling for unexpected numeric arguments passed to cli ([#5263](https://github.com/mochajs/mocha/issues/5263)) ([210d658](https://github.com/mochajs/mocha/commit/210d658678a2ec3b6f85c59d4b300b4722671099))
-
+- catch exceptions setting Error.stackTraceLimit ([#5254](https://github.com/mochajs/mocha/issues/5254)) ([259f8f8](https://github.com/mochajs/mocha/commit/259f8f8ba5709b5d84fa66e17cd10560a11f45c9))
+- error handling for unexpected numeric arguments passed to cli ([#5263](https://github.com/mochajs/mocha/issues/5263)) ([210d658](https://github.com/mochajs/mocha/commit/210d658678a2ec3b6f85c59d4b300b4722671099))
 
 ### 📚 Documentation
 
-* correct outdated `status: accepting prs` link ([#5268](https://github.com/mochajs/mocha/issues/5268)) ([f729cd0](https://github.com/mochajs/mocha/commit/f729cd09b61bb598409f19b3c76b9e9536812237))
-* replace "New in" with "Since" in version annotations ([#5262](https://github.com/mochajs/mocha/issues/5262)) ([6f10d12](https://github.com/mochajs/mocha/commit/6f10d12c6c6dfa4df7d5221a3ce688f687aaf320))
+- correct outdated `status: accepting prs` link ([#5268](https://github.com/mochajs/mocha/issues/5268)) ([f729cd0](https://github.com/mochajs/mocha/commit/f729cd09b61bb598409f19b3c76b9e9536812237))
+- replace "New in" with "Since" in version annotations ([#5262](https://github.com/mochajs/mocha/issues/5262)) ([6f10d12](https://github.com/mochajs/mocha/commit/6f10d12c6c6dfa4df7d5221a3ce688f687aaf320))
 
 ## [11.0.1](https://github.com/mochajs/mocha/compare/v11.0.0...v11.0.1) (2024-12-02)
 
-
 ### 🌟 Features
 
-* bumped glob dependency from 8 to 10 ([#5250](https://github.com/mochajs/mocha/issues/5250)) ([43c3157](https://github.com/mochajs/mocha/commit/43c3157c6ef4f2d4bfecf3ad3a42479fd64187b8))
-
+- bumped glob dependency from 8 to 10 ([#5250](https://github.com/mochajs/mocha/issues/5250)) ([43c3157](https://github.com/mochajs/mocha/commit/43c3157c6ef4f2d4bfecf3ad3a42479fd64187b8))
 
 ### 📚 Documentation
 
-* fix examples for `linkPartialObjects` methods ([#5255](https://github.com/mochajs/mocha/issues/5255)) ([34e0e52](https://github.com/mochajs/mocha/commit/34e0e52e047a9119aeae9cb5b660a8438656a1e0))
+- fix examples for `linkPartialObjects` methods ([#5255](https://github.com/mochajs/mocha/issues/5255)) ([34e0e52](https://github.com/mochajs/mocha/commit/34e0e52e047a9119aeae9cb5b660a8438656a1e0))
 
 ## [11.0.0](https://github.com/mochajs/mocha/compare/v10.8.2...v11.0.0) (2024-11-11)
 
