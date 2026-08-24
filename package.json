@@ -1,6 +1,6 @@
 {
   "name": "mocha-bun",
-  "version": "12.0.0-bun.1",
+  "version": "12.0.0-bun.2",
   "type": "module",
   "description": "Classic, reliable, trusted test framework for Node.js and the browser (Bun runtime fork)",
   "keywords": [

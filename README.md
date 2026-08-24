@@ -24,7 +24,7 @@
 
 ## mocha-bun (Bun fork)
 
-This is `mocha-bun` — a fork of `mocha@12.0.0-rc.6` with first-class **Bun 1.4+** support.
+This is `mocha-bun` — a fork of `mocha@12.0.0-rc.6` with first-class **Bun 1.4+** support. **Documentation in this fork uses ASD-STE100 Simplified Technical English.**
 
 - **Engines:** `node >=22.12.0` (ESM), `bun >=1.4.0`
 - **Bin:** `mocha` (`#!/usr/bin/env node`) and `mocha-bun` (`#!/usr/bin/env bun`) — no manual `node_modules/.bin` edit needed. Use `bunx mocha`, `bun run mocha`, or `mocha-bun` (`bun ./bin/mocha-bun.js`) for Bun; `npx mocha` / `node ./bin/mocha.js` for Node.
