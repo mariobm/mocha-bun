@@ -24,14 +24,14 @@
 
 ## mocha-bun (Bun fork)
 
-This is `mocha-bun` — a fork of `mocha@12.0.0-rc.6` with first-class **Bun 1.4+** support. **Documentation in this fork uses ASD-STE100 Simplified Technical English.**
+This is `mocha-bun`. It is a fork of `mocha@12.0.0-rc.6`. It adds support for Bun 1.4 and later.
 
-- **Engines:** `node >=22.12.0` (ESM), `bun >=1.4.0`
-- **Bin:** `mocha` (`#!/usr/bin/env node`) and `mocha-bun` (`#!/usr/bin/env bun`) — no manual `node_modules/.bin` edit needed. Use `bunx mocha`, `bun run mocha`, or `mocha-bun` (`bun ./bin/mocha-bun.js`) for Bun; `npx mocha` / `node ./bin/mocha.js` for Node.
-- **`--parallel` on Bun:** native `BunForkPool` (`lib/nodejs/worker-bun.cjs` + `node:child_process.fork` queue, reuse, `MOCHA_WORKER_ID`) — `workerpool` is kept for Node only. Verified `bun --parallel` 69ms vs Node 113ms.
-- **`glob` → `fs.globSync`:** `lib/cli/lookup-files.js` and `watch-run.cjs` now use built-in `node:fs.globSync` + `minimatch.braceExpand` (removed direct `glob` dep, transitive via `nyc` remains).
-- **ESM:** CLI layer (`options.js`, `collect-files.js`, `node-flags.js`) is ESM, Bun's `require(esm)` unsupported is avoided via `errors.cjs` shims and `import` chain.
-- **Globals:** `global` → `globalThis` fallback in `runner`, `runnable`, `reporters`, `mocha.cjs`.
+- **Engines:** Use `node >=22.12.0` or `bun >=1.4.0`.
+- **Bin:** The fork provides `mocha` and `mocha-bun`. `mocha` uses `node`. `mocha-bun` uses `bun`. You do not need to edit `node_modules/.bin`. Use `bunx mocha-bun` or `bun ./bin/mocha-bun.js` for Bun. Use `npx mocha` or `node ./bin/mocha.js` for Node.
+- **Parallel:** For Bun, the fork uses `BunForkPool`. For Node, it uses `Piscina`. `BunForkPool` uses `fork` and a queue. `Piscina` uses threads. The test shows `bun --parallel` at 69 ms and `node --parallel` at 78 ms.
+- **Glob:** The fork uses `node:fs.globSync`. It replaces `glob` in `lookup-files.js` and `watch-run.cjs`. It uses `minimatch.braceExpand` for brace patterns.
+- **ESM:** The CLI layer uses ESM. The files are `options.js`, `collect-files.js`, and `node-flags.js`. The fork uses `errors.cjs` shims to avoid `require(esm)` errors on Bun.
+- **Globals:** The fork uses `globalThis` with a fallback to `global`. The files are `runner`, `runnable`, `reporters`, and `mocha.cjs`.
 
 Install (private fork):
 ```bash
