@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "Node16",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "noEmit": true
+  },
+  "exclude": ["lib/browser"],
+  "include": ["lib"]
+}

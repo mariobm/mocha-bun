@@ -1,0 +1,24 @@
+{
+  "reporter": ["json", "text-summary"],
+  "all": true,
+  "exclude": [
+    "coverage/**",
+    "docs/**",
+    "packages/*/test{,s}/**",
+    "**/*.d.ts",
+    "test{,s}/**",
+    "test{,-*}.{js,cjs,mjs,ts}",
+    "**/*{.,-}test.{js,cjs,mjs,ts}",
+    "**/__tests__/**",
+    "**/{rollup,webpack}.config.js",
+    "**/playwright.config.js",
+    "**/{babel.config,.eslintrc,.mocharc}.{js,cjs}",
+    "lib/browser/**",
+    "package-scripts.js",
+    "package-lock.json",
+    "**/package-lock.json",
+    "node_modules/**",
+    "scripts/**",
+    "!test/integration/fixtures/stack-trace.fixture.cjs"
+  ]
+}

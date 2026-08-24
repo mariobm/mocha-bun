@@ -1,0 +1,13 @@
+require: "./test/setup.cjs"
+ui: "bdd"
+global:
+  - "okGlobalA,okGlobalB"
+  - "okGlobalC"
+  - "callback*"
+timeout: 1000
+watch-ignore:
+  - ".*"
+  - "docs/_site/**"
+  - "node_modules"
+  - "coverage"
+  - "cache"
