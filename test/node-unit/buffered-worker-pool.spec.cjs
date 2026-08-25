@@ -4,7 +4,6 @@ const rewiremock = require("rewiremock/node");
 const sinon = require("sinon");
 
 describe("class BufferedWorkerPool", function () {
-  // Piscina pool tests only for Node; Bun uses BunForkPool (tested via integration)
   before(function () {
     if (process.versions.bun || typeof Bun !== "undefined") {
       this.skip();
