@@ -2,7 +2,7 @@
   <img src="docs/src/components/mocha-logo.svg" alt="Mocha test framework logo"/>
 </p>
 
-<p align="center">☕️ Classic, reliable, trusted test framework for Node.js and the browser ☕️</p>
+<p align="center">☕️ Classic, reliable, trusted test framework for Node.js and Bun ☕️</p>
 
 <div align="center">
 
@@ -24,7 +24,7 @@
 
 ## mocha-bun (Bun fork)
 
-This is `mocha-bun`. It is a fork of `mocha@12.0.0-rc.6`. It adds support for Bun 1.4 and later.
+This is `mocha-bun`. It is a fork of `mocha@12.0.0-rc.6`. It adds support for Bun 1.4 and later. It does not support the browser.
 
 - **Engines:** Use `node >=22.12.0` or `bun >=1.4.0`.
 - **Bin:** The fork provides `mocha` and `mocha-bun`. `mocha` uses `node`. `mocha-bun` uses `bun`. You do not need to edit `node_modules/.bin`. Use `bunx mocha-bun` or `bun ./bin/mocha-bun.js` for Bun. Use `npx mocha` or `node ./bin/mocha.js` for Node.
