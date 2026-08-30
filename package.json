@@ -1,6 +1,6 @@
 {
   "name": "mocha-bun",
-  "version": "12.0.0-bun.9",
+  "version": "12.0.0-bun.10",
   "type": "module",
   "description": "Classic, reliable, trusted test framework for Node.js and Bun (browser support removed)",
   "keywords": [
@@ -22,14 +22,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mochajs/mocha.git",
-    "original": "mocha v12.0.0-rc.6 fork for Bun"
+    "url": "https://github.com/mariobm/mocha-bun.git"
   },
   "bugs": {
-    "url": "https://github.com/mochajs/mocha/issues/"
+    "url": "https://github.com/mariobm/mocha-bun/issues/"
   },
   "discord": "https://discord.gg/KeDn2uXhER",
-  "homepage": "https://mochajs.org/",
+  "homepage": "https://github.com/mariobm/mocha-bun#readme",
   "logo": "https://cldup.com/S9uQ-cOLYz.svg",
   "notifyLogo": "https://ibin.co/4QuRuGjXvl36.png",
   "main": "./index.js",
