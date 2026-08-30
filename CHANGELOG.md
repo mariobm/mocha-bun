@@ -1,5 +1,45 @@
 # Changelog
 
+## [12.0.0-rc.7](https://github.com/mariobm/mocha-bun/compare/v12.0.0-rc.6...v12.0.0-rc.7) (2026-08-30)
+
+
+### 🌟 Features
+
+* **bun:** Bun-native parallel + globalThis + bin bun (Phase 4-5) ([bcaa741](https://github.com/mariobm/mocha-bun/commit/bcaa741ad2abf33586bccdb37944b9ae54463cf9))
+* **bun:** ESM + fs.glob migration (Phase 2-3) ([c15fcb1](https://github.com/mariobm/mocha-bun/commit/c15fcb1ce1e152ea4d0313a7dd4a58355b82cc0f))
+* **bun:** Phase 6 polish - bun scripts, README, esm-utils Bun fix ([6d51601](https://github.com/mariobm/mocha-bun/commit/6d51601bcd2e2afd373c6615866ff3cf46a9aa6e))
+* harden Bun process pool for .bun.8 (explicit pool, states, ready gating, single handler, monotonic IDs, graceful shutdown) ([1a920f1](https://github.com/mariobm/mocha-bun/commit/1a920f127758d65c05fe8e2765bb27b549ee0992))
+* **node:** piscina for Node, keep BunForkPool for Bun (no workerpool fallback) ([0449c3b](https://github.com/mariobm/mocha-bun/commit/0449c3b10fd9461da9ea7b095cf8071b6b811a43))
+* remove browser support for mocha-bun, bump to 12.0.0-bun.9 ([89ff5c0](https://github.com/mariobm/mocha-bun/commit/89ff5c03ff98ab4415c4d1febd7519ec0bc19674))
+* use Piscina for both Node and Bun (drop BunForkPool), fix parallel reporting ([7539279](https://github.com/mariobm/mocha-bun/commit/7539279af919d5aab666af8603821da46bb1eb58))
+
+
+### 🩹 Fixes
+
+* **bun:** handle worker death in BunForkPool (no hang, restore throughput) ([6ee7465](https://github.com/mariobm/mocha-bun/commit/6ee7465905a895c004a94363c834d62926b9ba8e))
+* handle numeric filenames, negative numbers/quoted MOCHA_OPTIONS, FIFO (fixes [#6221](https://github.com/mariobm/mocha-bun/issues/6221), [#6252](https://github.com/mariobm/mocha-bun/issues/6252), [#6253](https://github.com/mariobm/mocha-bun/issues/6253)) ([22f6241](https://github.com/mariobm/mocha-bun/commit/22f6241f61afbdb810303fe7b3634f7ad061367f))
+* **parallel:** report all worker deaths, not just first ([5f38e90](https://github.com/mariobm/mocha-bun/commit/5f38e909f7f3ddb2fdea4c4d34866c6b13a1b445))
+* **piscina:** set MOCHA_WORKER_ID from threadId, remove dead onCreateWorker ([7a518d3](https://github.com/mariobm/mocha-bun/commit/7a518d30ef51b85021645344da21ca886762d516))
+* point npm repository/bugs/homepage to mariobm/mocha-bun, bump to 12.0.0-bun.10 ([c451d75](https://github.com/mariobm/mocha-bun/commit/c451d75c69cba0ec82537d5980d8112727936b43))
+* workerId 0-based, docs piscina Node default Bun optional ([b7252d2](https://github.com/mariobm/mocha-bun/commit/b7252d2e5cf448c030685ed6b6993fc8f913b53d))
+
+
+### 📚 Documentation
+
+* note ASD-STE100 Simplified Technical English, bump to 12.0.0-bun.2 ([f8aae35](https://github.com/mariobm/mocha-bun/commit/f8aae35329b214186354dbf3adc7dd293d3f8058))
+* use STE without mention, bump to 12.0.0-bun.3 ([05986eb](https://github.com/mariobm/mocha-bun/commit/05986eb7d9b1db7c1f31667815e5614695cf0893))
+
+
+### 🧹 Chores
+
+* bump to 12.0.0-bun.11 for test release (fixes [#6221](https://github.com/mariobm/mocha-bun/issues/6221), [#6252](https://github.com/mariobm/mocha-bun/issues/6252), [#6253](https://github.com/mariobm/mocha-bun/issues/6253)) ([21ab8ff](https://github.com/mariobm/mocha-bun/commit/21ab8ffcf585598a8b534437f6edabd1078dd02c))
+* bump to 12.0.0-bun.4 ([aaf469a](https://github.com/mariobm/mocha-bun/commit/aaf469a8104b29123141acc94eeccd5231ff42ab))
+* bump to 12.0.0-bun.5 ([c9f3e73](https://github.com/mariobm/mocha-bun/commit/c9f3e736d55bbcdd1978a006e12db384d980c1cc))
+* bump version to 12.0.0-bun.1 for npm publish ([4598e9f](https://github.com/mariobm/mocha-bun/commit/4598e9f84df395e19a78b6b46d0b947061e8228d))
+* fix pool shutdown for Piscina threads (no child processes) ([5280a71](https://github.com/mariobm/mocha-bun/commit/5280a71f56004d860d27dc13840045605a5f3a0a))
+* import full mocha v12.0.0-rc.6 source ([37a6804](https://github.com/mariobm/mocha-bun/commit/37a68044e8ebca73f9800150ae415c7b28c72df3))
+* sync package-lock for piscina + browser removal ([774ed19](https://github.com/mariobm/mocha-bun/commit/774ed19f56c2334aef2490c7cde3280e2467a50f))
+
 ## [12.0.0-rc.6](https://github.com/mochajs/mocha/compare/v12.0.0-rc.5...v12.0.0-rc.6) (2026-08-09)
 
 ### 🩹 Fixes
