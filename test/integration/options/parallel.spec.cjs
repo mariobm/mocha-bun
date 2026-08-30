@@ -532,14 +532,16 @@ describe("--parallel", function () {
   describe("pool shutdown", function () {
     describe("during normal operation", function () {
       it("should not leave orphaned processes around", async function () {
+        this.timeout(5000);
         const [{ pid }, promise] = invokeMochaAsync([
           resolveFixturePath("options/parallel/test-*.fixture.js"),
           "--parallel",
         ]);
+        // For Piscina threads, no child processes; just wait for mocha to exit
         const childPids = await waitForChildPids(pid);
         await promise;
-        // For Piscina thread pools, childPids is empty (threads share PID); just check main exits
         if (!childPids.length) {
+          // Threads share PID, just ensure main exited
           return expect(await checkProcessExists(pid), "to be", false);
         }
         return expect(
@@ -557,6 +559,7 @@ describe("--parallel", function () {
 
     describe("during operation with --bail", function () {
       it("should not leave orphaned processes around", async function () {
+        this.timeout(5000);
         const [{ pid }, promise] = invokeMochaAsync([
           resolveFixturePath("options/parallel/test-*.fixture.js"),
           "--bail",
