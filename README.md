@@ -34,11 +34,13 @@ This is `mocha-bun`. It is a fork of `mocha@12.0.0-rc.6`. It adds support for Bu
 - **Globals:** The fork uses `globalThis` with a fallback to `global`. The files are `runner`, `runnable`, `reporters`, and `mocha.cjs`.
 
 Install (private fork):
+
 ```bash
 bun install mocha-bun   # or from this repo: bun install
 bun ./bin/mocha-bun.js --no-config test/smoke/smoke.spec.cjs
 bun ./bin/mocha-bun.js --no-config --parallel test/**/*.spec.cjs
 ```
+
 Test matrix: `npm run test-bun` (smoke+unit+integration on Bun), `npm run test-node` (Node), `npm run test-bun:parallel-smoke`.
 
 ## Links

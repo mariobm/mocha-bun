@@ -95,11 +95,7 @@ if (mochaArgs["node-option"] || Object.keys(nodeArgs).length || hasInspect) {
 
   debug("final node argv", nodeArgv);
 
-  const args = [].concat(
-    nodeArgv,
-    mochaPath,
-    unparseMochaArgs(mochaArgs),
-  );
+  const args = [].concat(nodeArgv, mochaPath, unparseMochaArgs(mochaArgs));
 
   debug(
     "forking child process via command: %s %s",
