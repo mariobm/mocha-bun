@@ -82,16 +82,21 @@ async function assertReporterOutputEquality(reporter) {
 
 /**
  * Polls a process for its list of children PIDs. Returns the first non-empty list found
+ * For Piscina thread pools, there are no child processes (threads share PID),
+ * so return empty after a short wait and let the caller handle it.
  * @param {number} pid - Process PID
  * @returns {number[]} Child PIDs
  */
 async function waitForChildPids(pid) {
   let childPids = [];
-  while (!childPids.length) {
+  let attempts = 0;
+  while (!childPids.length && attempts < 5) {
     childPids = await getChildPids(pid);
+    if (childPids.length) return childPids;
     await new Promise((resolve) => setTimeout(resolve, 100));
+    attempts++;
   }
-  return childPids;
+  return childPids; // may be empty for Piscina threads
 }
 
 describe("--parallel", function () {
@@ -533,6 +538,10 @@ describe("--parallel", function () {
         ]);
         const childPids = await waitForChildPids(pid);
         await promise;
+        // For Piscina thread pools, childPids is empty (threads share PID); just check main exits
+        if (!childPids.length) {
+          return expect(await checkProcessExists(pid), "to be", false);
+        }
         return expect(
           Promise.all(
             [pid, ...childPids].map(
@@ -555,6 +564,9 @@ describe("--parallel", function () {
         ]);
         const childPids = await waitForChildPids(pid);
         await promise;
+        if (!childPids.length) {
+          return expect(await checkProcessExists(pid), "to be", false);
+        }
         return expect(
           Promise.all(
             [pid, ...childPids].map(

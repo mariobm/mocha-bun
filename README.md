@@ -29,6 +29,7 @@ This is `mocha-bun`. It is a fork of `mocha@12.0.0-rc.6`. It adds support for Bu
 - **Engines:** Use `node >=22.12.0` or `bun >=1.4.0`.
 - **Bin:** The fork provides `mocha` and `mocha-bun`. `mocha` uses `node`. `mocha-bun` uses `bun`. You do not need to edit `node_modules/.bin`. Use `bunx mocha-bun` or `bun ./bin/mocha-bun.js` for Bun. Use `npx mocha` or `node ./bin/mocha.js` for Node.
 - **Parallel:** For Node, the fork uses `Piscina` threads. For Bun, the default is `BunForkPool` processes. `Piscina` is optional for Bun via `--pool thread`. `BunForkPool` uses `fork` and a queue. `Piscina` uses threads. The test shows `bun --parallel` at 69 ms and `node --parallel` at 78 ms.
+- **Piscina note:** `Piscina` uses `structuredClone` for worker messages. Errors that contain functions (as in `test/integration/parallel` circular tests) cannot be cloned and will show `DataCloneError`. This is a known `Piscina` limitation. Normal `chai`/`assert` errors do not contain functions.
 - **Glob:** The fork uses `node:fs.globSync`. It replaces `glob` in `lookup-files.js` and `watch-run.cjs`. It uses `minimatch.braceExpand` for brace patterns.
 - **ESM:** The CLI layer uses ESM. The files are `options.js`, `collect-files.js`, and `node-flags.js`. The fork uses `errors.cjs` shims to avoid `require(esm)` errors on Bun.
 - **Globals:** The fork uses `globalThis` with a fallback to `global`. The files are `runner`, `runnable`, `reporters`, and `mocha.cjs`.
